@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<!-- Saved by Site Saver from https://www.creditsaint.com/90day/ on 2026-11-10T21:34:20.063Z -->
+<html lang="en-US"><head><meta charset="utf-8">
+    <script>
+(function() {
+  'use strict';
+
+  let scriptsLoaded = false;
+  const LOAD_TIMEOUT = 3000; // Default 3 seconds
+
+  function loadDeferredScripts() {
+    if (scriptsLoaded) return;
+    scriptsLoaded = true;
+
+    // Dispatch custom event that scripts can listen to
+    window.dispatchEvent(new CustomEvent('deferredScriptsReady'));
+  }
+
+  // Load on first user interaction
+  const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+  events.forEach(event => {
+    window.addEventListener(event, loadDeferredScripts, { once: true, passive: true });
+  });
+
+  // Fallback: load after timeout
+  window.addEventListener('load', function() {
+    setTimeout(loadDeferredScripts, LOAD_TIMEOUT);
+  });
+})();
+</script>
+    <style>#chat-widget-container { display: none !important; }</style>
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.asyncInit = true;
+    (function () {
+        var tries = 0;
+        var queued = false;
+        var timer = setInterval(function () {
+            var lc = window.LiveChatWidget;
+            if (lc && typeof lc.call === 'function') {
+                // Before tracking.js loads, LiveChatWidget is a queueing stub whose getters throw.
+                var loaded = false;
+                try { lc.get('state'); loaded = true; } catch (e) {}
+                if (loaded) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    clearInterval(timer);
+                    return;
+                }
+                if (!queued) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    queued = true;
+                }
+            }
+            if (++tries >= 60) clearInterval(timer);
+        }, 500);
+    })();
+</script>
+
+    
+    <script>
+    (function() {
+      'use strict';
+
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        // Initialize dataLayer if not exists
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+
+        // Load GTM script
+        var f = document.getElementsByTagName('script')[0];
+        var j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KKPV8B4';
+        f.parentNode.insertBefore(j, f);
+      }
+
+      // Load GTM on deferredScriptsReady event
+      window.addEventListener('deferredScriptsReady', loadGTM);
+
+      // Fallback: load after page load + 3s
+      window.addEventListener('load', function() {
+        setTimeout(loadGTM, 3000);
+      });
+    })();
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="apple-itunes-app" content="app-id=1591290922">
+        <meta name="csrf-token" content="uAgrNBt7FLiuz00za1hYZQ8KHYNTfam3U8WJSQoQ">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="facebook-domain-verification" content="vpzfdiv19m15upua5kkk20d23nvldj">
+    
+    <title>90-Day Money-Back Guarantee | Credit Saint</title>
+    <meta name="description" content="The full terms of our 90-day guarantee: eligibility, what counts as a removal, and how to request a refund.">
+    <meta name="application-name" content="Credit Saint">
+            <link rel="canonical" href="https://www.creditsaint.com/90day/">
+                    <link rel="alternate" hreflang="en" href="https://www.creditsaint.com/90day/">
+                    <link rel="alternate" hreflang="es" href="https://www.santodecredito.com/90day/">
+                <link rel="alternate" hreflang="x-default" href="https://www.creditsaint.com/90day/">
+        <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Credit Saint">
+    <meta property="og:locale" content="en_US">
+            <meta property="og:locale:alternate" content="es_US">
+        <meta property="og:title" content="90-Day Money-Back Guarantee | Credit Saint">
+    <meta property="og:description" content="The full terms of our 90-day guarantee: eligibility, what counts as a removal, and how to request a refund.">
+            <meta property="og:url" content="https://www.creditsaint.com/90day/">
+        <meta property="og:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Credit Saint">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="90-Day Money-Back Guarantee | Credit Saint">
+    <meta name="twitter:description" content="The full terms of our 90-day guarantee: eligibility, what counts as a removal, and how to request a refund.">
+    <meta name="twitter:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <link rel="icon" type="image/png" href="../_external/cdn.creditsaint.com/webapp/img/newDesign/cs-icon.svg">
+
+    
+    
+    
+    <link rel="stylesheet" href="../_external/fonts.googleapis.com/css2__qaw5g14.css">
+    <link rel="stylesheet" href="../css/home-6-0/site__q19m5z2z.css">
+    <link rel="stylesheet" href="../css/home-6-0/guarantee__q19m5z2z.css">
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.creditsaint.com/#organization","name":"Credit Saint, LLC","alternateName":"Credit Saint","url":"https://www.creditsaint.com/","logo":{"@type":"ImageObject","url":"https://cdn.creditsaint.com/webapp/img/newDesign/cs-new-logo.svg"},"description":"Credit Saint challenges potentially inaccurate items with all three credit bureaus. A credit repair organization as defined under the Credit Repair Organizations Act (CROA) and not a law firm.","foundingDate":"2007","address":{"@type":"PostalAddress","streetAddress":"PO Box 110","addressLocality":"Oakland","addressRegion":"NJ","postalCode":"07436","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1-877-637-2673","contactType":"customer service","areaServed":"US","availableLanguage":["English","Spanish"]}],"sameAs":["https://www.linkedin.com/company/credit-saint-llc","https://www.instagram.com/creditsaint/","https://www.facebook.com/creditsaint/","https://www.bbb.org/us/nj/saddle-brook/profile/credit-repair-no-advanced-fee/credit-saint-llc-0221-27004499"]},{"@type":"WebSite","@id":"https://www.creditsaint.com/#website","name":"Credit Saint","url":"https://www.creditsaint.com/","publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.creditsaint.com/90day/#webpage","name":"90-Day Money-Back Guarantee | Credit Saint","description":"The full terms of our 90-day guarantee: eligibility, what counts as a removal, and how to request a refund.","url":"https://www.creditsaint.com/90day/","isPartOf":{"@id":"https://www.creditsaint.com/#website"},"publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.creditsaint.com/90day/#breadcrumb"},"about":{"@id":"https://www.creditsaint.com/90day/#returnpolicy"},"hasPart":{"@id":"https://www.creditsaint.com/90day/#faq"}},{"@type":"BreadcrumbList","@id":"https://www.creditsaint.com/90day/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.creditsaint.com/"},{"@type":"ListItem","position":2,"name":"90-Day Money-Back Guarantee","item":"https://www.creditsaint.com/90day/"}]},{"@type":"MerchantReturnPolicy","@id":"https://www.creditsaint.com/90day/#returnpolicy","name":"90-Day Money-Back Guarantee","merchantReturnDays":90,"returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","refundType":"https://schema.org/FullRefund","applicableCountry":"US","returnFees":"https://schema.org/FreeReturn","description":"If Credit Saint challenges items on your report and none are removed within the first 90 days of active work, you can request a full refund of what you have paid. The guarantee covers the work, not a score outcome.","merchantReturnLink":"https://www.creditsaint.com/90day/","provider":{"@id":"https://www.creditsaint.com/#organization"}},{"@type":"FAQPage","@id":"https://www.creditsaint.com/90day/#faq","mainEntity":[{"@type":"Question","name":"What Does the 90-Day Guarantee Actually Cover?","acceptedAnswer":{"@type":"Answer","text":"If we challenge items on your report and none of them are removed within the first 90 days of active work, you can request a full refund of what you have paid. It covers the work, not an outcome we cannot guarantee. No credit repair company can legally guarantee a score increase, and accurate, verified, current information stays on your report regardless of who files the challenge."}},{"@type":"Question","name":"Can I Cancel, and Does It Cost Anything?","acceptedAnswer":{"@type":"Answer","text":"You can cancel at any time, and there is no cancellation fee on any plan. There is no contract holding you to a minimum term. Federal law also gives you three business days to cancel after signing, no reason required. Call the number at the top of this page and we will close it out."}},{"@type":"Question","name":"When Does the 90 Days Start?","acceptedAnswer":{"@type":"Answer","text":"During the first 6 days we are performing the First Work on your account. The 90 days begins when your disputes are released to the Credit Bureaus."}},{"@type":"Question","name":"What if Some Items Are Removed but Not All?","acceptedAnswer":{"@type":"Answer","text":"There may be a scenario where items are verified and can not be removed. This is why it is important to submit all requested documents as well as any supporting documents to accompany our disputes. There is no guarantee that every single inaccuracy will be removed, but you are covered by our guarantee - if nothing is removed in the first 90 days you are eligible for a full refund of all payments made."}}]}]}</script>
+</head>
+
+<body data-site="6-0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKPV8B4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="cs6-header">
+    <nav aria-label="Main" data-site-nav="" class="cs6-header__nav">
+        <div class="cs6-header__row">
+            <a href="../index.html" aria-label="Credit Saint home" class="cs6-header__home">
+                <span class="cs6-lockup" data-size="header">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="72" height="72" class="cs6-lockup__mark" fetchpriority="high">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+            </a>
+                            <span class="cs6-header__links">
+                                                                        <a href="../packages/index.html" data-track="true" data-track-id="nav-packages" class="cs6-header__link">Packages</a>
+                                                                                                <a href="../faq/index.html" data-track="true" data-track-id="nav-faq" class="cs6-header__link">FAQ</a>
+                                                                                                <a href="../resources/index.html" data-track="true" data-track-id="nav-resources" class="cs6-header__link">Resources</a>
+                                                            </span>
+                        <span class="cs6-header__actions">
+                <span class="cs6-lang-switch--head">
+            <button type="button" class="cs6-lang-switch__toggle" aria-expanded="false" aria-controls="cs6-lang-menu" aria-label="Language: English" data-cs6-lang-toggle="">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path>
+                </svg>
+                <span translate="no" class="cs6-lang-switch__code">EN</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true" class="cs6-lang-switch__chevron">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+            <span id="cs6-lang-menu" role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch__menu" hidden="">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            English<span aria-hidden="true" class="cs6-lang-switch__tick">✓</span>                                    </a>
+                                                                            <a href="https://www.santodecredito.com/90day/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            Español                                    </a>
+                        </span>
+            </span>
+                                        <a href="../portal/login/index.html" id="nav-login" data-track="true" class="cs6-header__login">Log in</a>
+                                <a class="cs6-header__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-header" data-track="true" data-cs-cta="landing"><span>Start free consultation</span>
+                                            <span aria-hidden="true" class="cs6-header__cta-arrow">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                        </span></a>
+                                    <button type="button" class="cs6-header__menu-button" aria-expanded="false" aria-controls="cs6-menu" aria-label="Menu" data-cs6-menu-toggle="">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                            <g class="cs6-header__icon-open">
+                                <path d="M4 7h16"></path>
+                                <path d="M4 12h16"></path>
+                                <path d="M4 17h16"></path>
+                            </g>
+                            <g class="cs6-header__icon-close">
+                                <path d="M6 6l12 12"></path>
+                                <path d="M18 6L6 18"></path>
+                            </g>
+                        </svg>
+                    </button>
+                            </span>
+        </div>
+
+                    <div id="cs6-menu" class="cs6-header__menu" hidden="">
+                <div class="cs6-header__menu-inner">
+                                                                        <a href="../packages/index.html" id="nav-packages" data-track="true" class="cs6-header__menu-link">Packages</a>
+                                                                                                <a href="../faq/index.html" id="nav-faq" data-track="true" class="cs6-header__menu-link">FAQ</a>
+                                                                                                <a href="../resources/index.html" id="nav-resources" data-track="true" class="cs6-header__menu-link">Resources</a>
+                                                                <a href="../portal/login/index.html" class="cs6-header__menu-link">Log in</a>
+                    <div class="cs6-lang-switch__row">
+            <span class="cs6-lang-switch__row-label" aria-hidden="true">Language</span>
+            <span role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch--menu">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            EN
+                                    </a>
+                                                                                <span aria-hidden="true" class="cs6-lang-switch__sep">|</span>
+                                <a href="https://www.santodecredito.com/90day/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            ES
+                                    </a>
+                        </span>
+            </div>
+                        <a class="cs6-header__menu-cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" data-cs-cta="landing"><span>Start free consultation</span>
+                        <span aria-hidden="true" class="cs6-header__menu-cta-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+</span></a>
+                </div>
+            </div>
+            </nav>
+</div>
+
+        <main class="cs6-guarantee">
+        <section id="pg-top" class="cs6-guarantee__hero" aria-labelledby="pg-top-h">
+            <div class="cs6-guarantee__glow" aria-hidden="true"></div>
+            <div class="cs6-guarantee__hero-inner">
+                <figure class="cs6-guarantee__award">
+                    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/brand/laurel-left.svg" alt="" width="32" height="56" class="cs6-guarantee__laurel">
+                    <figcaption class="cs6-guarantee__award-text">#1 for a reason</figcaption>
+                    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/brand/laurel-right.svg" alt="" width="32" height="56" class="cs6-guarantee__laurel">
+                </figure>
+                <h1 id="pg-top-h" class="cs6-guarantee__h1">90-Day Money-Back Guarantee</h1>
+                <p class="cs6-guarantee__lede">
+                    The goal of credit repair is to remove questionable negative information from credit reports. This is not an exact science and there are cases in which we may be unsuccessful. <strong><svg class="cs6-guarantee__seal" width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 0.8L14.81 3.35L18.58 2.94L19.36 6.65L22.65 8.54L21.1 12L22.65 15.46L19.36 17.35L18.58 21.06L14.81 20.65L12 23.2L9.19 20.65L5.42 21.06L4.64 17.35L1.35 15.46L2.9 12L1.35 8.54L4.64 6.65L5.42 2.94L9.19 3.35Z" style="fill: var(--cs-blue)"></path><path d="M7.7 12.4l2.8 2.8 5.8-6.2" style="stroke: var(--cs-white)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Our clients are protected with our 90 day guarantee.</strong>
+                </p>
+                <a class="cs6-guarantee__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-guarantee" data-track="true" data-cs-cta="landing">Start now
+                    <span aria-hidden="true" class="cs6-guarantee__cta-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                    </span></a>
+            </div>
+        </section>
+
+        <section class="cs6-guarantee__terms-body">
+            <div class="cs6-guarantee__container">
+                <div class="cs6-guarantee__terms-layout">
+                    <span class="cs6-guarantee-toc__spacer" data-cs6-toc-spacer="" aria-hidden="true"></span>
+                    <nav class="cs6-guarantee-toc" data-cs6-toc="" aria-label="Table of Contents">
+                        <div class="cs6-guarantee-toc__label">
+                            <svg class="cs6-guarantee-toc__book" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+                            <span class="cs6-guarantee-toc__heading">Table of Contents</span>
+                        </div>
+                        <button type="button" class="cs6-guarantee-toc__toggle" data-cs6-toc-toggle="" aria-expanded="false" aria-controls="cs6-guarantee-toc-list">
+                            <svg class="cs6-guarantee-toc__book" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+                            <span class="cs6-guarantee-toc__heading">Table of Contents</span>
+                            <span class="cs6-guarantee-toc__now" data-cs6-toc-now="" aria-hidden="true">What the Guarantee Covers</span>
+                            <svg class="cs6-guarantee-toc__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 5v14M5 12h14"></path>
+                            </svg>
+                        </button>
+                        <ol id="cs6-guarantee-toc-list" class="cs6-guarantee-toc__list">
+                                                            <li class="cs6-guarantee-toc__item  cs6-guarantee-toc__item--active ">
+                                    <a href="#what-the-guarantee-covers" class="cs6-guarantee-toc__link" data-cs6-toc-link="" aria-current="true">What the Guarantee Covers</a>
+                                </li>
+                                                            <li class="cs6-guarantee-toc__item ">
+                                    <a href="#terms-and-conditions" class="cs6-guarantee-toc__link" data-cs6-toc-link="">Terms and Conditions</a>
+                                </li>
+                                                            <li class="cs6-guarantee-toc__item ">
+                                    <a href="#how-to-apply-for-a-refund" class="cs6-guarantee-toc__link" data-cs6-toc-link="">How to Apply for a Refund</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                    <div class="cs6-guarantee__secs">
+                                                <section class="cs6-guarantee__sec" aria-labelledby="what-the-guarantee-covers">
+                            <h2 id="what-the-guarantee-covers" class="cs6-guarantee__sec-h">What the Guarantee Covers</h2>
+                            <p class="cs6-guarantee__p">
+                                If you sign up for service with Credit Saint in any program, and do not see any questionable items deleted from your credit in 90 days, you will be entitled to a full refund.
+                            </p>
+                            <p class="cs6-guarantee__p">
+                                This does not mean that your credit will be fixed completely during that period, but you should see some of your questionable negative items deleted in this period or your money back, subject to the terms and conditions set forth below.
+                            </p>
+                        </section>
+
+                        <section class="cs6-guarantee__sec" aria-labelledby="terms-and-conditions">
+                            <h2 id="terms-and-conditions" class="cs6-guarantee__sec-h">Terms and Conditions</h2>
+                            <p class="cs6-guarantee__p">
+                                The money-back guarantee is strictly subject to your compliance with all six conditions below.
+                            </p>
+                            <div class="cs6-guarantee__groups">
+                                                                    <div class="cs6-guarantee__group">
+                                        <h3 class="cs6-guarantee__group-label">
+                                            <span class="cs6-guarantee__navy-pill">WHEN YOU ENROLL</span>
+                                        </h3>
+                                        <ol class="cs6-guarantee__conditions" start="1">
+                                                                                            <li class="cs6-guarantee__condition">
+                                                    <span class="cs6-guarantee__num" aria-hidden="true">1</span>
+                                                    <span class="cs6-guarantee__cond-body">
+                                                        <span class="cs6-guarantee__cond-head">
+                                                            <strong class="cs6-guarantee__cond-title">Send proof of identity</strong>
+                                                                                                                            <span class="cs6-guarantee__when">Within 5 days</span>
+                                                                                                                    </span>
+                                                        <span class="cs6-guarantee__cond-text">Mail, fax or email Credit Saint proof of your identity, such as a copy of your driver’s license and social security card, within five (5) days of the effective date of this agreement.</span>
+                                                    </span>
+                                                </li>
+                                                                                    </ol>
+                                    </div>
+                                                                    <div class="cs6-guarantee__group">
+                                        <h3 class="cs6-guarantee__group-label">
+                                            <span class="cs6-guarantee__navy-pill">While you are in the program</span>
+                                        </h3>
+                                        <ol class="cs6-guarantee__conditions" start="2">
+                                                                                            <li class="cs6-guarantee__condition">
+                                                    <span class="cs6-guarantee__num" aria-hidden="true">2</span>
+                                                    <span class="cs6-guarantee__cond-body">
+                                                        <span class="cs6-guarantee__cond-head">
+                                                            <strong class="cs6-guarantee__cond-title">Stay active for the full term</strong>
+                                                                                                                            <span class="cs6-guarantee__when">90 days</span>
+                                                                                                                    </span>
+                                                        <span class="cs6-guarantee__cond-text">Eligibility for a refund does not begin until day 90, and you must be an active participant throughout. Cancelling or failing to pay during those first 90 days voids the guarantee.</span>
+                                                    </span>
+                                                </li>
+                                                                                            <li class="cs6-guarantee__condition">
+                                                    <span class="cs6-guarantee__num" aria-hidden="true">3</span>
+                                                    <span class="cs6-guarantee__cond-body">
+                                                        <span class="cs6-guarantee__cond-head">
+                                                            <strong class="cs6-guarantee__cond-title">Keep payments current</strong>
+                                                                                                                    </span>
+                                                        <span class="cs6-guarantee__cond-text">Make all payments due and owing to Credit Saint under this agreement in a timely manner.</span>
+                                                    </span>
+                                                </li>
+                                                                                            <li class="cs6-guarantee__condition">
+                                                    <span class="cs6-guarantee__num" aria-hidden="true">4</span>
+                                                    <span class="cs6-guarantee__cond-body">
+                                                        <span class="cs6-guarantee__cond-head">
+                                                            <strong class="cs6-guarantee__cond-title">Add no new derogatory items</strong>
+                                                                                                                    </span>
+                                                        <span class="cs6-guarantee__cond-text">Do not create or cause any new derogatory items to be added to your credit report after your participation in the program begins.</span>
+                                                    </span>
+                                                </li>
+                                                                                    </ol>
+                                    </div>
+                                                                    <div class="cs6-guarantee__group">
+                                        <h3 class="cs6-guarantee__group-label">
+                                            <span class="cs6-guarantee__navy-pill">When you request a refund</span>
+                                        </h3>
+                                        <ol class="cs6-guarantee__conditions" start="5">
+                                                                                            <li class="cs6-guarantee__condition">
+                                                    <span class="cs6-guarantee__num" aria-hidden="true">5</span>
+                                                    <span class="cs6-guarantee__cond-body">
+                                                        <span class="cs6-guarantee__cond-head">
+                                                            <strong class="cs6-guarantee__cond-title">Request inside the window</strong>
+                                                                                                                            <span class="cs6-guarantee__when">Day 91–120</span>
+                                                                                                                    </span>
+                                                        <span class="cs6-guarantee__cond-text">Refund audits must be requested between 91 and 120 days from receipt of your first payment, which activates your account. Continuing beyond 120 days waives the right to request a refund.</span>
+                                                    </span>
+                                                </li>
+                                                                                            <li class="cs6-guarantee__condition">
+                                                    <span class="cs6-guarantee__num" aria-hidden="true">6</span>
+                                                    <span class="cs6-guarantee__cond-body">
+                                                        <span class="cs6-guarantee__cond-head">
+                                                            <strong class="cs6-guarantee__cond-title">Allow time for the audit</strong>
+                                                                                                                            <span class="cs6-guarantee__when">30 days</span>
+                                                                                                                    </span>
+                                                        <span class="cs6-guarantee__cond-text">Give Credit Saint thirty (30) days from the date you request a refund to review your credit bureaus and audit your account, verifying that no negative items were removed and establishing why.</span>
+                                                    </span>
+                                                </li>
+                                                                                    </ol>
+                                    </div>
+                                                            </div>
+                        </section>
+
+                        <section class="cs6-guarantee__sec" aria-labelledby="how-to-apply-for-a-refund">
+                            <h2 id="how-to-apply-for-a-refund" class="cs6-guarantee__sec-h">How to Apply for a Refund</h2>
+                            <p class="cs6-guarantee__p">Contact your service specialist by phone so your identity can be verified.</p>
+                        </section>
+
+                        <div class="cs6-guarantee__disclosure">
+                            <p>
+                                Credit Saint is a credit repair organization as defined under the Credit Repair Organizations Act (CROA) and is not a law firm. Credit service companies cannot promise a result or credit score increase.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pg-faq" class="cs6-guarantee__faq" aria-labelledby="questions">
+            <div class="cs6-guarantee__container">
+                <div class="cs6-guarantee__section-head">
+                    <div>
+                        <div class="cs6-guarantee__navy-pill">Common questions</div>
+                        <h2 id="questions" class="cs6-guarantee__h2">
+                            What people ask before they <span class="cs6-guarantee__accent">rely on it</span>.
+                        </h2>
+                    </div>
+                    <a href="../faq/index.html" class="cs6-guarantee__more">
+                        All Questions
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+                <div class="cs6-guarantee__faq-grid">
+                                            <article class="cs6-guarantee__faq-card">
+                            <span class="cs6-guarantee__navy-pill cs6-guarantee__faq-tag">Coverage</span>
+                            <h3 class="cs6-guarantee__faq-q">What Does the 90-Day Guarantee Actually Cover?</h3>
+                            <div class="cs6-guarantee__faq-a">
+                                                                    <p>If we challenge items on your report and none of them are removed within the first 90 days of active work, you can request a full refund of what you have paid.</p>
+                                                                    <p>It covers the work, not an outcome we cannot guarantee. No credit repair company can legally guarantee a score increase, and accurate, verified, current information stays on your report regardless of who files the challenge.</p>
+                                                            </div>
+                        </article>
+                                            <article class="cs6-guarantee__faq-card">
+                            <span class="cs6-guarantee__navy-pill cs6-guarantee__faq-tag">Cancelling</span>
+                            <h3 class="cs6-guarantee__faq-q">Can I Cancel, and Does It Cost Anything?</h3>
+                            <div class="cs6-guarantee__faq-a">
+                                                                    <p>You can cancel at any time, and there is no cancellation fee on any plan. There is no contract holding you to a minimum term.</p>
+                                                                    <p>Federal law also gives you three business days to cancel after signing, no reason required. Call the number at the top of this page and we will close it out.</p>
+                                                            </div>
+                        </article>
+                                            <article class="cs6-guarantee__faq-card">
+                            <span class="cs6-guarantee__navy-pill cs6-guarantee__faq-tag">Timing</span>
+                            <h3 class="cs6-guarantee__faq-q">When Does the 90 Days Start?</h3>
+                            <div class="cs6-guarantee__faq-a">
+                                                                    <p>During the first 6 days we are performing the First Work on your account. The 90 days begins when your disputes are released to the Credit Bureaus.</p>
+                                                            </div>
+                        </article>
+                                            <article class="cs6-guarantee__faq-card">
+                            <span class="cs6-guarantee__navy-pill cs6-guarantee__faq-tag">Outcomes</span>
+                            <h3 class="cs6-guarantee__faq-q">What if Some Items Are Removed but Not All?</h3>
+                            <div class="cs6-guarantee__faq-a">
+                                                                    <p>There may be a scenario where items are verified and can not be removed. This is why it is important to submit all requested documents as well as any supporting documents to accompany our disputes. There is no guarantee that every single inaccuracy will be removed, but you are covered by our guarantee - if nothing is removed in the first 90 days you are eligible for a full refund of all payments made.</p>
+                                                            </div>
+                        </article>
+                                    </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="cs6-guarantee__reviews" aria-labelledby="reviews-h">
+            <div class="cs6-guarantee__reviews-blob" aria-hidden="true"></div>
+            <div class="cs6-guarantee__container cs6-guarantee__reviews-inner">
+                <div class="cs6-guarantee__reviews-head">
+                    <div class="cs6-guarantee__navy-pill">Verified Reviews</div>
+                    <h2 id="reviews-h" class="cs6-guarantee__reviews-h2">
+                        Real Americans. Real results. <span class="cs6-guarantee__accent">Third-party verified.</span>
+                    </h2>
+                </div>
+
+                <div class="cs6-guarantee__reviews-card">
+                    <div data-cs6-deck="" role="group" aria-roledescription="carousel" aria-label="Verified reviews">
+                        <div class="cs6-review-deck__head">
+                            <button type="button" class="cs6-review-deck__step" data-cs6-deck-step="-1" aria-label="Previous review">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+                            </button>
+                            <button type="button" class="cs6-review-deck__step" data-cs6-deck-step="1" aria-label="Next review">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+                            </button>
+                        </div>
+
+                        <div class="cs6-review-deck__slides" data-cs6-deck-live="" aria-live="off">
+                                                            <figure class="cs6-review-deck__slide" data-cs6-deck-slide="" role="group" aria-roledescription="slide" aria-label="Review 1 of 7">
+                                    <span class="cs6-review-deck__stars" role="img" aria-label="5 out of 5 stars">
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                            </span>
+                                    <blockquote class="cs6-review-deck__quote" lang="en">
+                                        <p>“DEFINITELY WORTH EVERY PENNY! After working with Credit Saint for only a few months, I was approved for a card that I had…”</p>
+                                    </blockquote>
+                                    <figcaption class="cs6-review-deck__author">
+                                        <span class="cs6-review-deck__avatar" aria-hidden="true">A</span>
+                                        <span class="cs6-review-deck__meta">
+                                            <span class="cs6-review-deck__name-row">
+                                                <span class="cs6-review-deck__name" translate="no">Ashlee S.</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="cs6-review-deck__verified" role="img" aria-label="Verified">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="cs6-review-deck__plat-row">
+                                                                                                    <svg class="cs6-review-deck__plat-mark" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" style="fill: var(--cs-blue)"></path>
+                                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-6.79-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill: var(--cs-green)"></path>
+                                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill: var(--cs-star)"></path>
+                                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill: var(--cs-coral)"></path>
+                                                    </svg>
+                                                                                                <span class="cs6-review-deck__plat">Verified Google review</span>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                                            <figure class="cs6-review-deck__slide" data-cs6-deck-slide="" hidden="" role="group" aria-roledescription="slide" aria-label="Review 2 of 7">
+                                    <span class="cs6-review-deck__stars" role="img" aria-label="5 out of 5 stars">
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                            </span>
+                                    <blockquote class="cs6-review-deck__quote" lang="en">
+                                        <p>“…They gave me back my life and are helping me and my family to erase all the wrongs done to us…Credit Saints will help you WIPE THE SLATE clean.”</p>
+                                    </blockquote>
+                                    <figcaption class="cs6-review-deck__author">
+                                        <span class="cs6-review-deck__avatar" aria-hidden="true">D</span>
+                                        <span class="cs6-review-deck__meta">
+                                            <span class="cs6-review-deck__name-row">
+                                                <span class="cs6-review-deck__name" translate="no">Daniel P.</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="cs6-review-deck__verified" role="img" aria-label="Verified">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="cs6-review-deck__plat-row">
+                                                                                                    <svg class="cs6-review-deck__plat-mark" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" style="fill: var(--cs-blue)"></path>
+                                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-6.79-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill: var(--cs-green)"></path>
+                                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill: var(--cs-star)"></path>
+                                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill: var(--cs-coral)"></path>
+                                                    </svg>
+                                                                                                <span class="cs6-review-deck__plat">Verified Google review</span>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                                            <figure class="cs6-review-deck__slide" data-cs6-deck-slide="" hidden="" role="group" aria-roledescription="slide" aria-label="Review 3 of 7">
+                                    <span class="cs6-review-deck__stars" role="img" aria-label="5 out of 5 stars">
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                            </span>
+                                    <blockquote class="cs6-review-deck__quote" lang="en">
+                                        <p>“Amazing success so far in the removal of many chargeoff and late payments in just 2 months…”</p>
+                                    </blockquote>
+                                    <figcaption class="cs6-review-deck__author">
+                                        <span class="cs6-review-deck__avatar" aria-hidden="true">R</span>
+                                        <span class="cs6-review-deck__meta">
+                                            <span class="cs6-review-deck__name-row">
+                                                <span class="cs6-review-deck__name" translate="no">Rod A.</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="cs6-review-deck__verified" role="img" aria-label="Verified">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="cs6-review-deck__plat-row">
+                                                                                                    <svg class="cs6-review-deck__plat-mark" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" style="fill: var(--cs-blue)"></path>
+                                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-6.79-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill: var(--cs-green)"></path>
+                                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill: var(--cs-star)"></path>
+                                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill: var(--cs-coral)"></path>
+                                                    </svg>
+                                                                                                <span class="cs6-review-deck__plat">Verified Google review</span>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                                            <figure class="cs6-review-deck__slide" data-cs6-deck-slide="" hidden="" role="group" aria-roledescription="slide" aria-label="Review 4 of 7">
+                                    <span class="cs6-review-deck__stars" role="img" aria-label="5 out of 5 stars">
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                            </span>
+                                    <blockquote class="cs6-review-deck__quote" lang="en">
+                                        <p>“…They followed up with the credit bureaus until almost all my negative items were removed…I certainly recommend their service to anyone.”</p>
+                                    </blockquote>
+                                    <figcaption class="cs6-review-deck__author">
+                                        <span class="cs6-review-deck__avatar" aria-hidden="true">D</span>
+                                        <span class="cs6-review-deck__meta">
+                                            <span class="cs6-review-deck__name-row">
+                                                <span class="cs6-review-deck__name" translate="no">Diego D.</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="cs6-review-deck__verified" role="img" aria-label="Verified">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="cs6-review-deck__plat-row">
+                                                                                                    <svg class="cs6-review-deck__plat-mark" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" style="fill: var(--cs-blue)"></path>
+                                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-6.79-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill: var(--cs-green)"></path>
+                                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill: var(--cs-star)"></path>
+                                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill: var(--cs-coral)"></path>
+                                                    </svg>
+                                                                                                <span class="cs6-review-deck__plat">Verified Google review</span>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                                            <figure class="cs6-review-deck__slide" data-cs6-deck-slide="" hidden="" role="group" aria-roledescription="slide" aria-label="Review 5 of 7">
+                                    <span class="cs6-review-deck__stars" role="img" aria-label="5 out of 5 stars">
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                            </span>
+                                    <blockquote class="cs6-review-deck__quote" lang="en">
+                                        <p>“The start up process was very simple and straightforward. I’m ready to get started and my credit back to where it was…”</p>
+                                    </blockquote>
+                                    <figcaption class="cs6-review-deck__author">
+                                        <span class="cs6-review-deck__avatar" aria-hidden="true">M</span>
+                                        <span class="cs6-review-deck__meta">
+                                            <span class="cs6-review-deck__name-row">
+                                                <span class="cs6-review-deck__name" translate="no">Mike G.</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="cs6-review-deck__verified" role="img" aria-label="Verified">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="cs6-review-deck__plat-row">
+                                                                                                    <svg class="cs6-review-deck__plat-mark" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" style="fill: var(--cs-blue)"></path>
+                                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-6.79-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill: var(--cs-green)"></path>
+                                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill: var(--cs-star)"></path>
+                                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill: var(--cs-coral)"></path>
+                                                    </svg>
+                                                                                                <span class="cs6-review-deck__plat">Verified Google review</span>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                                            <figure class="cs6-review-deck__slide" data-cs6-deck-slide="" hidden="" role="group" aria-roledescription="slide" aria-label="Review 6 of 7">
+                                    <span class="cs6-review-deck__stars" role="img" aria-label="5 out of 5 stars">
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                            </span>
+                                    <blockquote class="cs6-review-deck__quote" lang="en">
+                                        <p>“This service really helped me out! I was trying to close a home in a very short timeframe and they went right to work handling all disputes for me…”</p>
+                                    </blockquote>
+                                    <figcaption class="cs6-review-deck__author">
+                                        <span class="cs6-review-deck__avatar" aria-hidden="true">M</span>
+                                        <span class="cs6-review-deck__meta">
+                                            <span class="cs6-review-deck__name-row">
+                                                <span class="cs6-review-deck__name" translate="no">Mitchell K.</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="cs6-review-deck__verified" role="img" aria-label="Verified">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="cs6-review-deck__plat-row">
+                                                                                                    <svg class="cs6-review-deck__plat-mark" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" style="fill: var(--cs-blue)"></path>
+                                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-6.79-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill: var(--cs-green)"></path>
+                                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill: var(--cs-star)"></path>
+                                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill: var(--cs-coral)"></path>
+                                                    </svg>
+                                                                                                <span class="cs6-review-deck__plat">Verified Google review</span>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                                            <figure class="cs6-review-deck__slide" data-cs6-deck-slide="" hidden="" role="group" aria-roledescription="slide" aria-label="Review 7 of 7">
+                                    <span class="cs6-review-deck__stars" role="img" aria-label="5 out of 5 stars">
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                                            </span>
+                                    <blockquote class="cs6-review-deck__quote" lang="en">
+                                        <p>“Credit Saint is the absolute best - very matter of fact, and most importantly informative. They are very hands-on in terms of answering every question…”</p>
+                                    </blockquote>
+                                    <figcaption class="cs6-review-deck__author">
+                                        <span class="cs6-review-deck__avatar" aria-hidden="true">D</span>
+                                        <span class="cs6-review-deck__meta">
+                                            <span class="cs6-review-deck__name-row">
+                                                <span class="cs6-review-deck__name" translate="no">Danielle H.</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="cs6-review-deck__verified" role="img" aria-label="Verified">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="cs6-review-deck__plat-row">
+                                                                                                    <svg class="cs6-review-deck__plat-mark" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" style="fill: var(--cs-blue)"></path>
+                                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-6.79-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill: var(--cs-green)"></path>
+                                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill: var(--cs-star)"></path>
+                                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill: var(--cs-coral)"></path>
+                                                    </svg>
+                                                                                                <span class="cs6-review-deck__plat">Verified Google review</span>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                                    </div>
+
+                        <div class="cs6-review-deck__dots">
+                                                            <button type="button" class="cs6-review-deck__dot" data-cs6-deck-dot="0" aria-label="Review 1" aria-current="true">
+                                    <span class="cs6-review-deck__dot-mark  cs6-review-deck__dot-mark--on "></span>
+                                </button>
+                                                            <button type="button" class="cs6-review-deck__dot" data-cs6-deck-dot="1" aria-label="Review 2">
+                                    <span class="cs6-review-deck__dot-mark "></span>
+                                </button>
+                                                            <button type="button" class="cs6-review-deck__dot" data-cs6-deck-dot="2" aria-label="Review 3">
+                                    <span class="cs6-review-deck__dot-mark "></span>
+                                </button>
+                                                            <button type="button" class="cs6-review-deck__dot" data-cs6-deck-dot="3" aria-label="Review 4">
+                                    <span class="cs6-review-deck__dot-mark "></span>
+                                </button>
+                                                            <button type="button" class="cs6-review-deck__dot" data-cs6-deck-dot="4" aria-label="Review 5">
+                                    <span class="cs6-review-deck__dot-mark "></span>
+                                </button>
+                                                            <button type="button" class="cs6-review-deck__dot" data-cs6-deck-dot="5" aria-label="Review 6">
+                                    <span class="cs6-review-deck__dot-mark "></span>
+                                </button>
+                                                            <button type="button" class="cs6-review-deck__dot" data-cs6-deck-dot="6" aria-label="Review 7">
+                                    <span class="cs6-review-deck__dot-mark "></span>
+                                </button>
+                                                    </div>
+                    </div>
+                    <div class="cs6-guarantee__reviews-foot">
+                        <svg viewBox="0 0 562 961.27728" class="cs6-guarantee__reviews-bbb" role="img" aria-label="Better Business Bureau Accredited Business">
+                            <svg viewBox="0 0 562 961.27728" width="100%" height="100%"><defs id="lg1-defs8"></defs><path d="M 438.82309,541.63751 H 122.78223 l -11.44575,37.79071 h 84.26441 l 15.98458,52.0979 h 138.43438 l 16.08325,-52.0979 h 84.16574 z M 174.38678,329.49644 c -24.21078,33.38046 -16.79065,80.06548 16.5766,104.29447 l 75.6801,54.95934 c 8.40139,6.05364 10.26194,17.79282 4.14415,26.14762 l 11.34708,8.18963 39.96146,-55.05801 c 9.27836,-12.68718 14.28817,-27.99303 14.30718,-43.71092 -0.0345,-3.99857 -0.36429,-7.98913 -0.9867,-11.93911 -3.02182,-19.52693 -13.66772,-37.05719 -29.60108,-48.74311 l -75.58142,-54.86066 c -4.20569,-2.8155 -7.06201,-7.2428 -7.89362,-12.23512 -0.0987,-0.9867 -0.0987,-1.9734 0,-2.9601 0.0257,-3.92987 1.26633,-7.75559 3.55213,-10.9524 l -11.34708,-8.28831 z m 45.58566,-220.82405 c -13.40338,18.40159 -20.6237,40.58079 -20.62208,63.34631 -0.0296,5.78208 0.43415,11.56416 1.38138,17.2673 4.41172,28.39377 20.01208,53.83763 43.31625,70.64791 l 95.11813,69.06918 c 12.46002,9.0002 20.80787,22.60543 23.18751,37.79071 0.50618,3.06616 0.77012,6.16742 0.78936,9.27501 -0.0483,12.14552 -3.95229,23.96193 -11.14974,33.74523 l 9.17634,6.6109 74.89073,-103.5051 C 471.02906,264.44314 460.2148,196.82441 411.88611,161.65832 L 297.13259,78.281951 c -7.17549,-5.19686 -11.97238,-13.04955 -13.32049,-21.80613 -1.46339,-8.74763 0.67179,-17.71533 5.92022,-24.8649 l -9.07767,-6.61091 z M 25.78936,663.1006 h 86.63249 c 17.789,-1.18103 35.31967,4.74532 48.74311,16.47794 8.4291,8.35068 13.03501,19.81189 12.72847,31.67315 v 0.59203 c 0.47766,17.0409 -9.10688,32.77041 -24.47023,40.15879 21.51012,8.2883 34.83061,20.81943 34.83061,45.88168 0,34.13991 -27.62768,51.20986 -69.75988,51.20986 H 25.69069 Z m 78.14685,75.38409 c 18.05666,0 29.60108,-5.92022 29.60108,-19.73406 0,-12.33378 -9.86703,-19.73405 -26.93698,-19.73405 H 65.75082 v 39.46811 z m 10.85373,75.08807 c 18.15533,0 29.00906,-6.41357 29.00906,-19.73406 v -0.59202 c 0,-12.43245 -9.27501,-19.73405 -30.29177,-19.73405 H 65.75082 v 41.04683 z M 202.60648,663.1006 h 86.63249 c 17.78899,-1.18103 35.31966,4.74532 48.74311,16.47794 8.39292,8.36738 12.96228,19.82649 12.62979,31.67315 v 0.59203 c 0.47766,17.0409 -9.10688,32.77041 -24.47022,40.15879 21.60878,8.2883 34.92927,20.81943 34.92927,45.88168 0,34.13991 -27.72634,51.20986 -69.85855,51.20986 h -88.60589 z m 77.85083,75.38409 c 18.05666,0 29.60108,-5.92022 29.60108,-19.73406 0,-12.33378 -9.86702,-19.73405 -26.83831,-19.73405 h -41.1455 v 39.46811 z m 10.85373,75.08807 c 18.15533,0 29.00906,-6.41357 29.00906,-19.73406 v -0.59202 c 0,-12.43245 -9.27501,-19.73405 -30.29177,-19.73405 h -47.95375 v 41.04683 z M 378.43689,663.1006 h 86.63249 c 17.78899,-1.18103 35.31966,4.74532 48.74311,16.47794 8.42909,8.35068 13.035,19.81189 12.72846,31.67315 v 0.59203 c 0.47766,17.0409 -9.10688,32.77041 -24.47022,40.15879 21.60878,8.2883 34.92927,20.81943 34.92927,45.88168 0,34.13991 -27.72634,51.20986 -69.85855,51.20986 h -88.80323 z m 77.85083,75.38409 c 18.05666,0 29.60108,-5.92022 29.60108,-19.73406 0,-12.33378 -9.86702,-19.73405 -26.83831,-19.73405 h -40.65215 v 39.46811 z m 10.85373,75.08807 c 18.15533,0 29.10773,-6.41357 29.10773,-19.73406 v -0.59202 c 0,-12.43245 -9.37367,-19.73405 -30.39044,-19.73405 h -47.4604 v 41.04683 z M 25,928.81963 l 3.25612,-3.74947 c 4.39964,4.27772 10.34408,6.59143 16.47793,6.41356 6.3149,0 10.55772,-3.25612 10.55772,-7.69628 0,-4.24282 -2.36809,-6.61091 -12.33378,-8.68298 -9.9657,-2.07208 -15.78724,-5.72288 -15.78724,-13.22182 0.66708,-7.8189 7.70551,-13.51242 15.49123,-12.53112 6.02325,-0.18747 11.91102,1.81014 16.5766,5.62421 l -3.15745,3.94681 c -3.75203,-3.51636 -8.67266,-5.51976 -13.81383,-5.62421 -6.11756,0 -9.86703,3.25612 -9.86703,7.40027 0,4.34149 2.46676,6.80825 12.82713,8.97899 10.36038,2.17075 15.2939,5.92022 15.2939,12.92581 0,7.89362 -6.70958,13.02447 -16.08326,13.02447 C 37.32638,935.92825 30.37002,933.49175 25,928.81963 Z m 45.09231,-2.26942 v -20.42474 h -4.83484 v -4.44017 h 4.83484 v -9.86702 h 5.13085 v 9.86702 h 11.05107 v 4.44017 H 75.22316 v 19.73405 c 0,4.14415 2.36809,5.6242 5.92022,5.6242 1.75005,0.0326 3.48029,-0.37455 5.03218,-1.18404 v 4.34149 c -1.90607,1.03087 -4.05011,1.54135 -6.21622,1.48006 -5.6017,0.72542 -10.42153,-3.94983 -9.86703,-9.57102 z m 20.72076,-0.88803 c 0,-7.10426 6.01888,-10.9524 14.89921,-10.9524 3.60619,-0.0434 7.1984,0.45595 10.65638,1.48005 v -1.18404 c 0,-6.11756 -3.84814,-9.27501 -9.86702,-9.27501 -3.66702,0.0533 -7.27519,0.92997 -10.55772,2.56543 l -1.87474,-4.24282 c 3.97722,-1.88855 8.32564,-2.86611 12.72847,-2.86144 4.09421,-0.25911 8.12852,1.08564 11.24841,3.74947 2.46676,2.67397 3.74947,6.23596 3.55213,9.86703 v 20.72075 h -5.22953 v -5.13085 c -2.99152,3.7959 -7.60125,5.95442 -12.43245,5.82155 -6.61091,0 -13.12314,-3.45346 -13.12314,-10.55772 z m 25.65426,-2.76277 v -3.25612 c -3.20093,-0.9643 -6.52403,-1.46278 -9.86702,-1.48005 -6.51224,0 -9.86703,2.76276 -9.86703,7.00559 0,4.34149 4.04548,6.80824 8.78166,6.80824 5.46328,0.3049 10.23821,-3.65268 10.95239,-9.07766 z m 13.91251,-21.21411 h 5.22953 v 8.88033 c 2.05801,-6.00675 7.76162,-9.99529 14.10984,-9.86703 v 5.42687 c -8.32632,-0.0701 -14.79373,7.23477 -13.71516,15.49123 v 13.51782 h -5.22953 z m 27.03565,24.86491 v -20.42474 h -4.83484 v -4.44017 h 4.83484 v -9.86702 h 5.72288 v 9.86702 h 11.05107 v 4.44017 h -11.05107 v 19.73405 c 0,4.14415 2.36809,5.6242 5.82155,5.6242 1.75004,0.0326 3.48028,-0.37455 5.03218,-1.18404 v 4.34149 c -1.90608,1.03087 -4.05011,1.54135 -6.21623,1.48006 -5.78982,1.09324 -10.99232,-3.71288 -10.36038,-9.57102 z m 38.77742,-36.80401 h 5.82154 l 13.41916,38.08672 12.9258,-38.28406 h 4.3415 l 12.9258,38.28406 13.51783,-38.08672 h 5.52553 l -16.77394,46.07901 h -4.53884 l -12.9258,-37.19869 -12.92581,37.19869 h -4.44016 z m 75.48275,-0.9867 h 5.92022 v 5.52553 h -5.92022 z m 0,12.9258 h 5.22952 v 33.8439 h -5.22952 z m 17.2673,24.86491 v -20.42474 h -4.83485 v -4.44017 h 4.83485 v -9.86702 h 5.13085 v 9.86702 h 11.05107 v 4.44017 h -11.05107 v 19.73405 c 0,4.14415 2.36809,5.6242 5.92022,5.6242 1.74646,0.01 3.47319,-0.39468 5.03218,-1.18404 v 4.34149 c -1.94184,1.03039 -4.11744,1.54029 -6.3149,1.48006 -5.59197,0.73992 -10.39398,-3.96512 -9.76835,-9.57102 z m 23.28618,-38.77741 h 5.22952 v 19.73405 c 2.44702,-4.24593 7.04178,-6.79014 11.9391,-6.61091 7.63652,-0.50726 13.93994,5.8896 13.32049,13.51783 v 21.01676 h -5.22952 v -19.73405 c 0.51693,-5.6497 -4.21733,-10.38396 -9.86703,-9.86703 -6.00685,-0.38136 -10.95266,4.65771 -10.45905,10.65639 v 19.73406 h -5.22952 z m 70.94392,6.70957 h -15.78724 v -4.73617 h 37.00135 v 4.73617 h -15.78725 v 41.04683 h -5.42686 z m 28.31836,7.20293 h 5.13086 v 8.88033 c 2.12116,-6.00253 7.84316,-9.97614 14.20852,-9.86703 v 5.42687 c -8.33541,-0.0622 -14.82626,7.2173 -13.81384,15.49123 v 13.51782 h -5.13085 z m 24.66757,21.21411 V 901.6853 h 5.13085 v 19.73406 c -0.44184,5.62226 4.24477,10.30884 9.86703,9.86702 6.00685,0.38146 10.95266,-4.65771 10.45905,-10.65639 v -19.73405 h 5.13085 v 33.8439 h -5.13085 v -5.92021 c -2.4784,4.21387 -7.05231,6.74652 -11.9391,6.6109 -7.30244,0.57683 -13.54057,-5.20597 -13.51783,-12.53112 z m 37.10002,8.2883 2.56543,-3.55213 c 3.48191,2.61646 7.68477,4.0978 12.03777,4.24282 4.24282,0 7.20293,-2.07207 7.20293,-5.32819 0,-3.45346 -4.04548,-4.73617 -8.68299,-6.01889 -4.6375,-1.28271 -11.44575,-3.25612 -11.44575,-9.86702 0,-5.82155 4.93352,-9.86703 11.84044,-9.86703 4.44016,0.0987 8.77178,1.38138 12.53112,3.74947 l -2.36809,3.74947 c -2.95718,-1.90974 -6.35401,-3.0307 -9.86702,-3.25612 -4.04548,0 -6.70958,2.07208 -6.70958,4.93352 0,3.25611 4.34149,4.44016 8.97899,5.82154 4.6375,1.38138 11.14974,3.6508 11.14974,9.86703 0,6.41356 -5.42686,9.86702 -12.33378,9.86702 -5.30768,0.22221 -10.5417,-1.30291 -14.89921,-4.34149 z m 36.21199,-4.6375 v -20.42474 h -4.93352 v -4.44017 h 4.93352 v -9.86702 h 5.13085 v 9.86702 h 11.05107 v 4.44017 h -11.05107 v 19.73405 c 0,4.14415 2.36809,5.6242 5.82155,5.6242 1.77606,0.0197 3.54226,-0.39468 5.13085,-1.18404 v 4.34149 c -1.94648,1.01797 -4.1188,1.5271 -6.3149,1.48006 -5.59197,0.73992 -10.39398,-3.96512 -9.76835,-9.57102 z" fill="#FFF" id="lg1-path2" style="fill:#005f86;fill-opacity:1;stroke-width:9.86703"></path></svg>
+                        </svg>
+                        <p class="cs6-guarantee__reviews-foot-text">
+                            A BBB Accredited Business. 16,000+ Google reviews at 4.8 stars. Individual results vary based on your credit profile, the items in dispute, and creditor responses. Reviews reflect individual experiences and are not typical or guaranteed. Accurate negative items can’t be removed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pg-guides" class="cs6-guarantee__guides" aria-labelledby="worth-reading">
+            <div class="cs6-guarantee__container">
+                <div class="cs6-guarantee__section-head">
+                    <div>
+                        <div class="cs6-guarantee__navy-pill">BEFORE ENROLLING</div>
+                        <h2 id="worth-reading" class="cs6-guarantee__h2">Worth Reading</h2>
+                    </div>
+                    <a href="../resources/index.html" class="cs6-guarantee__more">All Guides<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 5l7 7-7 7"></path></svg></a>
+                </div>
+                <ul class="cs6-guarantee__guides-grid">
+                                            <li>
+                            <a class="cs6-guarantee__guides-card" href="../resources/credit-repair/how-long-does-it-take-to-repair-credit/index.html" target="_blank" rel="noopener"><span class="cs6-guarantee__guides-img"><img src="../_external/blog.creditsaint.com/wp-content/uploads/2026/04/credit_repair-1024x683.jpg" alt="" width="640" height="360" loading="lazy" decoding="async"></span>
+                                <span class="cs6-guarantee__guides-title">How Long Does It Take to Repair Credit?</span>
+                                <span class="cs6-guarantee__guides-read">
+                                    Read Guide
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 5l7 7-7 7"></path></svg>
+                                </span></a>
+                        </li>
+                                            <li>
+                            <a class="cs6-guarantee__guides-card" href="https://www.creditsaint.com/resources/credit-repair/is-credit-repair-still-regulated/" target="_blank" rel="noopener"><span class="cs6-guarantee__guides-img"><img src="../_external/blog.creditsaint.com/wp-content/uploads/2026/05/credit-repair-still-regulated-1024x687.png" alt="" width="640" height="360" loading="lazy" decoding="async"></span>
+                                <span class="cs6-guarantee__guides-title">Is Credit Repair Still Regulated as the CFPB Shrinks?</span>
+                                <span class="cs6-guarantee__guides-read">
+                                    Read Guide
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 5l7 7-7 7"></path></svg>
+                                </span></a>
+                        </li>
+                                            <li>
+                            <a class="cs6-guarantee__guides-card" href="../resources/credit-repair/credit-repair-reviews/index.html" target="_blank" rel="noopener"><span class="cs6-guarantee__guides-img"><img src="../_external/blog.creditsaint.com/wp-content/uploads/2026/05/credit-repair-reviews-1024x687.png" alt="" width="640" height="360" loading="lazy" decoding="async"></span>
+                                <span class="cs6-guarantee__guides-title">Credit Repair Reviews: How to Read Them</span>
+                                <span class="cs6-guarantee__guides-read">
+                                    Read Guide
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 5l7 7-7 7"></path></svg>
+                                </span></a>
+                        </li>
+                                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cs6-footer">
+    <div class="cs6-footer__inner">
+        <div class="cs6-footer__grid">
+            <div class="cs6-footer__brand-col">
+                <a href="../index.html" aria-label="Credit Saint" class="cs6-footer__brand">
+                    <span class="cs6-lockup" data-size="footer">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="64" height="64" class="cs6-lockup__mark" loading="lazy">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+                </a>
+                <ul class="cs6-footer__contact">
+                    <li>
+                        <span class="cs6-footer__address" translate="no">250 Pehle Ave, Suite 200, Saddle Brook, NJ 07663</span>
+                    </li>
+                    <li>
+                        <span class="cs6-footer__address">Mailing: <span translate="no">PO Box 110, Oakland, NJ 07436</span></span>
+                    </li>
+                    <li class="cs6-footer__phone-row">
+                        <span>Customer service: <a href="tel:+18776372673" data-cs6-phone="" data-track="true" data-track-id="phone-footer"><span data-cs6-phone-text="">877-637-2673</span></a></span>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-labelledby="ft-prog">
+                <h3 id="ft-prog" class="cs6-footer__heading">Credit Programs</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../packages/index.html">Packages and Pricing</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../faq/index.html">FAQ</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../resources/index.html">Resources</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../about/index.html">About</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../careers/index.html">Careers</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+            <nav aria-labelledby="ft-legal">
+                <h3 id="ft-legal" class="cs6-footer__heading">Legal and Your Rights</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../terms-of-service/index.html">Terms and Conditions</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://privacy.cptn.co/privacy-policy/973bfa8b-4680-4129-a23e-fac916e9629f" target="_blank" rel="noopener">Privacy Policy</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../disclosure/index.html">Disclosure</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://www.creditsaint.com/glba-notice/" target="_blank" rel="noopener">GLBA Privacy Notice</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../ccpa-privacy-policy/index.html">Your California Privacy Rights</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676" target="_blank" rel="noopener">Privacy Requests</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+        </div>
+        <div class="cs6-footer__notes">
+            <p>“#1 for a reason”: named #1 Best Overall Credit Repair Company by ConsumerAffairs, 2026.</p>
+            <p>Ratings, review counts and client counts as of October 2026.</p>
+                        <p class="cs6-footer__copyright">© 2026. All Rights Reserved. Credit Saint, LLC</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="cs6-chat" class="cs6-chat" data-mode="widget" data-chat-now-url="https://www.creditsaint.com/chat-now" data-entry-url="https://chat.creditsaint.com/" data-start-url="https://chat.creditsaint.com/start" data-attribution="[]">
+            <button type="button" id="cs-chat-launcher" class="cs6-chat__launcher" aria-label="Chat with Nico, Credit Saint’s virtual assistant, available 24/7" aria-controls="cs-chat-panel" aria-expanded="false" title="Chat with Nico">
+            <span aria-hidden="true" class="cs6-nico-orb cs6-chat__launcher-orb" data-cs6-nico-orb="reading" style="--orb: 84px; --draw: 109px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+        </button>
+                <div id="cs-chat-panel" role="dialog" aria-label="Chat with Nico" class="cs6-chat__panel" hidden="" data-out="" inert="" data-frame-title="Chat with Credit Saint">
+            <div class="cs6-chat__bar">
+                <span class="cs6-chat__avatar" aria-hidden="true">
+                    <span class="cs6-chat__orb"></span>
+                </span>
+                <span class="cs6-chat__identity">
+                    <b class="cs6-chat__name">
+                        <span translate="no">Nico</span>
+                        <span class="cs6-chat__role">Virtual assistant</span>
+                    </b>
+                    <small class="cs6-chat__company" translate="no">Credit Saint</small>
+                </span>
+                <button type="button" class="cs6-chat__minimize" aria-label="Minimize chat" data-cs6-chat-minimize="">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M6 12h12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="cs6-chat__body">
+                <div class="cs6-chat__wait">
+                    <span class="cs6-chat__wait-orb" aria-hidden="true">
+                        <span class="cs6-chat__orb"></span>
+                    </span>
+                    <span aria-hidden="true" data-cs6-chat-connecting="">Connecting to Nico…</span>
+                    <span class="cs6-chat__slow" data-cs6-chat-slow="" hidden="">
+                        Taking longer than usual.
+                        <a href="#" target="_blank" rel="noopener" data-cs6-chat-slow-link="">Open the chat in a new tab</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home-6-0/site__q19m5z2z.js" defer=""></script>
+    <script src="../js/home-6-0/nico-orb__q19m5z2z.js" defer=""></script>
+    <script type="text/javascript">
+        // Load Microsoft Clarity after user interaction or timeout (non-critical analytics)
+        function loadClarity() {
+            if (window.clarityLoaded) return;
+            window.clarityLoaded = true;
+
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "liqcu2if7a");
+        }
+
+        // Load on deferred scripts event (user interaction) or after timeout
+        if (document.addEventListener) {
+            window.addEventListener('deferredScriptsReady', loadClarity, { once: true });
+
+            // Fallback: load after 3s if no interaction
+            window.addEventListener('load', function() {
+                setTimeout(loadClarity, 3000);
+            });
+        }
+    </script>
+        <script src="../js/home-6-0/guarantee__q19m5z2z.js" defer=""></script>
+
+
+
+</body></html>

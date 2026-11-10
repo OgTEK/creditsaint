@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!-- Saved by Site Saver from https://www.creditsaint.com/terms-of-service/ on 2026-11-10T21:34:18.980Z -->
+<html lang="en-US"><head><meta charset="utf-8">
+    <script>
+(function() {
+  'use strict';
+
+  let scriptsLoaded = false;
+  const LOAD_TIMEOUT = 3000; // Default 3 seconds
+
+  function loadDeferredScripts() {
+    if (scriptsLoaded) return;
+    scriptsLoaded = true;
+
+    // Dispatch custom event that scripts can listen to
+    window.dispatchEvent(new CustomEvent('deferredScriptsReady'));
+  }
+
+  // Load on first user interaction
+  const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+  events.forEach(event => {
+    window.addEventListener(event, loadDeferredScripts, { once: true, passive: true });
+  });
+
+  // Fallback: load after timeout
+  window.addEventListener('load', function() {
+    setTimeout(loadDeferredScripts, LOAD_TIMEOUT);
+  });
+})();
+</script>
+    <style>#chat-widget-container { display: none !important; }</style>
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.asyncInit = true;
+    (function () {
+        var tries = 0;
+        var queued = false;
+        var timer = setInterval(function () {
+            var lc = window.LiveChatWidget;
+            if (lc && typeof lc.call === 'function') {
+                // Before tracking.js loads, LiveChatWidget is a queueing stub whose getters throw.
+                var loaded = false;
+                try { lc.get('state'); loaded = true; } catch (e) {}
+                if (loaded) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    clearInterval(timer);
+                    return;
+                }
+                if (!queued) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    queued = true;
+                }
+            }
+            if (++tries >= 60) clearInterval(timer);
+        }, 500);
+    })();
+</script>
+
+    
+    <script>
+    (function() {
+      'use strict';
+
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        // Initialize dataLayer if not exists
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+
+        // Load GTM script
+        var f = document.getElementsByTagName('script')[0];
+        var j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KKPV8B4';
+        f.parentNode.insertBefore(j, f);
+      }
+
+      // Load GTM on deferredScriptsReady event
+      window.addEventListener('deferredScriptsReady', loadGTM);
+
+      // Fallback: load after page load + 3s
+      window.addEventListener('load', function() {
+        setTimeout(loadGTM, 3000);
+      });
+    })();
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="apple-itunes-app" content="app-id=1591290922">
+        <meta name="csrf-token" content="uAgrNBt7FLiuz00za1hYZQ8KHYNTfam3U8WJSQoQ">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="facebook-domain-verification" content="vpzfdiv19m15upua5kkk20d23nvldj">
+    
+    <title>Website Terms and Conditions | Credit Saint</title>
+    <meta name="description" content="The terms and conditions governing your access to and use of the Credit Saint website, including services description, refund policy, and applicable law.">
+    <meta name="application-name" content="Credit Saint">
+            <link rel="canonical" href="https://www.creditsaint.com/terms-of-service/">
+                    <link rel="alternate" hreflang="en" href="https://www.creditsaint.com/terms-of-service/">
+                    <link rel="alternate" hreflang="es" href="https://www.santodecredito.com/terms-of-service/">
+                <link rel="alternate" hreflang="x-default" href="https://www.creditsaint.com/terms-of-service/">
+        <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Credit Saint">
+    <meta property="og:locale" content="en_US">
+            <meta property="og:locale:alternate" content="es_US">
+        <meta property="og:title" content="Website Terms and Conditions | Credit Saint">
+    <meta property="og:description" content="The terms and conditions governing your access to and use of the Credit Saint website, including services description, refund policy, and applicable law.">
+            <meta property="og:url" content="https://www.creditsaint.com/terms-of-service/">
+        <meta property="og:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Credit Saint">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Website Terms and Conditions | Credit Saint">
+    <meta name="twitter:description" content="The terms and conditions governing your access to and use of the Credit Saint website, including services description, refund policy, and applicable law.">
+    <meta name="twitter:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <link rel="icon" type="image/png" href="../_external/cdn.creditsaint.com/webapp/img/newDesign/cs-icon.svg">
+
+    
+    
+    
+    <link rel="stylesheet" href="../_external/fonts.googleapis.com/css2__qaw5g14.css">
+    <link rel="stylesheet" href="../css/home-6-0/site__q19m5z2z.css">
+    <link rel="stylesheet" href="../css/home-6-0/legal__q19m5z2z.css">
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.creditsaint.com/#organization","name":"Credit Saint, LLC","alternateName":"Credit Saint","url":"https://www.creditsaint.com/","logo":{"@type":"ImageObject","url":"https://cdn.creditsaint.com/webapp/img/newDesign/cs-new-logo.svg"},"description":"Credit Saint challenges potentially inaccurate items with all three credit bureaus. A credit repair organization as defined under the Credit Repair Organizations Act (CROA) and not a law firm.","foundingDate":"2007","address":{"@type":"PostalAddress","streetAddress":"PO Box 110","addressLocality":"Oakland","addressRegion":"NJ","postalCode":"07436","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1-877-637-2673","contactType":"customer service","areaServed":"US","availableLanguage":["English","Spanish"]}],"sameAs":["https://www.linkedin.com/company/credit-saint-llc","https://www.instagram.com/creditsaint/","https://www.facebook.com/creditsaint/","https://www.bbb.org/us/nj/saddle-brook/profile/credit-repair-no-advanced-fee/credit-saint-llc-0221-27004499"]},{"@type":"WebSite","@id":"https://www.creditsaint.com/#website","name":"Credit Saint","url":"https://www.creditsaint.com/","publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.creditsaint.com/terms-of-service/#webpage","name":"Website Terms and Conditions","description":"The terms and conditions governing your access to and use of the Credit Saint website, including services description, refund policy, and applicable law.","url":"https://www.creditsaint.com/terms-of-service/","isPartOf":{"@id":"https://www.creditsaint.com/#website"},"publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.creditsaint.com/terms-of-service/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://www.creditsaint.com/terms-of-service/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.creditsaint.com/"},{"@type":"ListItem","position":2,"name":"Terms and Conditions","item":"https://www.creditsaint.com/terms-of-service/"}]}]}</script>
+</head>
+
+<body data-site="6-0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKPV8B4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="cs6-header">
+    <nav aria-label="Main" data-site-nav="" class="cs6-header__nav">
+        <div class="cs6-header__row">
+            <a href="../index.html" aria-label="Credit Saint home" class="cs6-header__home">
+                <span class="cs6-lockup" data-size="header">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="72" height="72" class="cs6-lockup__mark" fetchpriority="high">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+            </a>
+                            <span class="cs6-header__links">
+                                                                        <a href="../packages/index.html" data-track="true" data-track-id="nav-packages" class="cs6-header__link">Packages</a>
+                                                                                                <a href="../faq/index.html" data-track="true" data-track-id="nav-faq" class="cs6-header__link">FAQ</a>
+                                                                                                <a href="../resources/index.html" data-track="true" data-track-id="nav-resources" class="cs6-header__link">Resources</a>
+                                                            </span>
+                        <span class="cs6-header__actions">
+                <span class="cs6-lang-switch--head">
+            <button type="button" class="cs6-lang-switch__toggle" aria-expanded="false" aria-controls="cs6-lang-menu" aria-label="Language: English" data-cs6-lang-toggle="">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path>
+                </svg>
+                <span translate="no" class="cs6-lang-switch__code">EN</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true" class="cs6-lang-switch__chevron">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+            <span id="cs6-lang-menu" role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch__menu" hidden="">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            English<span aria-hidden="true" class="cs6-lang-switch__tick">✓</span>                                    </a>
+                                                                            <a href="https://www.santodecredito.com/terms-of-service/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            Español                                    </a>
+                        </span>
+            </span>
+                                        <a href="../portal/login/index.html" id="nav-login" data-track="true" class="cs6-header__login">Log in</a>
+                                <a class="cs6-header__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-header" data-track="true" data-cs-cta="landing"><span>Start free consultation</span>
+                                            <span aria-hidden="true" class="cs6-header__cta-arrow">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                        </span></a>
+                                    <button type="button" class="cs6-header__menu-button" aria-expanded="false" aria-controls="cs6-menu" aria-label="Menu" data-cs6-menu-toggle="">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                            <g class="cs6-header__icon-open">
+                                <path d="M4 7h16"></path>
+                                <path d="M4 12h16"></path>
+                                <path d="M4 17h16"></path>
+                            </g>
+                            <g class="cs6-header__icon-close">
+                                <path d="M6 6l12 12"></path>
+                                <path d="M18 6L6 18"></path>
+                            </g>
+                        </svg>
+                    </button>
+                            </span>
+        </div>
+
+                    <div id="cs6-menu" class="cs6-header__menu" hidden="">
+                <div class="cs6-header__menu-inner">
+                                                                        <a href="../packages/index.html" id="nav-packages" data-track="true" class="cs6-header__menu-link">Packages</a>
+                                                                                                <a href="../faq/index.html" id="nav-faq" data-track="true" class="cs6-header__menu-link">FAQ</a>
+                                                                                                <a href="../resources/index.html" id="nav-resources" data-track="true" class="cs6-header__menu-link">Resources</a>
+                                                                <a href="../portal/login/index.html" class="cs6-header__menu-link">Log in</a>
+                    <div class="cs6-lang-switch__row">
+            <span class="cs6-lang-switch__row-label" aria-hidden="true">Language</span>
+            <span role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch--menu">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            EN
+                                    </a>
+                                                                                <span aria-hidden="true" class="cs6-lang-switch__sep">|</span>
+                                <a href="https://www.santodecredito.com/terms-of-service/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            ES
+                                    </a>
+                        </span>
+            </div>
+                        <a class="cs6-header__menu-cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" data-cs-cta="landing"><span>Start free consultation</span>
+                        <span aria-hidden="true" class="cs6-header__menu-cta-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+</span></a>
+                </div>
+            </div>
+            </nav>
+</div>
+
+        <main>
+        <article class="cs6-legal__article">
+            <div class="cs6-legal__wrap">
+                <nav aria-label="Breadcrumb" class="cs6-crumbs cs6-legal__crumbs">
+    <ol>
+                    <li>
+                                    <a href="../index.html">Home</a>
+                            </li>
+                    <li>
+                                    <span aria-current="page">Terms and Conditions</span>
+                            </li>
+            </ol>
+</nav>
+                <h1 class="cs6-legal__title">Website Terms and Conditions</h1>
+                                    <p class="cs6-legal__lede">The terms governing your access to and use of www.CreditSaint.com.</p>
+                                                                    <p class="cs6-legal__meta">
+                        <span class="cs6-legal__meta-item">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="4.5" width="18" height="17" rx="2.5"></rect>
+                                <path d="M8 2.5v4M16 2.5v4M3 10h18"></path>
+                            </svg>
+                            Governed by the laws of the State of New Jersey
+                        </span>
+                    </p>
+                            </div>
+            <div class="cs6-legal__layout">
+                                    <div class="cs6-legal-toc__cell">
+                        <div class="cs6-legal-toc__sentinel" data-cs6-toc-sentinel="" aria-hidden="true"></div>
+                        <div class="cs6-legal-toc__placeholder" data-cs6-toc-placeholder="" aria-hidden="true"></div>
+                        <nav class="cs6-legal-toc__toc" data-cs6-toc="" data-next="Next: :title" data-end="End of article" aria-labelledby="cs6-legal-toc-label">
+                            <button type="button" class="cs6-legal-toc__toggle" data-cs6-toc-toggle="" aria-labelledby="cs6-legal-toc-label" aria-controls="cs6-legal-toc-list" disabled="">
+                                <svg class="cs6-legal-toc__book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 7v14"></path>
+                                    <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+                                </svg>
+                                <span id="cs6-legal-toc-label" class="cs6-legal-toc__label">On this page</span>
+                                <span class="cs6-legal-toc__now" aria-hidden="true">
+                                    <span class="cs6-legal-toc__now-cur" data-cs6-toc-cur="">Privacy</span>
+                                    <span class="cs6-legal-toc__now-next" data-cs6-toc-next="">Next: Copyright</span>
+                                </span>
+                                <svg class="cs6-legal-toc__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg>
+                            </button>
+                            <ol id="cs6-legal-toc-list" class="cs6-legal-toc__list">
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="privacy" data-active="">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#privacy">Privacy</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="copyright">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#copyright">Copyright</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="access-to-services">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#access-to-services">Access to Services</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="trademarks">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#trademarks">Trademarks</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="uploaded-content">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#uploaded-content">Uploaded Content</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="submissions">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#submissions">Submissions</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="services-description">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#services-description">Services Description</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="credit-restoration-services">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#credit-restoration-services">Credit Restoration Services</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="you-are-responsible-for-your-financial-decisions">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#you-are-responsible-for-your-financial-decisions">You Are Responsible for Your Financial Decisions</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="inappropriate-images-or-words">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#inappropriate-images-or-words">Inappropriate Images or Words</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="claims-of-copyright-infringement-designated-agent">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#claims-of-copyright-infringement-designated-agent">Claims of Copyright Infringement; Designated Agent</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="online-conduct-repeat-infringer-policy">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#online-conduct-repeat-infringer-policy">Online Conduct; Repeat Infringer Policy</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="content-review">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#content-review">Content Review</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="use-by-children">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#use-by-children">Use by Children</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="indemnity">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#indemnity">Indemnity</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="disclaimer">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#disclaimer">Disclaimer</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="limitation-of-liability">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#limitation-of-liability">Limitation of Liability</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="linking-to-our-website">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#linking-to-our-website">Linking to Our Website</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="third-party-links">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#third-party-links">Third Party Links</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="severability-and-nonwaiver">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#severability-and-nonwaiver">Severability and Nonwaiver</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="applicable-law">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#applicable-law">Applicable Law</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="termination">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#termination">Termination</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="miscellaneous">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#miscellaneous">Miscellaneous</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="90-day-refund-policy">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#90-day-refund-policy">90 Day Refund Policy</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="communications-to-you">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#communications-to-you">Communications to You</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="questions-and-contact-information">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#questions-and-contact-information">Questions and Contact Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="address-of-record">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#address-of-record">Address of Record</a>
+                                                                                    </div>
+                                                                            </li>
+                                                            </ol>
+                        </nav>
+                    </div>
+                                <div class="cs6-prose__body">
+                        <div class="cs6-prose__callout"><p class="cs6-prose__callout-title">PLEASE READ THESE TERMS AND CONDITIONS OF USE CAREFULLY. BY USING THIS WEBSITE, YOU AGREE TO THESE TERMS AND CONDITIONS.</p>
+        <p class="cs6-prose__callout-text">Services may not be available in all states so please call or check our website for details. Credit Saint's services are not available in South Carolina.</p></div>
+    <p class="cs6-prose__lead">Your access to and use of this Website is subject to the following terms and conditions of use (Terms of Use) and all applicable laws.</p>
+    <p class="cs6-prose__p">These Terms of Use apply exclusively to your access to, and use of, this Website known as www.CreditSaint.com (Credit Saint Website) which is exclusively owned and operated by Credit Saint, LLC (Credit Saint) and do not alter in any way the terms or conditions of any other agreement you may have with Credit Saint for services or otherwise. These Terms of Use may be changed by Credit Saint at any time in its sole discretion by posting the changes made to these Terms of Use, as revised, on this Website. Your use of this Website following the posting of such changes to the revised Terms of Use shall constitute your acceptance of any such changes. If you do not agree to these Terms of Use, our Privacy Statement, Credit Saint Service Agreement, or any other policy governing your access to or use of our Website you should immediately terminate your access to and use of the Website. If you have any question regarding these terms or your access to or use of this Website, please contact Customer Service at <a href="mailto:support@creditsaint.com">support@creditsaint.com</a>.</p>
+                                            <h2 id="privacy" class="cs6-prose__h2">Privacy</h2>
+                                <p class="cs6-prose__p">We respect the privacy of our customers and encourage you to read our Privacy Statement so that you may make an informed decision about using our Website. There is important information regarding the use and collection of your personal information in our Privacy Policy that we ask you to review.</p>
+                                                                        <h2 id="copyright" class="cs6-prose__h2">Copyright</h2>
+                                <p class="cs6-prose__p">Unless otherwise indicated, all Website materials, including, without limitation, the Credit Saint logo, and all designs, text, graphics, other files, and the selection and arrangement thereof are the proprietary and copyrighted property of Credit Saint or its licensors. You may electronically copy and print to a hard copy portions of this Website for the sole purpose of using materials it contains for informational and non-commercial, personal use only. Any other use of the materials in this Website including any commercial use, reproduction for purposes other than described herein, modification, distribution, republication, display or performance without the prior written permission of Credit Saint is strictly prohibited.</p>
+                                                                        <h2 id="access-to-services" class="cs6-prose__h2">Access to Services</h2>
+                                <p class="cs6-prose__p">The Credit Saint Website allows you to create a unique user name and password to utilize many of our customized online services. Only individuals authorized by you, who are over the age of 18, may access and use our Online Services. You may not access the Online Services from outside the country for which it was issued. Your unique user name may be restricted from accessing certain Materials otherwise available in the Online Services. Materials and features may be added to or withdrawn from the Online Services or otherwise changed without notice and in our sole discretion.</p>
+                                                                        <h2 id="trademarks" class="cs6-prose__h2">Trademarks</h2>
+                                <p class="cs6-prose__p">The Credit Saint, LLC logo, the Credit Saint Logo and any proprietary Service or service names contained in this Website are either trademarks or registered trademarks of Credit Saint or its licensors, and may not be copied, imitated or used, in whole or in part, without the prior written permission of Credit Saint. In addition, all page headers, custom graphics, button icons and scripts are service marks, trademarks and/or trade dress of Credit Saint, and may not be copied, imitated or used, in whole or in part, without the prior written permission of Credit Saint. All other trademarks, registered trademarks, Service names and company names or logos mentioned herein are the property of their respective owners.</p>
+                                                                        <h2 id="uploaded-content" class="cs6-prose__h2">Uploaded Content</h2>
+                                <p class="cs6-prose__p">You agree that the content you upload in your personal space belongs to you and is for your personal use. You certify that you own and are responsible for any of the contents uploaded in your personal area and that you are not uploading and storing items that would infringe U.S. Copyright laws. You understand that you may not upload, post, reproduce or distribute in any way material protected by copyright, trademark, trade secret or other proprietary rights or which would violate any right of publicity, right of privacy or other right of any third party without first obtaining permission of the owner of such right.</p>
+                                                                        <h2 id="submissions" class="cs6-prose__h2">Submissions</h2>
+                                <p class="cs6-prose__p">You agree that any materials, including but not limited to questions, comments, credit bureaus, credit reports, communications from credit reporting agencies, communications from credit bureaus, communications with credit reporting agencies, communications with credit bureaus, communications with creditor(s), suggestions, ideas, plans, notes, drawings, original or creative materials or other information, provided by you in the form of e-mail or submissions to the Credit Saint Website, or postings on this Website, are not confidential and that Credit Saint shall have a perpetual, worldwide, non-exclusive license to use such materials as it deems appropriate.</p>
+                                                                        <h2 id="services-description" class="cs6-prose__h2">Services Description</h2>
+                                <p class="cs6-prose__p">Credit Saint and its affiliates attempt to describe its Services as accurately as possible. However, Credit Saint does not warrant that Service descriptions or other content on this Website is accurate, complete, reliable, current, or error-free. If a Service offered by Credit Saint itself is not as described, your sole remedy is to cancel the service in the manner set forth in the Credit Saint Service Agreement. The prices displayed on the Website are in U.S. Dollars and are valid and effective only in the United States.</p>
+                                                                        <h2 id="credit-restoration-services" class="cs6-prose__h2">Credit Restoration Services</h2>
+                                <p class="cs6-prose__p">All use and/or purchase of Credit Saint's Credit Restoration services are subject to Credit Saint Service Agreement. Users can cancel their accounts at anytime, subject to the terms and conditions contained in the Credit Saint Service Agreement, however, since we are not able to pro-rate, the account will remain active until the end of the paid monthly cycle. There are no pro-rated refunds. Once your account is cancelled your member access to the site will be revoked upon the expiration of the paid monthly cycle. All cancellation shall also be strictly subject to the terms and conditions of the Credit Saint Service Agreement. In the event of a conflict between the terms and condition contained in this Terms of Use and the Credit Saint Services Agreement, the Credit Saint Services Agreement shall prevail and be deemed the governing document.</p>
+                                                                        <h2 id="you-are-responsible-for-your-financial-decisions" class="cs6-prose__h2">You Are Responsible for Your Financial Decisions</h2>
+                                <p class="cs6-prose__p">We may share, transfer or provide your information as indicated in our Privacy Policy. Based on your consent, you may be contacted by third-party service providers, such as financial institutions, debt settlement companies, lenders and other financial professionals ("Providers"). We do not endorse or recommend the products or services of any Service Provider, and are not an agent or advisor to you or any Provider. We do not validate or investigate the licensing, certification or other requirements and qualifications of Service Providers. It is your responsibility to investigate Service Providers. You acknowledge and agree that Providers are solely responsible for any services that they may provide to you and that we are not liable for any losses, costs, damages or claims in connection with, arising from, or related to, your use of a Provider's products or services. We urge you to obtain the advice of qualified professionals who are fully aware of your individual circumstances before you make any financial decisions. You acknowledge and agree that you rely on your own judgment and that of such advisors in selecting any products or services offered by Providers.</p>
+                                                                        <h2 id="inappropriate-images-or-words" class="cs6-prose__h2">Inappropriate Images or Words</h2>
+                            <p class="cs6-prose__p">Credit Saint reserves the right to remove any text or images uploaded by you that it deems in its sole judgment to be inappropriate or which it believes may subject it to any liability, including without limitation the following:</p>
+    <ul class="cs6-prose__list   cs6-prose__loose "><li class="cs6-prose__item"><span>Images, text or other materials submitted by users that are protected by trademark, copyright, right of publicity or other proprietary right, without the express permission of the owner of those rights;</span></li>
+                    <li class="cs6-prose__item"><span>Profanity or offensive comments including but not limited to expressions of racism, bigotry or hatred, or that are abusive, slanderous or offensive;</span></li>
+                    <li class="cs6-prose__item"><span>Any illegal material such as expressions of abuse, offensive language and imagery, obscenity or any other material that could give rise to any civil or criminal liability under, or otherwise violate, any applicable law.</span></li></ul>
+                                                                    <h2 id="claims-of-copyright-infringement-designated-agent" class="cs6-prose__h2">Claims of Copyright Infringement; Designated Agent</h2>
+                                <p class="cs6-prose__p">If you believe that any material on this Website infringes upon any copyright that you own or control, or that any link on this Website directs users to another Website that contains material that infringes upon any copyright which you own or control, you may file a notification of such infringement to the email or address stated below.</p>
+                                                                        <h2 id="online-conduct-repeat-infringer-policy" class="cs6-prose__h2">Online Conduct; Repeat Infringer Policy</h2>
+                            <p class="cs6-prose__p">You agree to use Credit Saint Website only for lawful purposes. You are prohibited from posting on or transmitting through Credit Saint Website any unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, sexually explicit, profane, hateful, racially, ethnically or otherwise objectionable material of any kind that infringes the intellectual property rights or is otherwise injurious to third parties, including but not limited to any material that encourages conduct that would constitute a criminal offense, give rise to civil liability or otherwise violate any applicable local, state, national or international law. Credit Saint may, at its discretion, terminate the accounts of any registered User who violate this policy.</p>
+    <p class="cs6-prose__p">Credit Saint respects the intellectual property of others, and we ask our Users to do the same. Credit Saint may, in appropriate circumstances and at its discretion, terminate the accounts of any User who infringe upon the intellectual property rights of others or who violate this policy.</p>
+                                                                    <h2 id="content-review" class="cs6-prose__h2">Content Review</h2>
+                                <p class="cs6-prose__p">Credit Saint may elect to electronically monitor areas of this Website and may disclose any content, records or electronic communication of any kind to satisfy any law, regulation or government request, if such disclosure is necessary or appropriate to operate this Website, or to protect the rights or property of Credit Saint, its independent contractors, service providers, consultants, sponsors, licensors or the public. Credit Saint retains the right, but not the obligation, to monitor and edit or remove any activity or content that it deems in its sole discretion to be harmful to its users, Credit Saint or the rights of any third party, or to violate any applicable law.</p>
+                                                                        <h2 id="use-by-children" class="cs6-prose__h2">Use by Children</h2>
+                                <p class="cs6-prose__p">Credit Saint and the Credit Saint Website do not offer products and services for sale to children under 18. We sell products and services for purchase by adults only. By using this Website, you are representing to us that you are 18 years of age or older. Credit Saint will not be liable for any damages that may result from misrepresentation of age by a user of our Website.</p>
+                                                                        <h2 id="indemnity" class="cs6-prose__h2">Indemnity</h2>
+                                <p class="cs6-prose__p">You agree to defend, indemnify and hold harmless Credit Saint, its Managers, it employees, its independent contractors, service providers and consultants, and their respective directors, employees and agents, from and against any third party claim, damages, costs and expenses (including, but not limited to, reasonable attorneys fees) arising out of your use of the Credit Saint Website or the use of any photographs, images or materials you provide, including without limitation any actual or threatened suit, demand, or claim made against Credit Saint and/or its independent contractors, service providers, or consultants, that use of the photographs, images or material provided infringes, misappropriates or otherwise violates any copyright, trademark, right of publicity or other proprietary right of any third party. You agree to pay any judgment or reasonable settlement offer resulting from any such suit, demand or claim.</p>
+                                                                        <h2 id="disclaimer" class="cs6-prose__h2">Disclaimer</h2>
+                            <p class="cs6-prose__caps">EXCEPT IF EXPLICITLY STATED IN WRITING OTHERWISE BY CREDIT SAINT, THE PRODUCTS AND/OR MATERIALS AND/OR SERVICES CONTAINED AND SOLD ON THE CREDIT SAINT WEBSITE ARE PROVIDED ON AN AS IS BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. CREDIT SAINT AND THE CREDIT SAINT WEBSITE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. CREDIT SAINT AND THE CREDIT SAINT WEBSITE DOES NOT REPRESENT OR WARRANT THAT ANY PRODUCTS AND/OR MATERIALS AND/OR SERVICES ON THE CREDIT SAINT WEBSITE, INCLUDING WITHOUT LIMITATION ANY INFORMATION ABOUT CREDIT SAINT AND THE CREDIT SAINT WEBSITE PROVIDED BY THIRD PARTIES, ARE ACCURATE, COMPLETE, RELIABLE, CURRENT OR ERROR-FREE. CREDIT SAINT DOES NOT REPRESENT OR WARRANT THAT THE CREDIT SAINT WEBSITE OR ITS SERVER(S) ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+    <p class="cs6-prose__p">Credit Saint reserves the right to change any and all content contained on the Credit Saint Website at any time without notice. Reference to any products, services, materials, processes or other information, by trade name, trademark, manufacturer, supplier or otherwise does not constitute or imply endorsement, sponsorship or recommendation thereof by Credit Saint and/or the Credit Saint Website.</p>
+    <p class="cs6-prose__p">If you rely on the Credit Saint website and any materials available on it, you do so solely at your own risk.</p>
+                                                                    <h2 id="limitation-of-liability" class="cs6-prose__h2">Limitation of Liability</h2>
+                            <p class="cs6-prose__caps">IN NO EVENT SHALL CREDIT SAINT OR ITS OFFICER(S), MANAGER(S), DIRECTOR(S), MEMBER(S) OR EMPLOYEE(S) BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES, OR ANY OTHER DAMAGES OF ANY KIND WHETHER IN AN ACTION IN CONTRACT, TORT (INCLUDING BUT NOT LIMITED TO NEGLIGENCE) OR OTHERWISE, ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR INABILITY TO USE THIS WEBSITE OR THE MATERIALS CONTAINED IN AND/OR SERVICES SOLD ON AND/OR PRODUCTS SOLD ON, OR ACCESSED THROUGH, THE CREDIT SAINT WEBSITE, INCLUDING WITHOUT LIMITATION ANY DAMAGES CAUSED BY OR RESULTING FROM RELIANCE BY USER ON ANY INFORMATION OBTAINED FROM CREDIT SAINT, OR THAT RESULTS FROM MISTAKES, OMMISSIONS, INTERRUPTIONS, DELETION OF FILES OR E-MAILS, ERRORS, DEFECTS, VIRUSES, DELAYS IN OPERATION OR TRANSMISSION OR ANY FAILURE OF PERFORMANCE, WHETHER OR NOT RESULTING FROM ACTS OF GOD, COMMUNICATIONS FAILURE, ACTS OF TERRORISM, THEFT, DESTRUCTION, OR UNAUTHORIZED ACESS TO THE CREDIT SAINT RECORDS, PROGRAMS OR SERVICES.</p>
+    <p class="cs6-prose__caps">IN NO EVENT SHALL THE AGGREGATE LIABILITY OF CREDIT SAINT (WHETHER IN CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE WHETHER ACTIVE, PASSIVE OR IMPUTED), PRODUCT LIABILITY, STRICT LIABILITY OR OTHER THEORY) ARISING OUT OF OR RELATING TO THE USE OF CREDIT SAINT WEBSITE EXCEED ANY COMPENSATION YOU PAY, IF ANY, TO CREDIT SAINT AND/OR THE CREDIT SAINT WEBSITE FOR ACCESS TO OR USE OR FOR SERVICES SOLD ON AND/OR PRODUCTS SOLD ON THE CREDIT SAINT WEBSITE.</p>
+                                                                    <h2 id="linking-to-our-website" class="cs6-prose__h2">Linking to Our Website</h2>
+                                <p class="cs6-prose__p">You are granted a limited non-exclusive right to create a hyperlink to the Credit Saint Website provided such link does not portray Credit Saint or any of its materials or products or services in a false, misleading, derogatory or otherwise defamatory manner. This limited right may be revoked at any time. You may not use, frame or utilize framing techniques to enclose any Credit Saint and/or Credit Saint trademark, logo or other proprietary information, including the images found on the Credit Saint Website, the content of any text or the layout/design of any page or form contained on a page without Credit Saint's express written consent. Furthermore, you may not use any meta tags or any other hidden text utilizing a Credit Saint and Credit Saint name, trademark or Service name without Credit Saint's express written consent. Except as noted above, you are not conveyed any right or license by implication, estoppel or otherwise in or under any patent, trademark, copyright or proprietary right of Credit Saint or any third party. Credit Saint makes no claim or representation regarding, and accepts no responsibility for, the quality, content, nature or reliability of Websites linking to the Credit Saint Website.</p>
+                                                                        <h2 id="third-party-links" class="cs6-prose__h2">Third Party Links</h2>
+                                <p class="cs6-prose__p">The Credit Saint Website may provide links to Web pages and content of third parties (Third Party Content) as a service to those interested in this information. Credit Saint does not monitor, nor does it have any control over, any Third Party Content. Credit Saint does not endorse or adopt any Third Party Content and can make no guarantee as to its accuracy or completeness. Credit Saint makes no representations or warranties of any kind regarding such Third Party Content, or any information contained therein, and undertakes no responsibility to update or review any Third Party Content. When leaving the Credit Saint Website, you should be aware that the Credit Saint Website's terms and policies no longer govern, and, therefore, you should review the applicable terms and policies, including privacy and data gathering practices, of that site. Users use these links and Third Party Content contained therein at their own risk.</p>
+                                                                        <h2 id="severability-and-nonwaiver" class="cs6-prose__h2">Severability and Nonwaiver</h2>
+                                <p class="cs6-prose__p">If any provision of these Terms of Use shall be deemed unlawful, void or for any reason unenforceable, then that provision shall be deemed severable from these Terms of Use and shall not affect the validity and enforceability of any remaining provisions. The failure of Credit Saint to insist upon or enforce strict performance of any of the provisions of these Terms of Use or to exercise any rights or remedies under these Terms of Use will not be construed as a waiver or relinquishment to any extent of Credit Saint right to assert or rely upon any such provisions, rights, or remedies in that or any other instance; rather, the same will be and remain in full force and effect.</p>
+                                                                        <h2 id="applicable-law" class="cs6-prose__h2">Applicable Law</h2>
+                                <p class="cs6-prose__p">The internal laws of the State of New Jersey will govern and construe these Terms of Use without giving effect to any conflict of laws provisions to the contrary. By use of this Website, you irrevocably consent to the jurisdiction of the courts of the State of New Jersey and agree that all disputes with Credit Saint venue shall be in the state or federal courts located in the State of New Jersey. If you access the Website from outside the United States, you do so at your own risk and are responsible for compliance with the laws of your jurisdiction.</p>
+                                                                        <h2 id="termination" class="cs6-prose__h2">Termination</h2>
+                                <p class="cs6-prose__p">Notwithstanding anything to the contrary herein, Credit Saint reserves the right, without notice and in its sole discretion, to terminate your use of this Website and to block or prevent future access to and use of this Website.</p>
+                                                                        <h2 id="miscellaneous" class="cs6-prose__h2">Miscellaneous</h2>
+                            <p class="cs6-prose__p">These General Terms and Conditions of Use may be changed from time to time without notice by Credit Saint in its sole discretion. Continued use of the Credit Saint Website's Online Services following any change constitutes acceptance of the change.</p>
+    <p class="cs6-prose__p">Credit Saint may suspend or discontinue providing Online Services to you without notice and pursue any other remedy legally available to it if you fail to comply with any of your obligations hereunder.</p>
+    <p class="cs6-prose__p">Except as otherwise provided herein, all notices and other communications hereunder by Credit Saint shall be in writing or displayed electronically on the Credit Saint Website. Notices shall be deemed to have been properly given on the date deposited in the U.S. mails, if mailed; on the date Credit Saint transmitted it to you electronically to the email address you have provided us, if sent via electronic mail; on the date first made available, if displayed Credit Saint Website; or on the date received, if delivered in any other manner.</p>
+    <p class="cs6-prose__p">The failure of Credit Saint or any third party supplier of Materials to enforce any provision hereof shall not constitute or be construed as a waiver of such provision or of the right to enforce it at a later time.</p>
+    <p class="cs6-prose__p">Each third party supplier of Materials has the right to assert and enforce these provisions directly on its own behalf as a third party beneficiary.</p>
+                                                                    <h2 id="90-day-refund-policy" class="cs6-prose__h2">90 Day Refund Policy</h2>
+                            <p class="cs6-prose__p">The Credit Saint money-back guarantee will be strictly subject to you complying with the following terms and conditions. For more information regarding the guarantee, please see: <a href="../90day/index.html">creditsaint.com/90day</a>.</p>
+                                                                    <h2 id="communications-to-you" class="cs6-prose__h2">Communications to You</h2>
+                                <p class="cs6-prose__p">You agree that Credit Saint may send electronic mail to you for the purpose of advising you of changes or additions to this Site, about any of Credit Saint Services or services, or for such other purpose(s) as Credit Saint deems appropriate. You also agree that Credit Saint may share your personal information with certain third parties. Please see our Privacy Policy for more detail.</p>
+                                                                        <h2 id="questions-and-contact-information" class="cs6-prose__h2">Questions and Contact Information</h2>
+                            <p class="cs6-prose__p">General questions or comments about Credit Saint Website may be directed to Credit Saint Website's Customer Service Department at <a href="mailto:support@creditsaint.com">support@creditsaint.com</a>.</p>
+                                                                    <h2 id="address-of-record" class="cs6-prose__h2">Address of Record</h2>
+                            <div class="cs6-prose__callout"><address class="cs6-prose__address" translate="no">
+            Credit Saint, LLC<br>            250 Pehle Avenue, Suite 200<br>            Saddle Brook, NJ 07663    </address>
+        <p class="cs6-prose__callout-text">Questions regarding this statement should be directed to <a href="mailto:support@creditsaint.com">support@creditsaint.com</a>.</p></div>
+                                                            </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="cs6-footer">
+    <div class="cs6-footer__inner">
+        <div class="cs6-footer__grid">
+            <div class="cs6-footer__brand-col">
+                <a href="../index.html" aria-label="Credit Saint" class="cs6-footer__brand">
+                    <span class="cs6-lockup" data-size="footer">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="64" height="64" class="cs6-lockup__mark" loading="lazy">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+                </a>
+                <ul class="cs6-footer__contact">
+                    <li>
+                        <span class="cs6-footer__address" translate="no">250 Pehle Ave, Suite 200, Saddle Brook, NJ 07663</span>
+                    </li>
+                    <li>
+                        <span class="cs6-footer__address">Mailing: <span translate="no">PO Box 110, Oakland, NJ 07436</span></span>
+                    </li>
+                    <li class="cs6-footer__phone-row">
+                        <span>Customer service: <a href="tel:+18776372673" data-cs6-phone="" data-track="true" data-track-id="phone-footer"><span data-cs6-phone-text="">877-637-2673</span></a></span>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-labelledby="ft-prog">
+                <h3 id="ft-prog" class="cs6-footer__heading">Credit Programs</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../packages/index.html">Packages and Pricing</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../faq/index.html">FAQ</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../resources/index.html">Resources</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../about/index.html">About</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../careers/index.html">Careers</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+            <nav aria-labelledby="ft-legal">
+                <h3 id="ft-legal" class="cs6-footer__heading">Legal and Your Rights</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="index.html">Terms and Conditions</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://privacy.cptn.co/privacy-policy/973bfa8b-4680-4129-a23e-fac916e9629f" target="_blank" rel="noopener">Privacy Policy</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../disclosure/index.html">Disclosure</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://www.creditsaint.com/glba-notice/" target="_blank" rel="noopener">GLBA Privacy Notice</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../ccpa-privacy-policy/index.html">Your California Privacy Rights</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676" target="_blank" rel="noopener">Privacy Requests</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+        </div>
+        <div class="cs6-footer__notes">
+            <p>“#1 for a reason”: named #1 Best Overall Credit Repair Company by ConsumerAffairs, 2026.</p>
+            <p>Ratings, review counts and client counts as of October 2026.</p>
+                        <p class="cs6-footer__copyright">© 2026. All Rights Reserved. Credit Saint, LLC</p>
+        </div>
+    </div>
+</footer>
+
+            <script src="../js/home-6-0/legal__q19m5z2z.js" defer=""></script>
+    
+    <div id="cs6-chat" class="cs6-chat" data-mode="widget" data-chat-now-url="https://www.creditsaint.com/chat-now" data-entry-url="https://chat.creditsaint.com/" data-start-url="https://chat.creditsaint.com/start" data-attribution="[]">
+            <button type="button" id="cs-chat-launcher" class="cs6-chat__launcher" aria-label="Chat with Nico, Credit Saint’s virtual assistant, available 24/7" aria-controls="cs-chat-panel" aria-expanded="false" title="Chat with Nico">
+            <span aria-hidden="true" class="cs6-nico-orb cs6-chat__launcher-orb" data-cs6-nico-orb="reading" style="--orb: 84px; --draw: 109px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+        </button>
+                <div id="cs-chat-panel" role="dialog" aria-label="Chat with Nico" class="cs6-chat__panel" hidden="" data-out="" inert="" data-frame-title="Chat with Credit Saint">
+            <div class="cs6-chat__bar">
+                <span class="cs6-chat__avatar" aria-hidden="true">
+                    <span class="cs6-chat__orb"></span>
+                </span>
+                <span class="cs6-chat__identity">
+                    <b class="cs6-chat__name">
+                        <span translate="no">Nico</span>
+                        <span class="cs6-chat__role">Virtual assistant</span>
+                    </b>
+                    <small class="cs6-chat__company" translate="no">Credit Saint</small>
+                </span>
+                <button type="button" class="cs6-chat__minimize" aria-label="Minimize chat" data-cs6-chat-minimize="">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M6 12h12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="cs6-chat__body">
+                <div class="cs6-chat__wait">
+                    <span class="cs6-chat__wait-orb" aria-hidden="true">
+                        <span class="cs6-chat__orb"></span>
+                    </span>
+                    <span aria-hidden="true" data-cs6-chat-connecting="">Connecting to Nico…</span>
+                    <span class="cs6-chat__slow" data-cs6-chat-slow="" hidden="">
+                        Taking longer than usual.
+                        <a href="#" target="_blank" rel="noopener" data-cs6-chat-slow-link="">Open the chat in a new tab</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home-6-0/site__q19m5z2z.js" defer=""></script>
+    <script src="../js/home-6-0/nico-orb__q19m5z2z.js" defer=""></script>
+    <script type="text/javascript">
+        // Load Microsoft Clarity after user interaction or timeout (non-critical analytics)
+        function loadClarity() {
+            if (window.clarityLoaded) return;
+            window.clarityLoaded = true;
+
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "liqcu2if7a");
+        }
+
+        // Load on deferred scripts event (user interaction) or after timeout
+        if (document.addEventListener) {
+            window.addEventListener('deferredScriptsReady', loadClarity, { once: true });
+
+            // Fallback: load after 3s if no interaction
+            window.addEventListener('load', function() {
+                setTimeout(loadClarity, 3000);
+            });
+        }
+    </script>
+    
+
+
+</body></html>

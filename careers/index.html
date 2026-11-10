@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!-- Saved by Site Saver from https://www.creditsaint.com/careers/ on 2026-11-10T21:34:18.812Z -->
+<html lang="en-US"><head><meta charset="utf-8">
+    <script>
+(function() {
+  'use strict';
+
+  let scriptsLoaded = false;
+  const LOAD_TIMEOUT = 3000; // Default 3 seconds
+
+  function loadDeferredScripts() {
+    if (scriptsLoaded) return;
+    scriptsLoaded = true;
+
+    // Dispatch custom event that scripts can listen to
+    window.dispatchEvent(new CustomEvent('deferredScriptsReady'));
+  }
+
+  // Load on first user interaction
+  const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+  events.forEach(event => {
+    window.addEventListener(event, loadDeferredScripts, { once: true, passive: true });
+  });
+
+  // Fallback: load after timeout
+  window.addEventListener('load', function() {
+    setTimeout(loadDeferredScripts, LOAD_TIMEOUT);
+  });
+})();
+</script>
+    <style>#chat-widget-container { display: none !important; }</style>
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.asyncInit = true;
+    (function () {
+        var tries = 0;
+        var queued = false;
+        var timer = setInterval(function () {
+            var lc = window.LiveChatWidget;
+            if (lc && typeof lc.call === 'function') {
+                // Before tracking.js loads, LiveChatWidget is a queueing stub whose getters throw.
+                var loaded = false;
+                try { lc.get('state'); loaded = true; } catch (e) {}
+                if (loaded) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    clearInterval(timer);
+                    return;
+                }
+                if (!queued) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    queued = true;
+                }
+            }
+            if (++tries >= 60) clearInterval(timer);
+        }, 500);
+    })();
+</script>
+
+    
+    <script>
+    (function() {
+      'use strict';
+
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        // Initialize dataLayer if not exists
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+
+        // Load GTM script
+        var f = document.getElementsByTagName('script')[0];
+        var j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KKPV8B4';
+        f.parentNode.insertBefore(j, f);
+      }
+
+      // Load GTM on deferredScriptsReady event
+      window.addEventListener('deferredScriptsReady', loadGTM);
+
+      // Fallback: load after page load + 3s
+      window.addEventListener('load', function() {
+        setTimeout(loadGTM, 3000);
+      });
+    })();
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="apple-itunes-app" content="app-id=1591290922">
+        <meta name="csrf-token" content="uAgrNBt7FLiuz00za1hYZQ8KHYNTfam3U8WJSQoQ">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="facebook-domain-verification" content="vpzfdiv19m15upua5kkk20d23nvldj">
+    
+    <title>Careers at Credit Saint | Open Roles in NJ</title>
+    <meta name="description" content="Join a New Jersey credit repair specialist rated #1 since 2007. See open roles in client service, compliance, and operations, and how our team works.">
+    <meta name="application-name" content="Credit Saint">
+            <link rel="canonical" href="https://www.creditsaint.com/careers/">
+                    <link rel="alternate" hreflang="en" href="https://www.creditsaint.com/careers/">
+                    <link rel="alternate" hreflang="es" href="https://www.santodecredito.com/careers/">
+                <link rel="alternate" hreflang="x-default" href="https://www.creditsaint.com/careers/">
+        <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Credit Saint">
+    <meta property="og:locale" content="en_US">
+            <meta property="og:locale:alternate" content="es_US">
+        <meta property="og:title" content="Careers at Credit Saint | Open Roles in NJ">
+    <meta property="og:description" content="Join a New Jersey credit repair specialist rated #1 since 2007. See open roles in client service, compliance, and operations, and how our team works.">
+            <meta property="og:url" content="https://www.creditsaint.com/careers/">
+        <meta property="og:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Credit Saint">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Careers at Credit Saint | Open Roles in NJ">
+    <meta name="twitter:description" content="Join a New Jersey credit repair specialist rated #1 since 2007. See open roles in client service, compliance, and operations, and how our team works.">
+    <meta name="twitter:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <link rel="icon" type="image/png" href="../_external/cdn.creditsaint.com/webapp/img/newDesign/cs-icon.svg">
+
+    
+    
+    
+    <link rel="stylesheet" href="../_external/fonts.googleapis.com/css2__qaw5g14.css">
+    <link rel="stylesheet" href="../css/home-6-0/site__q19m5z2z.css">
+    <link rel="stylesheet" href="../css/home-6-0/careers__q19m5z2z.css">
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.creditsaint.com/#organization","name":"Credit Saint, LLC","alternateName":"Credit Saint","url":"https://www.creditsaint.com/","logo":{"@type":"ImageObject","url":"https://cdn.creditsaint.com/webapp/img/newDesign/cs-new-logo.svg"},"description":"Credit Saint challenges potentially inaccurate items with all three credit bureaus. A credit repair organization as defined under the Credit Repair Organizations Act (CROA) and not a law firm.","foundingDate":"2007","address":{"@type":"PostalAddress","streetAddress":"PO Box 110","addressLocality":"Oakland","addressRegion":"NJ","postalCode":"07436","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1-877-637-2673","contactType":"customer service","areaServed":"US","availableLanguage":["English","Spanish"]}],"sameAs":["https://www.linkedin.com/company/credit-saint-llc","https://www.instagram.com/creditsaint/","https://www.facebook.com/creditsaint/","https://www.bbb.org/us/nj/saddle-brook/profile/credit-repair-no-advanced-fee/credit-saint-llc-0221-27004499"]},{"@type":"WebSite","@id":"https://www.creditsaint.com/#website","name":"Credit Saint","url":"https://www.creditsaint.com/","publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.creditsaint.com/careers/#webpage","name":"Careers at Credit Saint | Open Roles in NJ","description":"Join a New Jersey credit repair specialist rated #1 since 2007. See open roles in client service, compliance, and operations, and how our team works.","url":"https://www.creditsaint.com/careers/","isPartOf":{"@id":"https://www.creditsaint.com/#website"},"publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.creditsaint.com/careers/#breadcrumb"},"significantLink":"https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=4B059D8746A3DCEA26DEB0E1B2055C4E"},{"@type":"BreadcrumbList","@id":"https://www.creditsaint.com/careers/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.creditsaint.com/"},{"@type":"ListItem","position":2,"name":"Careers","item":"https://www.creditsaint.com/careers/"}]}]}</script>
+</head>
+
+<body data-site="6-0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKPV8B4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="cs6-header">
+    <nav aria-label="Main" data-site-nav="" class="cs6-header__nav">
+        <div class="cs6-header__row">
+            <a href="../index.html" aria-label="Credit Saint home" class="cs6-header__home">
+                <span class="cs6-lockup" data-size="header">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="72" height="72" class="cs6-lockup__mark" fetchpriority="high">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+            </a>
+                            <span class="cs6-header__links">
+                                                                        <a href="../packages/index.html" data-track="true" data-track-id="nav-packages" class="cs6-header__link">Packages</a>
+                                                                                                <a href="../faq/index.html" data-track="true" data-track-id="nav-faq" class="cs6-header__link">FAQ</a>
+                                                                                                <a href="../resources/index.html" data-track="true" data-track-id="nav-resources" class="cs6-header__link">Resources</a>
+                                                            </span>
+                        <span class="cs6-header__actions">
+                <span class="cs6-lang-switch--head">
+            <button type="button" class="cs6-lang-switch__toggle" aria-expanded="false" aria-controls="cs6-lang-menu" aria-label="Language: English" data-cs6-lang-toggle="">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path>
+                </svg>
+                <span translate="no" class="cs6-lang-switch__code">EN</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true" class="cs6-lang-switch__chevron">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+            <span id="cs6-lang-menu" role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch__menu" hidden="">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            English<span aria-hidden="true" class="cs6-lang-switch__tick">✓</span>                                    </a>
+                                                                            <a href="https://www.santodecredito.com/careers/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            Español                                    </a>
+                        </span>
+            </span>
+                                        <a href="../portal/login/index.html" id="nav-login" data-track="true" class="cs6-header__login">Log in</a>
+                                <a class="cs6-header__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-header" data-track="true" data-cs-cta="landing"><span>Start free consultation</span>
+                                            <span aria-hidden="true" class="cs6-header__cta-arrow">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                        </span></a>
+                                    <button type="button" class="cs6-header__menu-button" aria-expanded="false" aria-controls="cs6-menu" aria-label="Menu" data-cs6-menu-toggle="">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                            <g class="cs6-header__icon-open">
+                                <path d="M4 7h16"></path>
+                                <path d="M4 12h16"></path>
+                                <path d="M4 17h16"></path>
+                            </g>
+                            <g class="cs6-header__icon-close">
+                                <path d="M6 6l12 12"></path>
+                                <path d="M18 6L6 18"></path>
+                            </g>
+                        </svg>
+                    </button>
+                            </span>
+        </div>
+
+                    <div id="cs6-menu" class="cs6-header__menu" hidden="">
+                <div class="cs6-header__menu-inner">
+                                                                        <a href="../packages/index.html" id="nav-packages" data-track="true" class="cs6-header__menu-link">Packages</a>
+                                                                                                <a href="../faq/index.html" id="nav-faq" data-track="true" class="cs6-header__menu-link">FAQ</a>
+                                                                                                <a href="../resources/index.html" id="nav-resources" data-track="true" class="cs6-header__menu-link">Resources</a>
+                                                                <a href="../portal/login/index.html" class="cs6-header__menu-link">Log in</a>
+                    <div class="cs6-lang-switch__row">
+            <span class="cs6-lang-switch__row-label" aria-hidden="true">Language</span>
+            <span role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch--menu">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            EN
+                                    </a>
+                                                                                <span aria-hidden="true" class="cs6-lang-switch__sep">|</span>
+                                <a href="https://www.santodecredito.com/careers/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            ES
+                                    </a>
+                        </span>
+            </div>
+                        <a class="cs6-header__menu-cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" data-cs-cta="landing"><span>Start free consultation</span>
+                        <span aria-hidden="true" class="cs6-header__menu-cta-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+</span></a>
+                </div>
+            </div>
+            </nav>
+</div>
+
+        <main class="cs6-careers">
+        <section id="cr-top" aria-labelledby="cr-title" class="cs6-careers__hero">
+            <div class="cs6-careers__hero-inner">
+                <div class="cs6-careers__hero-copy">
+                    <div class="cs6-crumb-pill">
+    <nav aria-label="Breadcrumb" class="cs6-crumbs cs6-crumb-pill__crumbs">
+    <ol>
+                    <li>
+                                    <a href="../index.html">Home</a>
+                            </li>
+                    <li>
+                                    <span aria-current="page">Careers</span>
+                            </li>
+            </ol>
+</nav>
+    <span aria-hidden="true" class="cs6-crumb-pill__rule"></span>
+    <span class="cs6-crumb-pill__badge">
+        <span class="cs6-crumb-pill__label">Saddle Brook, NJ</span>
+            </span>
+</div>
+                    <h1 id="cr-title" class="cs6-careers__h1">
+                        <span>Do work that</span> <span>changes lives.</span>
+                    </h1>
+                    <p class="cs6-careers__lede">
+                        People often come to us after the worst financial year they’ve had. What happens next depends on the team behind them.
+                    </p>
+                    <div class="cs6-careers__hero-actions">
+                        <a href="#open-roles" class="cs6-careers__primary">
+                            <span>See open roles</span>
+                            <span aria-hidden="true" class="cs6-careers__primary-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 5v14"></path>
+                                    <path d="M6 13l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="../about/index.html" class="cs6-careers__outline">About us</a>
+                    </div>
+                </div>
+
+                <div class="cs6-careers__stage">
+                    <span aria-hidden="true" class="cs6-careers__stage-glow"></span>
+                    <span aria-hidden="true" class="cs6-careers__stage-green"></span>
+                    <span aria-hidden="true" class="cs6-careers__stage-blue"></span>
+                    <div class="cs6-careers__home-card">
+                        <div class="cs6-careers__home-base">
+                            <svg role="img" aria-label="Map of New Jersey" width="56" height="100" viewBox="0 0 54 100" class="cs6-nj-map">
+    <path d="M27.9 2.4 L52.1 16.8 L50.2 22.8 L48.4 27.6 L47.5 30.4 L43.5 31.2 L41.1 36.4 L45.3 38.4 L49.0 38.0 L49.6 44.8 L48.1 52.8 L47.2 60.8 L46.0 66.8 L42.9 72.0 L39.2 77.6 L36.2 82.4 L31.3 86.0 L27.0 92.8 L22.7 98.0 L19.6 99.6 L20.5 92.0 L15.3 88.8 L8.6 84.8 L2.5 78.8 L1.2 72.8 L3.7 66.4 L9.2 62.4 L14.4 58.8 L19.3 54.4 L25.4 48.8 L23.0 44.8 L19.3 41.6 L16.2 38.8 L12.6 33.6 L12.3 29.2 L14.4 24.0 L15.9 17.6 L19.3 12.8 L23.9 7.2 Z" fill="var(--cs-white)" stroke="var(--cs-white)" stroke-width="1.2" stroke-linejoin="round"></path>
+    <circle cx="41.1" cy="15.6" r="4.5" fill="var(--cs-green)"></circle>
+    <circle cx="41.1" cy="15.6" r="4.5" fill="none" stroke="var(--cs-green)" stroke-width="2.4" class="cs6-nj-map__ping"></circle>
+</svg>
+                            <span class="cs6-careers__home-text">
+                                <span class="cs6-careers__home-label">Our home base</span>
+                                <b class="cs6-careers__home-city">Saddle Brook, New Jersey</b>
+                                <span class="cs6-careers__home-note">Real people who write, send and follow up on every challenge.</span>
+                            </span>
+                        </div>
+                        <dl class="cs6-careers__facts">
+                            <div class="cs6-careers__fact">
+                                <dt>Challenging errors since</dt>
+                                <dd>2007</dd>
+                            </div>
+                            <div class="cs6-careers__fact">
+                                <dt>Clients enrolled</dt>
+                                <dd>350K+</dd>
+                            </div>
+                            <div class="cs6-careers__fact">
+                                <dt>16,000+ reviews<sup class="cs6-cite cs6-cite--tight">▵</sup></dt>
+                                <dd>
+                                    4.8
+                                    <svg width="14.8" height="14.8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-careers__star"><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="open-roles" class="cs6-careers__section cs6-careers__roles">
+            <div class="cs6-careers__inner">
+                <div class="cs6-careers__roles-head">
+                    <div>
+                        <span class="cs6-careers__eyebrow">Join the team</span>
+                        <h2 id="open-roles" class="cs6-careers__h2 cs6-careers__roles-title">
+                            Open <span class="cs6-careers__blue">roles</span>
+                        </h2>
+                    </div>
+                    <a href="https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=4B059D8746A3DCEA26DEB0E1B2055C4E" target="_blank" rel="noopener noreferrer" hreflang="en" class="cs6-careers__outline cs6-careers__board-link">
+                        Open job board in a new tab
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7M9 7h8v8"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="cs6-careers__frame">
+                    <iframe src="https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=4B059D8746A3DCEA26DEB0E1B2055C4E" title="Credit Saint open positions" loading="lazy"></iframe>
+                </div>
+
+                <p class="cs6-careers__frame-note">
+                    Listings are served by our applicant tracking system. If the board doesn't load in your browser, use the button above to open it directly.
+                </p>
+            </div>
+        </section>
+
+        <section aria-labelledby="who-we-are" class="cs6-careers__section cs6-careers__who">
+            <div class="cs6-careers__inner">
+                <h2 id="who-we-are" class="cs6-careers__h2 cs6-careers__who-title">
+                    Want to know who you'd be <span class="cs6-careers__blue">working with?</span>
+                </h2>
+                <p class="cs6-careers__who-text">
+                    We've been challenging inaccurate credit report items since 2007. Read how we work and what we hold ourselves to.
+                </p>
+                <div class="cs6-careers__btn-row">
+                    <a href="../about/index.html" class="cs6-careers__btn-navy">About Credit Saint</a>
+                    <a href="../resources/index.html" class="cs6-careers__btn-quiet">Read Resources</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cs6-footer">
+    <div class="cs6-footer__inner">
+        <div class="cs6-footer__grid">
+            <div class="cs6-footer__brand-col">
+                <a href="../index.html" aria-label="Credit Saint" class="cs6-footer__brand">
+                    <span class="cs6-lockup" data-size="footer">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="64" height="64" class="cs6-lockup__mark" loading="lazy">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+                </a>
+                <ul class="cs6-footer__contact">
+                    <li>
+                        <span class="cs6-footer__address" translate="no">250 Pehle Ave, Suite 200, Saddle Brook, NJ 07663</span>
+                    </li>
+                    <li>
+                        <span class="cs6-footer__address">Mailing: <span translate="no">PO Box 110, Oakland, NJ 07436</span></span>
+                    </li>
+                    <li class="cs6-footer__phone-row">
+                        <span>Customer service: <a href="tel:+18776372673" data-cs6-phone="" data-track="true" data-track-id="phone-footer"><span data-cs6-phone-text="">877-637-2673</span></a></span>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-labelledby="ft-prog">
+                <h3 id="ft-prog" class="cs6-footer__heading">Credit Programs</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../packages/index.html">Packages and Pricing</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../faq/index.html">FAQ</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../resources/index.html">Resources</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../about/index.html">About</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="index.html">Careers</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+            <nav aria-labelledby="ft-legal">
+                <h3 id="ft-legal" class="cs6-footer__heading">Legal and Your Rights</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../terms-of-service/index.html">Terms and Conditions</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://privacy.cptn.co/privacy-policy/973bfa8b-4680-4129-a23e-fac916e9629f" target="_blank" rel="noopener">Privacy Policy</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../disclosure/index.html">Disclosure</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://www.creditsaint.com/glba-notice/" target="_blank" rel="noopener">GLBA Privacy Notice</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../ccpa-privacy-policy/index.html">Your California Privacy Rights</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676" target="_blank" rel="noopener">Privacy Requests</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+        </div>
+        <div class="cs6-footer__notes">
+            <p>“#1 for a reason”: named #1 Best Overall Credit Repair Company by ConsumerAffairs, 2026.</p>
+            <p><sup class="cs6-cite cs6-cite--light cs6-cite--tight">▵</sup> Ratings, review counts and client counts as of October 2026.</p>
+                        <p class="cs6-footer__copyright">© 2026. All Rights Reserved. Credit Saint, LLC</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="cs6-chat" class="cs6-chat" data-mode="widget" data-chat-now-url="https://www.creditsaint.com/chat-now" data-entry-url="https://chat.creditsaint.com/" data-start-url="https://chat.creditsaint.com/start" data-attribution="[]">
+            <button type="button" id="cs-chat-launcher" class="cs6-chat__launcher" aria-label="Chat with Nico, Credit Saint’s virtual assistant, available 24/7" aria-controls="cs-chat-panel" aria-expanded="false" title="Chat with Nico">
+            <span aria-hidden="true" class="cs6-nico-orb cs6-chat__launcher-orb" data-cs6-nico-orb="reading" style="--orb: 84px; --draw: 109px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+        </button>
+                <div id="cs-chat-panel" role="dialog" aria-label="Chat with Nico" class="cs6-chat__panel" hidden="" data-out="" inert="" data-frame-title="Chat with Credit Saint">
+            <div class="cs6-chat__bar">
+                <span class="cs6-chat__avatar" aria-hidden="true">
+                    <span class="cs6-chat__orb"></span>
+                </span>
+                <span class="cs6-chat__identity">
+                    <b class="cs6-chat__name">
+                        <span translate="no">Nico</span>
+                        <span class="cs6-chat__role">Virtual assistant</span>
+                    </b>
+                    <small class="cs6-chat__company" translate="no">Credit Saint</small>
+                </span>
+                <button type="button" class="cs6-chat__minimize" aria-label="Minimize chat" data-cs6-chat-minimize="">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M6 12h12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="cs6-chat__body">
+                <div class="cs6-chat__wait">
+                    <span class="cs6-chat__wait-orb" aria-hidden="true">
+                        <span class="cs6-chat__orb"></span>
+                    </span>
+                    <span aria-hidden="true" data-cs6-chat-connecting="">Connecting to Nico…</span>
+                    <span class="cs6-chat__slow" data-cs6-chat-slow="" hidden="">
+                        Taking longer than usual.
+                        <a href="#" target="_blank" rel="noopener" data-cs6-chat-slow-link="">Open the chat in a new tab</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home-6-0/site__q19m5z2z.js" defer=""></script>
+    <script src="../js/home-6-0/nico-orb__q19m5z2z.js" defer=""></script>
+    <script type="text/javascript">
+        // Load Microsoft Clarity after user interaction or timeout (non-critical analytics)
+        function loadClarity() {
+            if (window.clarityLoaded) return;
+            window.clarityLoaded = true;
+
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "liqcu2if7a");
+        }
+
+        // Load on deferred scripts event (user interaction) or after timeout
+        if (document.addEventListener) {
+            window.addEventListener('deferredScriptsReady', loadClarity, { once: true });
+
+            // Fallback: load after 3s if no interaction
+            window.addEventListener('load', function() {
+                setTimeout(loadClarity, 3000);
+            });
+        }
+    </script>
+    
+
+
+</body></html>

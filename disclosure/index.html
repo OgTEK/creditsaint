@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!-- Saved by Site Saver from https://www.creditsaint.com/disclosure/ on 2026-11-10T21:34:18.980Z -->
+<html lang="en-US"><head><meta charset="utf-8">
+    <script>
+(function() {
+  'use strict';
+
+  let scriptsLoaded = false;
+  const LOAD_TIMEOUT = 3000; // Default 3 seconds
+
+  function loadDeferredScripts() {
+    if (scriptsLoaded) return;
+    scriptsLoaded = true;
+
+    // Dispatch custom event that scripts can listen to
+    window.dispatchEvent(new CustomEvent('deferredScriptsReady'));
+  }
+
+  // Load on first user interaction
+  const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+  events.forEach(event => {
+    window.addEventListener(event, loadDeferredScripts, { once: true, passive: true });
+  });
+
+  // Fallback: load after timeout
+  window.addEventListener('load', function() {
+    setTimeout(loadDeferredScripts, LOAD_TIMEOUT);
+  });
+})();
+</script>
+    <style>#chat-widget-container { display: none !important; }</style>
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.asyncInit = true;
+    (function () {
+        var tries = 0;
+        var queued = false;
+        var timer = setInterval(function () {
+            var lc = window.LiveChatWidget;
+            if (lc && typeof lc.call === 'function') {
+                // Before tracking.js loads, LiveChatWidget is a queueing stub whose getters throw.
+                var loaded = false;
+                try { lc.get('state'); loaded = true; } catch (e) {}
+                if (loaded) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    clearInterval(timer);
+                    return;
+                }
+                if (!queued) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    queued = true;
+                }
+            }
+            if (++tries >= 60) clearInterval(timer);
+        }, 500);
+    })();
+</script>
+
+    
+    <script>
+    (function() {
+      'use strict';
+
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        // Initialize dataLayer if not exists
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+
+        // Load GTM script
+        var f = document.getElementsByTagName('script')[0];
+        var j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KKPV8B4';
+        f.parentNode.insertBefore(j, f);
+      }
+
+      // Load GTM on deferredScriptsReady event
+      window.addEventListener('deferredScriptsReady', loadGTM);
+
+      // Fallback: load after page load + 3s
+      window.addEventListener('load', function() {
+        setTimeout(loadGTM, 3000);
+      });
+    })();
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="apple-itunes-app" content="app-id=1591290922">
+        <meta name="csrf-token" content="uAgrNBt7FLiuz00za1hYZQ8KHYNTfam3U8WJSQoQ">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="facebook-domain-verification" content="vpzfdiv19m15upua5kkk20d23nvldj">
+    
+    <title>Disclosure Statement | Credit Saint</title>
+    <meta name="description" content="Consumer credit file rights under state and federal law, as required by the Credit Repair Organizations Act.">
+    <meta name="application-name" content="Credit Saint">
+            <link rel="canonical" href="https://www.creditsaint.com/disclosure/">
+                    <link rel="alternate" hreflang="en" href="https://www.creditsaint.com/disclosure/">
+                    <link rel="alternate" hreflang="es" href="https://www.santodecredito.com/disclosure/">
+                <link rel="alternate" hreflang="x-default" href="https://www.creditsaint.com/disclosure/">
+        <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Credit Saint">
+    <meta property="og:locale" content="en_US">
+            <meta property="og:locale:alternate" content="es_US">
+        <meta property="og:title" content="Disclosure Statement | Credit Saint">
+    <meta property="og:description" content="Consumer credit file rights under state and federal law, as required by the Credit Repair Organizations Act.">
+            <meta property="og:url" content="https://www.creditsaint.com/disclosure/">
+        <meta property="og:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Credit Saint">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Disclosure Statement | Credit Saint">
+    <meta name="twitter:description" content="Consumer credit file rights under state and federal law, as required by the Credit Repair Organizations Act.">
+    <meta name="twitter:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <link rel="icon" type="image/png" href="../_external/cdn.creditsaint.com/webapp/img/newDesign/cs-icon.svg">
+
+    
+    
+    
+    <link rel="stylesheet" href="../_external/fonts.googleapis.com/css2__qaw5g14.css">
+    <link rel="stylesheet" href="../css/home-6-0/site__q19m5z2z.css">
+    <link rel="stylesheet" href="../css/home-6-0/legal__q19m5z2z.css">
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.creditsaint.com/#organization","name":"Credit Saint, LLC","alternateName":"Credit Saint","url":"https://www.creditsaint.com/","logo":{"@type":"ImageObject","url":"https://cdn.creditsaint.com/webapp/img/newDesign/cs-new-logo.svg"},"description":"Credit Saint challenges potentially inaccurate items with all three credit bureaus. A credit repair organization as defined under the Credit Repair Organizations Act (CROA) and not a law firm.","foundingDate":"2007","address":{"@type":"PostalAddress","streetAddress":"PO Box 110","addressLocality":"Oakland","addressRegion":"NJ","postalCode":"07436","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1-877-637-2673","contactType":"customer service","areaServed":"US","availableLanguage":["English","Spanish"]}],"sameAs":["https://www.linkedin.com/company/credit-saint-llc","https://www.instagram.com/creditsaint/","https://www.facebook.com/creditsaint/","https://www.bbb.org/us/nj/saddle-brook/profile/credit-repair-no-advanced-fee/credit-saint-llc-0221-27004499"]},{"@type":"WebSite","@id":"https://www.creditsaint.com/#website","name":"Credit Saint","url":"https://www.creditsaint.com/","publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.creditsaint.com/disclosure/#webpage","name":"Disclosure Statement","description":"Consumer credit file rights under state and federal law, as required by the Credit Repair Organizations Act.","url":"https://www.creditsaint.com/disclosure/","isPartOf":{"@id":"https://www.creditsaint.com/#website"},"publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.creditsaint.com/disclosure/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://www.creditsaint.com/disclosure/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.creditsaint.com/"},{"@type":"ListItem","position":2,"name":"Disclosure Statement","item":"https://www.creditsaint.com/disclosure/"}]}]}</script>
+</head>
+
+<body data-site="6-0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKPV8B4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="cs6-header">
+    <nav aria-label="Main" data-site-nav="" class="cs6-header__nav">
+        <div class="cs6-header__row">
+            <a href="../index.html" aria-label="Credit Saint home" class="cs6-header__home">
+                <span class="cs6-lockup" data-size="header">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="72" height="72" class="cs6-lockup__mark" fetchpriority="high">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+            </a>
+                            <span class="cs6-header__links">
+                                                                        <a href="../packages/index.html" data-track="true" data-track-id="nav-packages" class="cs6-header__link">Packages</a>
+                                                                                                <a href="../faq/index.html" data-track="true" data-track-id="nav-faq" class="cs6-header__link">FAQ</a>
+                                                                                                <a href="../resources/index.html" data-track="true" data-track-id="nav-resources" class="cs6-header__link">Resources</a>
+                                                            </span>
+                        <span class="cs6-header__actions">
+                <span class="cs6-lang-switch--head">
+            <button type="button" class="cs6-lang-switch__toggle" aria-expanded="false" aria-controls="cs6-lang-menu" aria-label="Language: English" data-cs6-lang-toggle="">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path>
+                </svg>
+                <span translate="no" class="cs6-lang-switch__code">EN</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true" class="cs6-lang-switch__chevron">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+            <span id="cs6-lang-menu" role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch__menu" hidden="">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            English<span aria-hidden="true" class="cs6-lang-switch__tick">✓</span>                                    </a>
+                                                                            <a href="https://www.santodecredito.com/disclosure/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            Español                                    </a>
+                        </span>
+            </span>
+                                        <a href="../portal/login/index.html" id="nav-login" data-track="true" class="cs6-header__login">Log in</a>
+                                <a class="cs6-header__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-header" data-track="true" data-cs-cta="landing"><span>Start free consultation</span>
+                                            <span aria-hidden="true" class="cs6-header__cta-arrow">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                        </span></a>
+                                    <button type="button" class="cs6-header__menu-button" aria-expanded="false" aria-controls="cs6-menu" aria-label="Menu" data-cs6-menu-toggle="">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                            <g class="cs6-header__icon-open">
+                                <path d="M4 7h16"></path>
+                                <path d="M4 12h16"></path>
+                                <path d="M4 17h16"></path>
+                            </g>
+                            <g class="cs6-header__icon-close">
+                                <path d="M6 6l12 12"></path>
+                                <path d="M18 6L6 18"></path>
+                            </g>
+                        </svg>
+                    </button>
+                            </span>
+        </div>
+
+                    <div id="cs6-menu" class="cs6-header__menu" hidden="">
+                <div class="cs6-header__menu-inner">
+                                                                        <a href="../packages/index.html" id="nav-packages" data-track="true" class="cs6-header__menu-link">Packages</a>
+                                                                                                <a href="../faq/index.html" id="nav-faq" data-track="true" class="cs6-header__menu-link">FAQ</a>
+                                                                                                <a href="../resources/index.html" id="nav-resources" data-track="true" class="cs6-header__menu-link">Resources</a>
+                                                                <a href="../portal/login/index.html" class="cs6-header__menu-link">Log in</a>
+                    <div class="cs6-lang-switch__row">
+            <span class="cs6-lang-switch__row-label" aria-hidden="true">Language</span>
+            <span role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch--menu">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            EN
+                                    </a>
+                                                                                <span aria-hidden="true" class="cs6-lang-switch__sep">|</span>
+                                <a href="https://www.santodecredito.com/disclosure/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            ES
+                                    </a>
+                        </span>
+            </div>
+                        <a class="cs6-header__menu-cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" data-cs-cta="landing"><span>Start free consultation</span>
+                        <span aria-hidden="true" class="cs6-header__menu-cta-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+</span></a>
+                </div>
+            </div>
+            </nav>
+</div>
+
+        <main>
+        <article class="cs6-legal__article">
+            <div class="cs6-legal__wrap">
+                <nav aria-label="Breadcrumb" class="cs6-crumbs cs6-legal__crumbs">
+    <ol>
+                    <li>
+                                    <a href="../index.html">Home</a>
+                            </li>
+                    <li>
+                                    <span aria-current="page">Disclosure Statement</span>
+                            </li>
+            </ol>
+</nav>
+                <h1 class="cs6-legal__title">Disclosure Statement</h1>
+                                    <p class="cs6-legal__lede">Consumer Credit File Rights Under State and Federal Law</p>
+                                                                    <p class="cs6-legal__meta">
+                        <span class="cs6-legal__meta-item">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="4.5" width="18" height="17" rx="2.5"></rect>
+                                <path d="M8 2.5v4M16 2.5v4M3 10h18"></path>
+                            </svg>
+                            Required disclosure under the Credit Repair Organizations Act
+                        </span>
+                    </p>
+                            </div>
+            <div class="cs6-legal__layout">
+                                    <div class="cs6-legal-toc__cell">
+                        <div class="cs6-legal-toc__sentinel" data-cs6-toc-sentinel="" aria-hidden="true"></div>
+                        <div class="cs6-legal-toc__placeholder" data-cs6-toc-placeholder="" aria-hidden="true"></div>
+                        <nav class="cs6-legal-toc__toc" data-cs6-toc="" data-next="Next: :title" data-end="End of article" aria-labelledby="cs6-legal-toc-label">
+                            <button type="button" class="cs6-legal-toc__toggle" data-cs6-toc-toggle="" aria-labelledby="cs6-legal-toc-label" aria-controls="cs6-legal-toc-list" disabled="">
+                                <svg class="cs6-legal-toc__book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 7v14"></path>
+                                    <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+                                </svg>
+                                <span id="cs6-legal-toc-label" class="cs6-legal-toc__label">On this page</span>
+                                <span class="cs6-legal-toc__now" aria-hidden="true">
+                                    <span class="cs6-legal-toc__now-cur" data-cs6-toc-cur="">Removing Accurate Information</span>
+                                    <span class="cs6-legal-toc__now-next" data-cs6-toc-next="">Next: Obtaining Your Credit Report</span>
+                                </span>
+                                <svg class="cs6-legal-toc__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg>
+                            </button>
+                            <ol id="cs6-legal-toc-list" class="cs6-legal-toc__list">
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="removing-accurate-information" data-active="">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#removing-accurate-information">Removing Accurate Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="obtaining-your-credit-report">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#obtaining-your-credit-report">Obtaining Your Credit Report</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="your-right-to-sue">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#your-right-to-sue">Your Right to Sue</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="your-right-to-cancel">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#your-right-to-cancel">Your Right to Cancel</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="disputing-information-yourself">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#disputing-information-yourself">Disputing Information Yourself</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="contacting-the-federal-trade-commission">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#contacting-the-federal-trade-commission">Contacting the Federal Trade Commission</a>
+                                                                                    </div>
+                                                                            </li>
+                                                            </ol>
+                        </nav>
+                    </div>
+                                <div class="cs6-prose__body">
+                        <p class="cs6-prose__lead">You have a right to dispute inaccurate information in your credit report by contacting the credit bureau directly. However, neither you nor any credit repair company or credit repair organization has the right to have accurate, current, and verifiable information removed from your credit report.</p>
+                                            <h2 id="removing-accurate-information" class="cs6-prose__h2">Removing Accurate Information</h2>
+                            <p class="cs6-prose__p">The credit bureau must remove accurate, negative information from your report only if it is over 7 years old. Bankruptcy information can be reported for 10 years.</p>
+                                                                    <h2 id="obtaining-your-credit-report" class="cs6-prose__h2">Obtaining Your Credit Report</h2>
+                            <p class="cs6-prose__p">You have a right to obtain a copy of your credit report from a credit bureau. You may be charged a reasonable fee. There is no fee, however, if you have been turned down for credit, employment, insurance, or a rental dwelling because of information in your credit report within the preceding 60 days. The credit bureau must provide someone to help you interpret the information in your credit file.</p>
+    <p class="cs6-prose__p">You are entitled to receive a free copy of your credit report if you are unemployed and intend to apply for employment in the next 60 days, if you are a recipient of public welfare assistance, or if you have reason to believe that there is inaccurate information in your credit report due to fraud.</p>
+                                                                    <h2 id="your-right-to-sue" class="cs6-prose__h2">Your Right to Sue</h2>
+                            <p class="cs6-prose__p">You have a right to sue a credit repair organization that violates the Credit Repair Organization Act. This law prohibits deceptive practices by credit repair organizations.</p>
+                                                                    <h2 id="your-right-to-cancel" class="cs6-prose__h2">Your Right to Cancel</h2>
+                            <p class="cs6-prose__p">You have the right to cancel your contract with any credit repair organization for any reason within 3 business days from the date you signed it.</p>
+                                                                    <h2 id="disputing-information-yourself" class="cs6-prose__h2">Disputing Information Yourself</h2>
+                            <p class="cs6-prose__p">Credit bureaus are required to follow reasonable procedures to ensure that the information they report is accurate. However, mistakes may occur.</p>
+    <p class="cs6-prose__p">You may, on your own, notify a credit bureau in writing that you dispute the accuracy of information in your credit file. The credit bureau must then reinvestigate and modify or remove inaccurate or incomplete information. The credit bureau may not charge any fee for this service. Any pertinent information and copies of all documents you have concerning an error should be given to the credit bureau.</p>
+    <p class="cs6-prose__p">If the credit bureau's reinvestigation does not resolve the dispute to your satisfaction, you may send a brief statement to the credit bureau, to be kept in your file, explaining why you think the record is inaccurate. The credit bureau must include a summary of your statement about disputed information with any report it issues about you.</p>
+                                                                    <h2 id="contacting-the-federal-trade-commission" class="cs6-prose__h2">Contacting the Federal Trade Commission</h2>
+                            <p class="cs6-prose__p">The Federal Trade Commission regulates credit bureaus and credit repair organizations. For more information contact:</p>
+    <div class="cs6-prose__callout"><span class="cs6-prose__callout-label">Federal Trade Commission</span>
+        <div lang="en">
+            <address class="cs6-prose__address" translate="no">
+            The Public Reference Branch<br>            Federal Trade Commission<br>            Washington, D.C. 20580    </address>
+        </div></div>
+                                                            </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="cs6-footer">
+    <div class="cs6-footer__inner">
+        <div class="cs6-footer__grid">
+            <div class="cs6-footer__brand-col">
+                <a href="../index.html" aria-label="Credit Saint" class="cs6-footer__brand">
+                    <span class="cs6-lockup" data-size="footer">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="64" height="64" class="cs6-lockup__mark" loading="lazy">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+                </a>
+                <ul class="cs6-footer__contact">
+                    <li>
+                        <span class="cs6-footer__address" translate="no">250 Pehle Ave, Suite 200, Saddle Brook, NJ 07663</span>
+                    </li>
+                    <li>
+                        <span class="cs6-footer__address">Mailing: <span translate="no">PO Box 110, Oakland, NJ 07436</span></span>
+                    </li>
+                    <li class="cs6-footer__phone-row">
+                        <span>Customer service: <a href="tel:+18776372673" data-cs6-phone="" data-track="true" data-track-id="phone-footer"><span data-cs6-phone-text="">877-637-2673</span></a></span>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-labelledby="ft-prog">
+                <h3 id="ft-prog" class="cs6-footer__heading">Credit Programs</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../packages/index.html">Packages and Pricing</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../faq/index.html">FAQ</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../resources/index.html">Resources</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../about/index.html">About</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../careers/index.html">Careers</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+            <nav aria-labelledby="ft-legal">
+                <h3 id="ft-legal" class="cs6-footer__heading">Legal and Your Rights</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../terms-of-service/index.html">Terms and Conditions</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://privacy.cptn.co/privacy-policy/973bfa8b-4680-4129-a23e-fac916e9629f" target="_blank" rel="noopener">Privacy Policy</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="index.html">Disclosure</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://www.creditsaint.com/glba-notice/" target="_blank" rel="noopener">GLBA Privacy Notice</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../ccpa-privacy-policy/index.html">Your California Privacy Rights</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676" target="_blank" rel="noopener">Privacy Requests</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+        </div>
+        <div class="cs6-footer__notes">
+            <p>“#1 for a reason”: named #1 Best Overall Credit Repair Company by ConsumerAffairs, 2026.</p>
+            <p>Ratings, review counts and client counts as of October 2026.</p>
+                        <p class="cs6-footer__copyright">© 2026. All Rights Reserved. Credit Saint, LLC</p>
+        </div>
+    </div>
+</footer>
+
+            <script src="../js/home-6-0/legal__q19m5z2z.js" defer=""></script>
+    
+    <div id="cs6-chat" class="cs6-chat" data-mode="widget" data-chat-now-url="https://www.creditsaint.com/chat-now" data-entry-url="https://chat.creditsaint.com/" data-start-url="https://chat.creditsaint.com/start" data-attribution="[]">
+            <button type="button" id="cs-chat-launcher" class="cs6-chat__launcher" aria-label="Chat with Nico, Credit Saint’s virtual assistant, available 24/7" aria-controls="cs-chat-panel" aria-expanded="false" title="Chat with Nico">
+            <span aria-hidden="true" class="cs6-nico-orb cs6-chat__launcher-orb" data-cs6-nico-orb="reading" style="--orb: 84px; --draw: 109px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+        </button>
+                <div id="cs-chat-panel" role="dialog" aria-label="Chat with Nico" class="cs6-chat__panel" hidden="" data-out="" inert="" data-frame-title="Chat with Credit Saint">
+            <div class="cs6-chat__bar">
+                <span class="cs6-chat__avatar" aria-hidden="true">
+                    <span class="cs6-chat__orb"></span>
+                </span>
+                <span class="cs6-chat__identity">
+                    <b class="cs6-chat__name">
+                        <span translate="no">Nico</span>
+                        <span class="cs6-chat__role">Virtual assistant</span>
+                    </b>
+                    <small class="cs6-chat__company" translate="no">Credit Saint</small>
+                </span>
+                <button type="button" class="cs6-chat__minimize" aria-label="Minimize chat" data-cs6-chat-minimize="">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M6 12h12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="cs6-chat__body">
+                <div class="cs6-chat__wait">
+                    <span class="cs6-chat__wait-orb" aria-hidden="true">
+                        <span class="cs6-chat__orb"></span>
+                    </span>
+                    <span aria-hidden="true" data-cs6-chat-connecting="">Connecting to Nico…</span>
+                    <span class="cs6-chat__slow" data-cs6-chat-slow="" hidden="">
+                        Taking longer than usual.
+                        <a href="#" target="_blank" rel="noopener" data-cs6-chat-slow-link="">Open the chat in a new tab</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home-6-0/site__q19m5z2z.js" defer=""></script>
+    <script src="../js/home-6-0/nico-orb__q19m5z2z.js" defer=""></script>
+    <script type="text/javascript">
+        // Load Microsoft Clarity after user interaction or timeout (non-critical analytics)
+        function loadClarity() {
+            if (window.clarityLoaded) return;
+            window.clarityLoaded = true;
+
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "liqcu2if7a");
+        }
+
+        // Load on deferred scripts event (user interaction) or after timeout
+        if (document.addEventListener) {
+            window.addEventListener('deferredScriptsReady', loadClarity, { once: true });
+
+            // Fallback: load after 3s if no interaction
+            window.addEventListener('load', function() {
+                setTimeout(loadClarity, 3000);
+            });
+        }
+    </script>
+    
+
+
+</body></html>

@@ -1,0 +1,33 @@
+Site Saver report
+Source: https://try.creditsaint.com/getstarted/?token=enter/de95e85dbecac2750889eec78b3ece93&c_phone_number=ODc3LTYzNy0yNjcz
+Saved: 2026-11-10T21:43:57.423Z
+Pages: 1
+Files (excluding this report): 5
+Failed: 13
+
+FAILED https://d9hhrg4mnvzow.cloudfront.net/try.creditsaint.com/getstarted/z2a-b668900f.png
+  HTTP 407
+FAILED https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+  HTTP 407
+FAILED https://d9hhrg4mnvzow.cloudfront.net/try.creditsaint.com/getstarted/credit-saint-1-for-a-reason-562f5e71.svg
+  HTTP 407
+FAILED https://cdn.trustedform.com/trustedform-1.12.19.js
+  HTTP 407
+FAILED https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onloadTurnstileCallback
+  HTTP 407
+FAILED https://try.creditsaint.com/_ub/static/ts/4ae6c57e90f8e0f4e878a289ce063b8f61f48172.js
+  HTTP 407
+FAILED https://www.clarity.ms/tag/liqcu2if7a
+  HTTP 407
+FAILED https://d9hhrg4mnvzow.cloudfront.net/try.creditsaint.com/getstarted/cc5fe02f-favicon-48.png
+  HTTP 407
+FAILED https://builder-assets.unbounce.com/images/transparent.gif
+  HTTP 403
+FAILED https://d9hhrg4mnvzow.cloudfront.net/try.creditsaint.com/getstarted/consumeraffairs-c56b967a.svg
+  HTTP 407
+FAILED https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Martian+Mono:wght@300;400;600&display=swap
+  HTTP 407
+FAILED https://d9hhrg4mnvzow.cloudfront.net/try.creditsaint.com/getstarted/money-de155f7a.svg
+  HTTP 407
+FAILED https://api.trustedform.com/ns.gif
+  HTTP 407

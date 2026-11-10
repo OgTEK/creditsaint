@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!-- Saved by Site Saver from https://www.creditsaint.com/about/ on 2026-11-10T21:34:18.746Z -->
+<html lang="en-US"><head><meta charset="utf-8">
+    <script>
+(function() {
+  'use strict';
+
+  let scriptsLoaded = false;
+  const LOAD_TIMEOUT = 3000; // Default 3 seconds
+
+  function loadDeferredScripts() {
+    if (scriptsLoaded) return;
+    scriptsLoaded = true;
+
+    // Dispatch custom event that scripts can listen to
+    window.dispatchEvent(new CustomEvent('deferredScriptsReady'));
+  }
+
+  // Load on first user interaction
+  const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+  events.forEach(event => {
+    window.addEventListener(event, loadDeferredScripts, { once: true, passive: true });
+  });
+
+  // Fallback: load after timeout
+  window.addEventListener('load', function() {
+    setTimeout(loadDeferredScripts, LOAD_TIMEOUT);
+  });
+})();
+</script>
+    <style>#chat-widget-container { display: none !important; }</style>
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.asyncInit = true;
+    (function () {
+        var tries = 0;
+        var queued = false;
+        var timer = setInterval(function () {
+            var lc = window.LiveChatWidget;
+            if (lc && typeof lc.call === 'function') {
+                // Before tracking.js loads, LiveChatWidget is a queueing stub whose getters throw.
+                var loaded = false;
+                try { lc.get('state'); loaded = true; } catch (e) {}
+                if (loaded) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    clearInterval(timer);
+                    return;
+                }
+                if (!queued) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    queued = true;
+                }
+            }
+            if (++tries >= 60) clearInterval(timer);
+        }, 500);
+    })();
+</script>
+
+    
+    <script>
+    (function() {
+      'use strict';
+
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        // Initialize dataLayer if not exists
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+
+        // Load GTM script
+        var f = document.getElementsByTagName('script')[0];
+        var j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KKPV8B4';
+        f.parentNode.insertBefore(j, f);
+      }
+
+      // Load GTM on deferredScriptsReady event
+      window.addEventListener('deferredScriptsReady', loadGTM);
+
+      // Fallback: load after page load + 3s
+      window.addEventListener('load', function() {
+        setTimeout(loadGTM, 3000);
+      });
+    })();
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="apple-itunes-app" content="app-id=1591290922">
+        <meta name="csrf-token" content="uAgrNBt7FLiuz00za1hYZQ8KHYNTfam3U8WJSQoQ">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="facebook-domain-verification" content="vpzfdiv19m15upua5kkk20d23nvldj">
+    
+    <title>About Credit Saint - Credit Repair Since 2007</title>
+    <meta name="description" content="Since 2007, over 350,000 clients have enrolled with Credit Saint. Meet the team that challenges potentially inaccurate items with all 3 bureaus.">
+    <meta name="application-name" content="Credit Saint">
+            <link rel="canonical" href="https://www.creditsaint.com/about/">
+                    <link rel="alternate" hreflang="en" href="https://www.creditsaint.com/about/">
+                    <link rel="alternate" hreflang="es" href="https://www.santodecredito.com/about/">
+                <link rel="alternate" hreflang="x-default" href="https://www.creditsaint.com/about/">
+        <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Credit Saint">
+    <meta property="og:locale" content="en_US">
+            <meta property="og:locale:alternate" content="es_US">
+        <meta property="og:title" content="About Credit Saint - Credit Repair Since 2007">
+    <meta property="og:description" content="Since 2007, over 350,000 clients have enrolled with Credit Saint. Meet the team that challenges potentially inaccurate items with all 3 bureaus.">
+            <meta property="og:url" content="https://www.creditsaint.com/about/">
+        <meta property="og:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Credit Saint">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Credit Saint - Credit Repair Since 2007">
+    <meta name="twitter:description" content="Since 2007, over 350,000 clients have enrolled with Credit Saint. Meet the team that challenges potentially inaccurate items with all 3 bureaus.">
+    <meta name="twitter:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <link rel="icon" type="image/png" href="../_external/cdn.creditsaint.com/webapp/img/newDesign/cs-icon.svg">
+
+    
+    
+    
+    <link rel="stylesheet" href="../_external/fonts.googleapis.com/css2__qaw5g14.css">
+    <link rel="stylesheet" href="../css/home-6-0/site__q19m5z2z.css">
+    <link rel="stylesheet" href="../css/home-6-0/about__q19m5z2z.css">
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.creditsaint.com/#organization","name":"Credit Saint, LLC","alternateName":"Credit Saint","url":"https://www.creditsaint.com/","logo":{"@type":"ImageObject","url":"https://cdn.creditsaint.com/webapp/img/newDesign/cs-new-logo.svg"},"description":"Credit Saint challenges potentially inaccurate items with all three credit bureaus. A credit repair organization as defined under the Credit Repair Organizations Act (CROA) and not a law firm.","foundingDate":"2007","address":{"@type":"PostalAddress","streetAddress":"PO Box 110","addressLocality":"Oakland","addressRegion":"NJ","postalCode":"07436","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1-877-637-2673","contactType":"customer service","areaServed":"US","availableLanguage":["English","Spanish"]}],"sameAs":["https://www.linkedin.com/company/credit-saint-llc","https://www.instagram.com/creditsaint/","https://www.facebook.com/creditsaint/","https://www.bbb.org/us/nj/saddle-brook/profile/credit-repair-no-advanced-fee/credit-saint-llc-0221-27004499"]},{"@type":"WebSite","@id":"https://www.creditsaint.com/#website","name":"Credit Saint","url":"https://www.creditsaint.com/","publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.creditsaint.com/about/#webpage","name":"About Credit Saint - Credit Repair Since 2007","description":"Since 2007, over 350,000 clients have enrolled with Credit Saint. Meet the team that challenges potentially inaccurate items with all 3 bureaus.","url":"https://www.creditsaint.com/about/","isPartOf":{"@id":"https://www.creditsaint.com/#website"},"publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.creditsaint.com/about/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://www.creditsaint.com/about/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.creditsaint.com/"},{"@type":"ListItem","position":2,"name":"About","item":"https://www.creditsaint.com/about/"}]},{"@type":"Person","@id":"https://www.creditsaint.com/about/#ashley-davison","name":"Ashley Davison","jobTitle":"Chief Compliance Officer","worksFor":{"@id":"https://www.creditsaint.com/#organization"},"url":"https://www.creditsaint.com/about/"}]}</script>
+</head>
+
+<body data-site="6-0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKPV8B4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="cs6-header">
+    <nav aria-label="Main" data-site-nav="" class="cs6-header__nav">
+        <div class="cs6-header__row">
+            <a href="../index.html" aria-label="Credit Saint home" class="cs6-header__home">
+                <span class="cs6-lockup" data-size="header">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="72" height="72" class="cs6-lockup__mark" fetchpriority="high">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+            </a>
+                            <span class="cs6-header__links">
+                                                                        <a href="../packages/index.html" data-track="true" data-track-id="nav-packages" class="cs6-header__link">Packages</a>
+                                                                                                <a href="../faq/index.html" data-track="true" data-track-id="nav-faq" class="cs6-header__link">FAQ</a>
+                                                                                                <a href="../resources/index.html" data-track="true" data-track-id="nav-resources" class="cs6-header__link">Resources</a>
+                                                            </span>
+                        <span class="cs6-header__actions">
+                <span class="cs6-lang-switch--head">
+            <button type="button" class="cs6-lang-switch__toggle" aria-expanded="false" aria-controls="cs6-lang-menu" aria-label="Language: English" data-cs6-lang-toggle="">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path>
+                </svg>
+                <span translate="no" class="cs6-lang-switch__code">EN</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true" class="cs6-lang-switch__chevron">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+            <span id="cs6-lang-menu" role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch__menu" hidden="">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            English<span aria-hidden="true" class="cs6-lang-switch__tick">✓</span>                                    </a>
+                                                                            <a href="https://www.santodecredito.com/about/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            Español                                    </a>
+                        </span>
+            </span>
+                                        <a href="../portal/login/index.html" id="nav-login" data-track="true" class="cs6-header__login">Log in</a>
+                                <a class="cs6-header__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-header" data-track="true" data-cs-cta="landing"><span>Start free consultation</span>
+                                            <span aria-hidden="true" class="cs6-header__cta-arrow">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                        </span></a>
+                                    <button type="button" class="cs6-header__menu-button" aria-expanded="false" aria-controls="cs6-menu" aria-label="Menu" data-cs6-menu-toggle="">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                            <g class="cs6-header__icon-open">
+                                <path d="M4 7h16"></path>
+                                <path d="M4 12h16"></path>
+                                <path d="M4 17h16"></path>
+                            </g>
+                            <g class="cs6-header__icon-close">
+                                <path d="M6 6l12 12"></path>
+                                <path d="M18 6L6 18"></path>
+                            </g>
+                        </svg>
+                    </button>
+                            </span>
+        </div>
+
+                    <div id="cs6-menu" class="cs6-header__menu" hidden="">
+                <div class="cs6-header__menu-inner">
+                                                                        <a href="../packages/index.html" id="nav-packages" data-track="true" class="cs6-header__menu-link">Packages</a>
+                                                                                                <a href="../faq/index.html" id="nav-faq" data-track="true" class="cs6-header__menu-link">FAQ</a>
+                                                                                                <a href="../resources/index.html" id="nav-resources" data-track="true" class="cs6-header__menu-link">Resources</a>
+                                                                <a href="../portal/login/index.html" class="cs6-header__menu-link">Log in</a>
+                    <div class="cs6-lang-switch__row">
+            <span class="cs6-lang-switch__row-label" aria-hidden="true">Language</span>
+            <span role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch--menu">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            EN
+                                    </a>
+                                                                                <span aria-hidden="true" class="cs6-lang-switch__sep">|</span>
+                                <a href="https://www.santodecredito.com/about/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            ES
+                                    </a>
+                        </span>
+            </div>
+                        <a class="cs6-header__menu-cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" data-cs-cta="landing"><span>Start free consultation</span>
+                        <span aria-hidden="true" class="cs6-header__menu-cta-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+</span></a>
+                </div>
+            </div>
+            </nav>
+</div>
+
+        <main class="cs6-about">
+        <span aria-hidden="true" class="cs6-about__glow"></span>
+
+        <header id="about" class="cs6-about__hero">
+            <div class="cs6-about__hero-copy">
+                <div class="cs6-crumb-pill">
+    <nav aria-label="Breadcrumb" class="cs6-crumbs cs6-crumb-pill__crumbs">
+    <ol>
+                    <li>
+                                    <a href="../index.html">Home</a>
+                            </li>
+                    <li>
+                                    <span aria-current="page">About</span>
+                            </li>
+            </ol>
+</nav>
+    <span aria-hidden="true" class="cs6-crumb-pill__rule"></span>
+    <span class="cs6-crumb-pill__badge">
+        <span class="cs6-crumb-pill__label">Since</span>
+                    <span class="cs6-crumb-pill__tag">2007</span>
+            </span>
+</div>
+                <h1 class="cs6-about__h1">We challenge what’s wrong on <span class="cs6-about__blue">your report.</span></h1>
+                <p class="cs6-about__lede">Since 2007, over 350,000 clients have enrolled with Credit Saint. Now Nico recovers your report and helps you review it. You tell us what’s wrong and our team does the disputing.</p>
+                <div class="cs6-about__ctas">
+                    <a class="cs6-about__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-hero" data-track="true" data-cs-cta="landing"><span aria-hidden="true" class="cs6-nico-orb cs6-about__cta-orb" data-cs6-nico-orb="reading" style="--orb: 40px; --draw: 52px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+                        Start my free consultation
+                        <span aria-hidden="true" class="cs6-about__cta-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                        </span></a>
+                    <a href="#how" class="cs6-about__outline">How we work</a>
+                </div>
+                <p class="cs6-about__rating">
+                    <span aria-hidden="true" class="cs6-about__stars">
+                                                    <svg width="13.6" height="13.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                    <svg width="13.6" height="13.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                    <svg width="13.6" height="13.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                    <svg width="13.6" height="13.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                                    <svg width="13.6" height="13.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+                                            </span>
+                    <b>4.8</b>
+                    <span class="cs6-about__rating-text">on 16,000+ Google reviews<sup class="cs6-cite cs6-cite--tight">▵</sup></span>
+                    <svg class="cs6-about__google" width="22" height="22" viewBox="0 0 48 48" aria-label="Google" role="img">
+                        <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"></path>
+                        <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"></path>
+                        <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"></path>
+                        <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"></path>
+                    </svg>
+                </p>
+            </div>
+
+            <div class="cs6-about__hero-art">
+                <span aria-hidden="true" class="cs6-about__back-green"></span>
+                <span aria-hidden="true" class="cs6-about__back-blue"></span>
+                <div class="cs6-about__numbers">
+                    <p class="cs6-about__numbers-eyebrow">By the numbers</p>
+                    <div class="cs6-about__numbers-grid">
+                        <div class="cs6-about__figure cs6-about__figure-wide">
+                            <b>350,000+</b>
+                            <span>clients enrolled since 2007</span>
+                        </div>
+                        <div class="cs6-about__figure">
+                            <b>4.8<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-about__star"><polygon points="12,0.5 14.47,8.6 22.94,8.45 15.99,13.3 18.76,21.3 12,16.2 5.24,21.3 8.01,13.3 1.06,8.45 9.53,8.6" fill="currentColor" stroke="none"></polygon></svg>
+</b>
+                            <span class="cs6-about__figure-small">16,000+ Google reviews<sup class="cs6-cite cs6-cite--tight">▵</sup></span>
+                        </div>
+                        <div class="cs6-about__figure">
+                            <b>90-day</b>
+                            <span>money-back guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section aria-labelledby="ab-why" data-theme="night" class="cs6-about__why">
+            <div class="cs6-about__why-inner">
+                <div class="cs6-about__why-head">
+                    <span class="cs6-about__eyebrow">Why we exist</span>
+                    <h2 id="ab-why" class="cs6-about__h2">Errors are ordinary. <span class="cs6-about__aqua">Disputing them alone isn’t.</span></h2>
+                </div>
+                <div class="cs6-about__why-side">
+                    <p class="cs6-about__why-body">Most people never check their reports. The ones who do find something, then get stuck in letters, deadlines and bureau replies. That’s the part we take.</p>
+                    <ul class="cs6-about__why-list">
+                                                    <li>
+                                <span class="cs6-about__why-label">Letters</span>
+                                <span class="cs6-about__why-handled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M20 6 9 17l-5-5"></path></svg>
+We handle it</span>
+                            </li>
+                                                    <li>
+                                <span class="cs6-about__why-label">Deadlines</span>
+                                <span class="cs6-about__why-handled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M20 6 9 17l-5-5"></path></svg>
+We handle it</span>
+                            </li>
+                                                    <li>
+                                <span class="cs6-about__why-label">Bureau replies</span>
+                                <span class="cs6-about__why-handled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M20 6 9 17l-5-5"></path></svg>
+We handle it</span>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" aria-labelledby="ab-how" class="cs6-about__how">
+            <div class="cs6-about__how-inner">
+                <div class="cs6-about__center-head">
+                    <span class="cs6-about__eyebrow">How Credit Saint works</span>
+                    <h2 id="ab-how" class="cs6-about__h2">Three Bureaus. <span class="cs6-about__blue">One app.</span></h2>
+                </div>
+                <div class="cs6-steps__track" data-cs6-steps-track="">
+                    <ol class="cs6-steps__list" data-top="0" data-cs6-steps-list="">
+                                                    <li class="cs6-steps__step" data-i="0">
+                                <span class="cs6-steps__step-head">
+                                    <span class="cs6-steps__chip">Step <span>01</span></span>
+                                    <span aria-hidden="true" class="cs6-steps__tile">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M19 8v3"></path><path d="M8 9h3M8 13h4"></path><circle cx="16.5" cy="16.5" r="3.5"></circle><path d="m21 21-2-2"></path></svg>
+                                    </span>
+                                </span>
+                                <h3 class="cs6-steps__title">You review it with Nico</h3>
+                                <p class="cs6-steps__text">Nico recovers your report and walks you through it line-by-line. Soft pull. No negative impact.</p>
+                            </li>
+                                                    <li class="cs6-steps__step" data-i="1">
+                                <span class="cs6-steps__step-head">
+                                    <span class="cs6-steps__chip">Step <span>02</span></span>
+                                    <span aria-hidden="true" class="cs6-steps__tile">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H11l-4.2 3.4a.5.5 0 0 1-.8-.4V16h.5A2.5 2.5 0 0 1 4 13.5z"></path><path d="m9 10 2 2 4-4"></path></svg>
+                                    </span>
+                                </span>
+                                <h3 class="cs6-steps__title">You dispute</h3>
+                                <p class="cs6-steps__text">Tell us what’s wrong and why in chat. Our team files the dispute with the bureau.</p>
+                            </li>
+                                                    <li class="cs6-steps__step" data-i="2">
+                                <span class="cs6-steps__step-head">
+                                    <span class="cs6-steps__chip">Step <span>03</span></span>
+                                    <span aria-hidden="true" class="cs6-steps__tile">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.5" width="14" height="16.5" rx="2.5"></rect><rect x="9" y="3" width="6" height="3.5" rx="1.2"></rect><path d="m8.5 12 1.5 1.5 2.5-2.5"></path><path d="M14.5 12.5h1"></path><path d="m8.5 16.5 1.5 1.5 2.5-2.5"></path><path d="M14.5 17h1"></path></svg>
+                                    </span>
+                                </span>
+                                <h3 class="cs6-steps__title">We get to work</h3>
+                                <p class="cs6-steps__text">Our team follows up and tracks every reply for you.</p>
+                            </li>
+                                            </ol>
+                </div>
+                <div class="cs6-steps__dots">
+                                            <span aria-hidden="true" class="cs6-steps__dot  cs6-steps__dot-on " data-cs6-steps-dot=""></span>
+                                            <span aria-hidden="true" class="cs6-steps__dot " data-cs6-steps-dot=""></span>
+                                            <span aria-hidden="true" class="cs6-steps__dot " data-cs6-steps-dot=""></span>
+                                        <button type="button" class="cs6-steps__swipe" aria-label="Swipe to the next step" data-cs6-steps-next="">Swipe</button>
+                </div>
+                <a href="../index.html#how" class="cs6-about__outline cs6-about__demo">See it in action</a>
+            </div>
+        </section>
+
+        <section aria-labelledby="ab-team" data-theme="night" class="cs6-about__dark cs6-about__team">
+            <div class="cs6-about__team-inner">
+                <div class="cs6-about__team-head">
+                    <span class="cs6-about__eyebrow">Who’s in your corner</span>
+                    <h2 id="ab-team" class="cs6-about__h2">You tell Nico. <span class="cs6-about__aqua">Our team handles it.</span></h2>
+                </div>
+                <div class="cs6-about__team-grid">
+                    <div class="cs6-about__team-card">
+                        <span aria-hidden="true" class="cs6-nico-orb cs6-about__team-orb" data-cs6-nico-orb="idle" style="--orb: 96px; --draw: 125px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+                        <h3 class="cs6-about__team-title">Nico, your credit guide</h3>
+                        <ul class="cs6-about__checks">
+                                                            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-about__check-aqua"><path d="M20 6 9 17l-5-5"></path></svg>
+Checks all three reports</li>
+                                                            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-about__check-aqua"><path d="M20 6 9 17l-5-5"></path></svg>
+Explains your report in plain language</li>
+                                                            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-about__check-aqua"><path d="M20 6 9 17l-5-5"></path></svg>
+You tell us why, then we file it</li>
+                                                    </ul>
+                    </div>
+                    <div class="cs6-about__team-card">
+                        <span class="cs6-about__based-in">
+                            <svg role="img" aria-label="Map of New Jersey" width="40" height="72" viewBox="0 0 54 100" class="cs6-nj-map">
+    <path d="M27.9 2.4 L52.1 16.8 L50.2 22.8 L48.4 27.6 L47.5 30.4 L43.5 31.2 L41.1 36.4 L45.3 38.4 L49.0 38.0 L49.6 44.8 L48.1 52.8 L47.2 60.8 L46.0 66.8 L42.9 72.0 L39.2 77.6 L36.2 82.4 L31.3 86.0 L27.0 92.8 L22.7 98.0 L19.6 99.6 L20.5 92.0 L15.3 88.8 L8.6 84.8 L2.5 78.8 L1.2 72.8 L3.7 66.4 L9.2 62.4 L14.4 58.8 L19.3 54.4 L25.4 48.8 L23.0 44.8 L19.3 41.6 L16.2 38.8 L12.6 33.6 L12.3 29.2 L14.4 24.0 L15.9 17.6 L19.3 12.8 L23.9 7.2 Z" fill="var(--cs-white)" stroke="var(--cs-white)" stroke-width="1.2" stroke-linejoin="round"></path>
+    <circle cx="41.1" cy="15.6" r="4.5" fill="var(--cs-green)"></circle>
+    <circle cx="41.1" cy="15.6" r="4.5" fill="none" stroke="var(--cs-green)" stroke-width="2.4" class="cs6-nj-map__ping"></circle>
+</svg>
+                            <span class="cs6-about__based-in-text">
+                                <span class="cs6-about__based-in-label">Based in</span>
+                                <span class="cs6-about__based-in-city" translate="no">Saddle Brook, NJ</span>
+                            </span>
+                        </span>
+                        <h3 class="cs6-about__team-title">Real people in New Jersey</h3>
+                        <ul class="cs6-about__checks">
+                                                            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-about__check-green"><path d="M20 6 9 17l-5-5"></path></svg>
+Write and send every challenge</li>
+                                                            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-about__check-green"><path d="M20 6 9 17l-5-5"></path></svg>
+Follow up with the bureaus, and with creditors when necessary</li>
+                                                            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon cs6-about__check-green"><path d="M20 6 9 17l-5-5"></path></svg>
+Answer when you call</li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="ab-aw" class="cs6-about__awards">
+            <div class="cs6-about__awards-inner">
+                <div class="cs6-about__center-head">
+                    <span class="cs6-about__eyebrow">Recognized</span>
+                    <h2 id="ab-aw" class="cs6-about__h2">Ranked #1. <span class="cs6-about__blue">Recommended by experts.</span></h2>
+                </div>
+                <div class="cs6-about__award-grid">
+                                            <figure class="cs6-about__award">
+                            <svg viewBox="0 0 104 26" role="img" aria-label="Forbes" fill="none" class="cs6-about__award-logo">
+                                <svg viewBox="0 0 104 26" width="100%" height="100%"><path fill="#0A2540" d="M58.9575 8.4C58.9575 5.39259 59.01 2.59259 59.1675 0L51.135 1.5037V2.22963L51.9225 2.33333C52.5 2.38519 52.8675 2.59259 53.0775 2.9037C53.2875 3.26667 53.445 3.78519 53.55 4.56296C53.655 6.06667 53.76 9.48889 53.7075 14.8815C53.7075 20.2222 53.655 23.5926 53.55 24.8889C56.4375 25.5111 58.695 25.7704 60.375 25.7704C63.525 25.7704 65.9925 24.8889 67.7775 23.0741C69.5625 21.3111 70.5075 18.8222 70.5075 15.763C70.5075 13.3259 69.825 11.3037 68.46 9.6963C67.095 8.08889 65.3625 7.31111 63.315 7.31111C61.95 7.31111 60.5325 7.67407 58.9575 8.4ZM59.115 24.3704C59.01 22.7111 58.905 17.7333 58.905 9.59259C59.3775 9.43704 60.0075 9.33333 60.795 9.33333C62.055 9.33333 63.0525 9.95556 63.7875 11.2519C64.5225 12.5481 64.89 14.1037 64.89 16.0741C64.89 18.5111 64.47 20.4815 63.63 22.1407C62.79 23.7481 61.74 24.5778 60.4275 24.5778C60.0075 24.4741 59.5875 24.4222 59.115 24.3704ZM21 0.518519H0V1.55556L1.1025 1.65926C1.9425 1.81481 2.52 2.12593 2.8875 2.59259C3.255 3.11111 3.465 3.94074 3.5175 5.08148C3.9375 10.6815 3.9375 15.9185 3.5175 20.7407C3.4125 21.8815 3.2025 22.7111 2.8875 23.2296C2.52 23.7481 1.9425 24.0593 1.1025 24.163L0 24.3185V25.3556H13.545V24.3185L12.1275 24.2148C11.7816 24.1862 11.4451 24.0888 11.1384 23.9284C10.8316 23.768 10.5609 23.5479 10.3425 23.2815C9.975 22.763 9.765 21.9333 9.7125 20.7926C9.555 18.7185 9.45 16.3333 9.45 13.6889L12.285 13.7407C13.8075 13.7926 14.8575 14.9333 15.3825 17.2148H16.4325V8.76296H15.3825C14.8575 10.9926 13.86 12.1333 12.285 12.1852L9.45 12.237C9.45 7.57037 9.555 4.25185 9.7125 2.22963H13.86C16.8 2.22963 18.795 4.0963 19.95 7.82963L21.21 7.46667L21 0.518519ZM18.5325 16.4889C18.5325 19.1852 19.32 21.4148 20.8425 23.1778C22.365 24.9407 24.6225 25.7704 27.4575 25.7704C30.2925 25.7704 32.6025 24.8889 34.2825 23.0741C35.9625 21.3111 36.75 19.0815 36.75 16.3852C36.75 13.6889 35.9625 11.4593 34.44 9.6963C32.9175 7.93333 30.66 7.1037 27.825 7.1037C24.99 7.1037 22.68 7.98518 21 9.8C19.32 11.563 18.5325 13.7926 18.5325 16.4889ZM30.24 10.5778C30.87 12.0815 31.1325 14.0519 31.1325 16.437C31.1325 21.9333 29.9775 24.6296 27.72 24.6296C26.565 24.6296 25.6725 23.8519 25.0425 22.2963C24.4125 20.7407 24.15 18.7704 24.15 16.437C24.15 10.9926 25.305 8.2963 27.5625 8.2963C28.7175 8.24444 29.61 9.02222 30.24 10.5778ZM74.6025 23.1778C76.335 24.8889 78.54 25.7704 81.165 25.7704C82.7925 25.7704 84.21 25.4593 85.47 24.7852C86.73 24.163 87.7275 23.3852 88.41 22.4519L87.885 21.8296C86.73 22.7111 85.4175 23.1259 83.895 23.1259C81.795 23.1259 80.1675 22.4519 79.065 21.0519C77.91 19.6519 77.385 17.8889 77.49 15.6074H88.725C88.725 13.1185 88.095 11.0963 86.7825 9.48889C85.47 7.93333 83.6325 7.15556 81.27 7.15556C78.33 7.15556 76.0725 8.08889 74.445 9.9037C72.8175 11.7185 72.03 13.9481 72.03 16.5926C72.03 19.2889 72.87 21.4667 74.6025 23.1778ZM78.4875 10.163C79.065 8.91852 79.8 8.2963 80.7975 8.2963C82.3725 8.2963 83.16 10.2667 83.16 14.2593L77.595 14.363C77.6475 12.8074 77.91 11.4074 78.4875 10.163ZM102.848 8.08889C101.43 7.46667 99.645 7.1037 97.4925 7.1037C96.7875 7.1037 93.555 7.67407 92.2425 8.76296C90.93 9.85185 90.2475 11.2 90.2475 12.8074C90.2475 14.2074 90.6675 15.2963 91.455 16.0741C92.2425 16.8519 93.5025 17.5259 95.13 18.0963C96.6 18.6148 97.65 19.1333 98.175 19.6C98.7 20.1185 99.015 20.6889 99.015 21.4667C99.015 22.1926 98.7525 22.8667 98.175 23.3852C97.65 23.9556 96.915 24.2148 95.97 24.2148C93.66 24.2148 91.9275 22.5556 90.72 19.237L89.8275 19.4963L90.0375 24.6815C91.9275 25.4074 94.0275 25.7704 96.3375 25.7704C98.7525 25.7704 100.59 26.7519 101.955 24.163C103.32 23.1259 104.003 21.6222 104.003 19.7556C104.003 18.5111 103.688 17.4741 103.005 16.6963C102.323 15.9185 101.22 15.2444 99.645 14.6222C97.9125 14 96.705 13.4296 96.075 12.9111C95.445 12.3926 95.13 11.7704 95.13 10.9926C95.13 10.2148 95.34 9.59259 95.8125 9.07407C96.285 8.55556 96.8625 8.34815 97.5975 8.34815C99.6975 8.34815 101.22 9.85185 102.165 12.8074L103.058 12.5481L102.848 8.08889ZM52.3425 7.62222C51.6075 7.25926 50.82 7.1037 49.9275 7.1037C49.035 7.1037 48.1425 7.46667 47.145 8.19259C46.1475 8.91852 45.4125 9.9037 44.835 11.2519L44.8875 7.1037L36.9075 8.65926V9.38519L37.695 9.43704C38.6925 9.54074 39.27 10.3185 39.375 11.7185C39.69 14.9333 39.69 18.3556 39.375 21.9852C39.27 23.3852 38.6925 24.1111 37.695 24.2667L36.9075 24.3704V25.3556H48.0375V24.3704L46.62 24.2667C45.6225 24.163 45.045 23.3852 44.94 21.9852C44.625 18.9778 44.5725 15.763 44.835 12.4444C45.15 11.9259 45.8325 11.6148 46.8825 11.5111C47.9325 11.4074 49.14 11.7185 50.4 12.4444L52.3425 7.62222Z"></path></svg>
+                            </svg>
+                            <figcaption class="cs6-about__award-name">Transparent Pricing</figcaption>
+                        </figure>
+                                            <figure class="cs6-about__award">
+                            <svg viewBox="0 0 80 26" role="img" aria-label="Money" fill="none" class="cs6-about__award-logo">
+                                <svg viewBox="0 0 80 26" width="100%" height="100%"><path fill="#0A2540" d="M51.7778 15.6346V7.39625C51.7778 6.75793 50.0865 3.68348 47.7216 3.68348C46.001 3.68348 44.4854 4.50366 43.1383 6.15134H42.9626L42.7868 4.22538C42.7575 3.91049 42.4647 3.69812 42.1572 3.76403L36.9296 4.93572C36.7465 4.97965 36.666 5.19934 36.7831 5.3458L37.8594 6.72986V15.6346L36.9955 16.8503C36.871 17.026 36.9955 17.2604 37.2078 17.2604H43.7899C44.0022 17.2604 44.1267 17.0187 44.0022 16.8503L43.1383 15.6639V7.14727C43.6874 6.79576 44.3097 6.59804 44.8808 6.59804C45.9058 6.59804 46.4989 7.2205 46.4989 8.28966V15.5321L45.613 16.8503C45.4958 17.026 45.6203 17.253 45.8326 17.253H52.4367C52.649 17.253 52.7735 17.0114 52.649 16.8429L51.7778 15.6346Z"></path><path fill="#0A2540" d="M28.9782 3.69141C25.127 3.69141 21.21 6.02013 21.21 10.6629C21.21 15.313 25.127 17.6344 28.9782 17.6344C32.8293 17.6344 36.7464 15.3057 36.7464 10.6629C36.7464 6.0128 32.8293 3.69141 28.9782 3.69141ZM28.9782 16.4847C27.5431 16.4847 26.5987 13.8777 26.5987 10.6629C26.5987 7.44812 27.5358 4.84112 28.9782 4.84112C30.4132 4.84112 31.3577 7.44812 31.3577 10.6629C31.3577 13.8777 30.4132 16.4847 28.9782 16.4847Z"></path><path fill="#0A2540" d="M66.4574 12.5015C66.5159 12.2818 66.2377 12.1427 66.0986 12.3185C65.1322 13.4608 63.5727 14.032 62.1816 14.0833C60.666 14.1346 59.5311 13.6293 58.7184 12.8457L65.7399 9.60894C66.0108 9.48444 66.1499 9.1842 66.0766 8.8986C65.9229 8.32741 65.7106 7.75621 65.4324 7.20699C64.4366 6.74442 62.6209 3.60406 59.8753 3.69926C55.3652 3.85304 52.7147 6.70902 52.8539 10.993C52.993 15.1232 55.9436 17.7961 60.1901 17.6569C63.9534 17.5105 65.7252 15.4161 66.4574 12.5015ZM58.5208 6.77371C60.0949 4.65125 61.8082 5.80097 62.2401 9.14026L57.9131 11.7765C56.5366 9.3746 57.0272 5.86687 58.5208 6.77371Z"></path><path fill="#0A2540" d="M20.1192 15.2978V1.83075L21.1662 0.417412C21.2906 0.248983 21.1735 0 20.9612 0H15.7409C15.5505 0 15.3821 0.102522 15.2869 0.263629L10.7549 8.38486L6.48637 0.278275C6.39119 0.109845 6.21547 0 6.02511 0H0.255696C0.0653341 0 -0.059133 0.205045 0.0287261 0.373474L1.16357 2.61432V14.9023L0.0433693 16.8722C-0.0518114 17.048 0.0726557 17.2604 0.270339 17.2604H4.38507C4.60472 17.2604 4.72919 16.9967 4.58276 16.8283L2.89147 14.9023V5.10414L8.19963 15.7225C8.29481 15.9129 8.55838 15.9129 8.66089 15.7298L14.401 5.12611V15.2978L13.3247 16.8576C13.2076 17.0333 13.3247 17.2677 13.5371 17.2677H20.9758C21.1881 17.2677 21.3053 17.0333 21.1881 16.8576L20.1192 15.2978Z"></path><path fill="#0A2540" d="M78.7356 4.0581H75.5141C76.7872 4.0581 75.17 4.33638 75.3311 4.49749L76.6124 5.81563L74.1157 12.5162L71.6117 5.552L72.5928 4.49016C72.7466 4.32173 72.6294 4.05078 72.4025 4.05078H65.4396C66.7346 4.05078 65.1101 4.27047 66.72 4.44622L65.9009 5.54468L71.0699 17.9499C71.3335 18.5797 71.026 19.2973 70.3963 19.5683C69.1517 20.1175 68.3463 18.2135 67.4604 17.7814C66.4573 17.2835 66.7566 17.5178 64.6782 18.4771C64.0998 19.4364 64.4146 20.6814 65.3737 21.2599C67.6873 22.6513 71.436 22.3583 73.7423 16.9613L74.328 15.6212L78.1133 5.92547L78.9626 4.44622C79.0578 4.27047 78.9333 4.0581 78.7356 4.0581Z"></path></svg>
+                            </svg>
+                            <figcaption class="cs6-about__award-name">#1, Best for Comprehensive Plans</figcaption>
+                        </figure>
+                                            <figure class="cs6-about__award">
+                            <svg viewBox="0 0 1040 168" role="img" aria-label="CNBC" fill="none" class="cs6-about__award-logo">
+                                <svg viewBox="0 0 1040 168" width="100%" height="100%"><g transform="translate(28.06 47.36) scale(.42)"><path d="M25.497,9.818c-28.003,25.35-38.195,82.79,12.286,116.368l201.391,138.169L141.526,40.642C121.064-12.149,65.086-23.661,25.497,9.818" fill="#0A2540"></path><path d="M198.857-98.951c-32.736,0.667-81.893,39.65-60.017,99.178l100.995,238.186l35.489-250.526C283.536-74.363,236.427-103.099,198.857-98.951" fill="#0A2540"></path><path d="M291.084-21.668h19.097c0,0,10.198,0,11.586,4.811c-7.515,6.137-27.97,6.906-26.754,39.687l32.103,215.549L428.921-0.432c20.517-53.322-22.548-97.854-60.749-99.215c-1.784-0.128-3.575-0.232-5.429-0.232C328.456-99.88,289.164-74.961,291.084-21.668" fill="#0A2540"></path><path d="M424.883,42.671l-94.872,221.029l201.332-138.898c46.41-32.918,38.925-85.546,12.946-111.56C533.398,0.998,513.401-8.46,492.218-8.46C467.192-8.465,440.409,4.809,424.883,42.671" fill="#0A2540"></path><path d="M508.801,156.251L319.726,288.318h232.806c47.763,0,78.457-49.246,64.812-94.438c-9.139-28.406-36.177-50.704-67.56-50.736C536.574,143.149,522.565,147.128,508.801,156.251" fill="#0A2540"></path><path d="M20.072,288.318h229.371L60.32,156.251C16.628,128.179-32.5,144.605-50.236,191.19C-66.77,244.517-27.733,288.318,20.072,288.318" fill="#0A2540"></path></g><g transform="translate(400 -301)"><path d="M-66.069,383.898c0,22.492,18.387,63.433,88.595,63.433c64.73,0,85.174-29.702,85.174-43.321H57.587c0,0-2.38,17.993-30.649,17.993c-28.287,0-35.937-23.611-35.937-37.264c0-13.601,7.65-35.937,35.937-35.937c28.269,0,30.649,15.665,30.649,15.665H107.7c0-13.635-15-42.918-85.174-42.918C-47.682,321.549-66.069,365.151-66.069,383.898" fill="#0A2540"></path><path d="M459.487,383.898c0,22.492,18.406,63.433,88.595,63.433c64.724,0,85.176-29.702,85.176-43.321H583.18c0,0-2.391,17.993-30.667,17.993c-28.29,0-35.948-23.611-35.948-37.264c0-13.601,7.658-35.937,35.948-35.937c28.276,0,30.667,15.665,30.667,15.665h50.078c0-13.635-14.984-42.918-85.176-42.918C477.894,321.549,459.487,365.151,459.487,383.898" fill="#0A2540"></path><polyline points="244.659,323.649 244.659,399.79 186.338,323.649 120.732,323.649 120.732,444.25 165.709,444.25 165.709,367.234 223.009,444.25 289.639,444.25 289.639,323.649 244.659,323.649" fill="#0A2540"></polyline><path d="M388.786,415.438v0.159h-37.476v-22.144h37.476v0.072c8.002,0,14.469,4.918,14.469,10.974C403.255,410.54,396.788,415.438,388.786,415.438 M351.654,347.105h36.11v0.051c6.118,0,11.079,4.025,11.079,8.979c0,4.973-4.961,8.963-11.079,8.963v0.054h-36.11V347.105z M425.593,380.134c8.188,0,25.308-9.505,25.308-27.919c0-26.221-48.827-28.566-56.317-28.566h-89.962V444.25h89.962c43.268,0,60.649-13.669,60.649-36.495S425.593,380.134,425.593,380.134z" fill="#0A2540"></path></g></svg>
+                            </svg>
+                            <figcaption class="cs6-about__award-name">Best money-back guarantee</figcaption>
+                        </figure>
+                                    </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="ab-promise" class="cs6-about__promise">
+            <div class="cs6-about__promise-card">
+                <div class="cs6-about__stack14">
+                    <span class="cs6-about__eyebrow cs6-about__eyebrow-green">Our commitment</span>
+                    <h2 id="ab-promise" class="cs6-about__h2">Real people. <span class="cs6-about__green">One commitment.</span></h2>
+                    <p class="cs6-about__promise-text">
+                        No questionable items deleted in the first 90 days of the program? You can request a full refund. Terms apply.<sup class="cs6-cite cs6-cite--tight">↑</sup> Cancel anytime by email, chat or phone.
+                    </p>
+                </div>
+                <div class="cs6-about__seal-row">
+                    <span aria-hidden="true" class="cs6-about__seal">
+                        <svg viewBox="0 0 128 128" width="104" height="104" class="cs6-about__seal-ring">
+                            <defs>
+                                <path id="ab-seal-ring" d="M64,64 m-49,0 a49,49 0 1,1 98,0 a49,49 0 1,1 -98,0"></path>
+                            </defs>
+                            <text lang="en">
+                                <textPath href="#ab-seal-ring" textLength="304" lengthAdjust="spacing">
+                                    90 DAYS • MONEY BACK • 90 DAYS • MONEY BACK •
+                                </textPath>
+                            </text>
+                        </svg>
+                        <span class="cs6-about__seal-center">
+                            <span class="cs6-about__seal-ninety">90</span>
+                            <span class="cs6-about__seal-days">Days</span>
+                        </span>
+                    </span>
+                    <p class="cs6-about__seal-text">
+                        <b>90-day</b><span><a href="../90day/index.html">money-back guarantee</a> on every plan</span>
+                    </p>
+                </div>
+            </div>
+            <p class="cs6-about__disclosure"><sup class="cs6-cite cs6-about__disclosure-mark">↑</sup>Credit repair companies can’t guarantee a specific result or score increase.</p>
+        </section>
+
+        <section aria-labelledby="ab-final" data-theme="night" class="cs6-about__dark cs6-about__final">
+            <div class="cs6-about__final-inner">
+                <h2 id="ab-final" class="cs6-about__h2">Give your credit a <span class="cs6-about__aqua">second look.</span></h2>
+                <p class="cs6-about__final-text">Free consultation. Soft check.</p>
+                <a class="cs6-about__cta cs6-about__cta-glass" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-free-consultation" data-track="true" data-cs-cta="landing"><span aria-hidden="true" class="cs6-nico-orb cs6-about__cta-orb" data-cs6-nico-orb="reading" style="--orb: 40px; --draw: 52px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+                    Start my free consultation
+                    <span aria-hidden="true" class="cs6-about__cta-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                    </span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cs6-footer">
+    <div class="cs6-footer__inner">
+        <div class="cs6-footer__grid">
+            <div class="cs6-footer__brand-col">
+                <a href="../index.html" aria-label="Credit Saint" class="cs6-footer__brand">
+                    <span class="cs6-lockup" data-size="footer">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="64" height="64" class="cs6-lockup__mark" loading="lazy">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+                </a>
+                <ul class="cs6-footer__contact">
+                    <li>
+                        <span class="cs6-footer__address" translate="no">250 Pehle Ave, Suite 200, Saddle Brook, NJ 07663</span>
+                    </li>
+                    <li>
+                        <span class="cs6-footer__address">Mailing: <span translate="no">PO Box 110, Oakland, NJ 07436</span></span>
+                    </li>
+                    <li class="cs6-footer__phone-row">
+                        <span>Customer service: <a href="tel:+18776372673" data-cs6-phone="" data-track="true" data-track-id="phone-footer"><span data-cs6-phone-text="">877-637-2673</span></a></span>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-labelledby="ft-prog">
+                <h3 id="ft-prog" class="cs6-footer__heading">Credit Programs</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../packages/index.html">Packages and Pricing</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../faq/index.html">FAQ</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../resources/index.html">Resources</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="index.html">About</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../careers/index.html">Careers</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+            <nav aria-labelledby="ft-legal">
+                <h3 id="ft-legal" class="cs6-footer__heading">Legal and Your Rights</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../terms-of-service/index.html">Terms and Conditions</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://privacy.cptn.co/privacy-policy/973bfa8b-4680-4129-a23e-fac916e9629f" target="_blank" rel="noopener">Privacy Policy</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../disclosure/index.html">Disclosure</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://www.creditsaint.com/glba-notice/" target="_blank" rel="noopener">GLBA Privacy Notice</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../ccpa-privacy-policy/index.html">Your California Privacy Rights</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676" target="_blank" rel="noopener">Privacy Requests</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+        </div>
+        <div class="cs6-footer__notes">
+            <p>“#1 for a reason”: named #1 Best Overall Credit Repair Company by ConsumerAffairs, 2026.</p>
+            <p><sup class="cs6-cite cs6-cite--light cs6-cite--tight">▵</sup> Ratings, review counts and client counts as of October 2026.</p>
+                        <p class="cs6-footer__copyright">© 2026. All Rights Reserved. Credit Saint, LLC</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="cs6-chat" class="cs6-chat" data-mode="widget" data-chat-now-url="https://www.creditsaint.com/chat-now" data-entry-url="https://chat.creditsaint.com/" data-start-url="https://chat.creditsaint.com/start" data-attribution="[]">
+            <button type="button" id="cs-chat-launcher" class="cs6-chat__launcher" aria-label="Chat with Nico, Credit Saint’s virtual assistant, available 24/7" aria-controls="cs-chat-panel" aria-expanded="false" title="Chat with Nico">
+            <span aria-hidden="true" class="cs6-nico-orb cs6-chat__launcher-orb" data-cs6-nico-orb="reading" style="--orb: 84px; --draw: 109px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+        </button>
+                <div id="cs-chat-panel" role="dialog" aria-label="Chat with Nico" class="cs6-chat__panel" hidden="" data-out="" inert="" data-frame-title="Chat with Credit Saint">
+            <div class="cs6-chat__bar">
+                <span class="cs6-chat__avatar" aria-hidden="true">
+                    <span class="cs6-chat__orb"></span>
+                </span>
+                <span class="cs6-chat__identity">
+                    <b class="cs6-chat__name">
+                        <span translate="no">Nico</span>
+                        <span class="cs6-chat__role">Virtual assistant</span>
+                    </b>
+                    <small class="cs6-chat__company" translate="no">Credit Saint</small>
+                </span>
+                <button type="button" class="cs6-chat__minimize" aria-label="Minimize chat" data-cs6-chat-minimize="">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M6 12h12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="cs6-chat__body">
+                <div class="cs6-chat__wait">
+                    <span class="cs6-chat__wait-orb" aria-hidden="true">
+                        <span class="cs6-chat__orb"></span>
+                    </span>
+                    <span aria-hidden="true" data-cs6-chat-connecting="">Connecting to Nico…</span>
+                    <span class="cs6-chat__slow" data-cs6-chat-slow="" hidden="">
+                        Taking longer than usual.
+                        <a href="#" target="_blank" rel="noopener" data-cs6-chat-slow-link="">Open the chat in a new tab</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home-6-0/site__q19m5z2z.js" defer=""></script>
+    <script src="../js/home-6-0/nico-orb__q19m5z2z.js" defer=""></script>
+    <script type="text/javascript">
+        // Load Microsoft Clarity after user interaction or timeout (non-critical analytics)
+        function loadClarity() {
+            if (window.clarityLoaded) return;
+            window.clarityLoaded = true;
+
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "liqcu2if7a");
+        }
+
+        // Load on deferred scripts event (user interaction) or after timeout
+        if (document.addEventListener) {
+            window.addEventListener('deferredScriptsReady', loadClarity, { once: true });
+
+            // Fallback: load after 3s if no interaction
+            window.addEventListener('load', function() {
+                setTimeout(loadClarity, 3000);
+            });
+        }
+    </script>
+        <script src="../js/home-6-0/about__q19m5z2z.js" defer=""></script>
+
+
+
+</body></html>

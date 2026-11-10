@@ -1,0 +1,19 @@
+Site Saver report
+Source: https://www.creditsaint.com/
+Saved: 2026-11-10T21:34:35.499Z
+Pages: 47
+Files (excluding this report): 587
+Failed: 6
+
+FAILED https://blog.creditsaint.com/wp-content/themes/credit-saint-blog/css/accordion.css?v1.0
+  HTTP 404
+FAILED https://blog.creditsaint.com/wp-content/themes/credit-saint-blog/css/resources.css?v1.0
+  HTTP 404
+FAILED https://www.creditsaint.com/css/home-3-0/header.css?v11.101.1-rc.1
+  HTTP 404
+FAILED https://blog.creditsaint.com/wp-content/themes/credit-saint-blog/css/details.css?v1.0
+  HTTP 404
+FAILED https://blog.creditsaint.com/wp-content/themes/credit-saint-blog/css/cta-banners.css?v1.0
+  HTTP 404
+FAILED https://www.creditsaint.com/home-4-0/fonts/Graphik-Bold.woff
+  HTTP 404

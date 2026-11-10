@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<!-- Saved by Site Saver from https://www.creditsaint.com/ccpa-privacy-policy/ on 2026-11-10T21:34:18.981Z -->
+<html lang="en-US"><head><meta charset="utf-8">
+    <script>
+(function() {
+  'use strict';
+
+  let scriptsLoaded = false;
+  const LOAD_TIMEOUT = 3000; // Default 3 seconds
+
+  function loadDeferredScripts() {
+    if (scriptsLoaded) return;
+    scriptsLoaded = true;
+
+    // Dispatch custom event that scripts can listen to
+    window.dispatchEvent(new CustomEvent('deferredScriptsReady'));
+  }
+
+  // Load on first user interaction
+  const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+  events.forEach(event => {
+    window.addEventListener(event, loadDeferredScripts, { once: true, passive: true });
+  });
+
+  // Fallback: load after timeout
+  window.addEventListener('load', function() {
+    setTimeout(loadDeferredScripts, LOAD_TIMEOUT);
+  });
+})();
+</script>
+    <style>#chat-widget-container { display: none !important; }</style>
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.asyncInit = true;
+    (function () {
+        var tries = 0;
+        var queued = false;
+        var timer = setInterval(function () {
+            var lc = window.LiveChatWidget;
+            if (lc && typeof lc.call === 'function') {
+                // Before tracking.js loads, LiveChatWidget is a queueing stub whose getters throw.
+                var loaded = false;
+                try { lc.get('state'); loaded = true; } catch (e) {}
+                if (loaded) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    clearInterval(timer);
+                    return;
+                }
+                if (!queued) {
+                    try { lc.call('destroy'); } catch (e) {}
+                    queued = true;
+                }
+            }
+            if (++tries >= 60) clearInterval(timer);
+        }, 500);
+    })();
+</script>
+
+    
+    <script>
+    (function() {
+      'use strict';
+
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        // Initialize dataLayer if not exists
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+
+        // Load GTM script
+        var f = document.getElementsByTagName('script')[0];
+        var j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KKPV8B4';
+        f.parentNode.insertBefore(j, f);
+      }
+
+      // Load GTM on deferredScriptsReady event
+      window.addEventListener('deferredScriptsReady', loadGTM);
+
+      // Fallback: load after page load + 3s
+      window.addEventListener('load', function() {
+        setTimeout(loadGTM, 3000);
+      });
+    })();
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="apple-itunes-app" content="app-id=1591290922">
+        <meta name="csrf-token" content="uAgrNBt7FLiuz00za1hYZQ8KHYNTfam3U8WJSQoQ">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="facebook-domain-verification" content="vpzfdiv19m15upua5kkk20d23nvldj">
+    
+    <title>Your California Privacy Rights | Credit Saint</title>
+    <meta name="description" content="Privacy notice for California consumers under the CCPA: what we collect, how we use and share it, and how to exercise your rights.">
+    <meta name="application-name" content="Credit Saint">
+            <link rel="canonical" href="https://www.creditsaint.com/ccpa-privacy-policy/">
+                    <link rel="alternate" hreflang="en" href="https://www.creditsaint.com/ccpa-privacy-policy/">
+                    <link rel="alternate" hreflang="es" href="https://www.santodecredito.com/ccpa-privacy-policy/">
+                <link rel="alternate" hreflang="x-default" href="https://www.creditsaint.com/ccpa-privacy-policy/">
+        <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Credit Saint">
+    <meta property="og:locale" content="en_US">
+            <meta property="og:locale:alternate" content="es_US">
+        <meta property="og:title" content="Your California Privacy Rights | Credit Saint">
+    <meta property="og:description" content="Privacy notice for California consumers under the CCPA: what we collect, how we use and share it, and how to exercise your rights.">
+            <meta property="og:url" content="https://www.creditsaint.com/ccpa-privacy-policy/">
+        <meta property="og:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Credit Saint">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your California Privacy Rights | Credit Saint">
+    <meta name="twitter:description" content="Privacy notice for California consumers under the CCPA: what we collect, how we use and share it, and how to exercise your rights.">
+    <meta name="twitter:image" content="https://cdn.creditsaint.com/webapp/img/home-6-0/social-share.jpg">
+    <link rel="icon" type="image/png" href="../_external/cdn.creditsaint.com/webapp/img/newDesign/cs-icon.svg">
+
+    
+    
+    
+    <link rel="stylesheet" href="../_external/fonts.googleapis.com/css2__qaw5g14.css">
+    <link rel="stylesheet" href="../css/home-6-0/site__q19m5z2z.css">
+    <link rel="stylesheet" href="../css/home-6-0/legal__q19m5z2z.css">
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.creditsaint.com/#organization","name":"Credit Saint, LLC","alternateName":"Credit Saint","url":"https://www.creditsaint.com/","logo":{"@type":"ImageObject","url":"https://cdn.creditsaint.com/webapp/img/newDesign/cs-new-logo.svg"},"description":"Credit Saint challenges potentially inaccurate items with all three credit bureaus. A credit repair organization as defined under the Credit Repair Organizations Act (CROA) and not a law firm.","foundingDate":"2007","address":{"@type":"PostalAddress","streetAddress":"PO Box 110","addressLocality":"Oakland","addressRegion":"NJ","postalCode":"07436","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1-877-637-2673","contactType":"customer service","areaServed":"US","availableLanguage":["English","Spanish"]}],"sameAs":["https://www.linkedin.com/company/credit-saint-llc","https://www.instagram.com/creditsaint/","https://www.facebook.com/creditsaint/","https://www.bbb.org/us/nj/saddle-brook/profile/credit-repair-no-advanced-fee/credit-saint-llc-0221-27004499"]},{"@type":"WebSite","@id":"https://www.creditsaint.com/#website","name":"Credit Saint","url":"https://www.creditsaint.com/","publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.creditsaint.com/ccpa-privacy-policy/#webpage","name":"Your California Privacy Rights","description":"Privacy notice for California consumers under the California Consumer Privacy Act (CCPA).","url":"https://www.creditsaint.com/ccpa-privacy-policy/","isPartOf":{"@id":"https://www.creditsaint.com/#website"},"publisher":{"@id":"https://www.creditsaint.com/#organization"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.creditsaint.com/ccpa-privacy-policy/#breadcrumb"},"dateModified":"2020-03-29"},{"@type":"BreadcrumbList","@id":"https://www.creditsaint.com/ccpa-privacy-policy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.creditsaint.com/"},{"@type":"ListItem","position":2,"name":"Your California Privacy Rights","item":"https://www.creditsaint.com/ccpa-privacy-policy/"}]}]}</script>
+</head>
+
+<body data-site="6-0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKPV8B4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="cs6-header">
+    <nav aria-label="Main" data-site-nav="" class="cs6-header__nav">
+        <div class="cs6-header__row">
+            <a href="../index.html" aria-label="Credit Saint home" class="cs6-header__home">
+                <span class="cs6-lockup" data-size="header">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="72" height="72" class="cs6-lockup__mark" fetchpriority="high">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+            </a>
+                            <span class="cs6-header__links">
+                                                                        <a href="../packages/index.html" data-track="true" data-track-id="nav-packages" class="cs6-header__link">Packages</a>
+                                                                                                <a href="../faq/index.html" data-track="true" data-track-id="nav-faq" class="cs6-header__link">FAQ</a>
+                                                                                                <a href="../resources/index.html" data-track="true" data-track-id="nav-resources" class="cs6-header__link">Resources</a>
+                                                            </span>
+                        <span class="cs6-header__actions">
+                <span class="cs6-lang-switch--head">
+            <button type="button" class="cs6-lang-switch__toggle" aria-expanded="false" aria-controls="cs6-lang-menu" aria-label="Language: English" data-cs6-lang-toggle="">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path>
+                </svg>
+                <span translate="no" class="cs6-lang-switch__code">EN</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true" class="cs6-lang-switch__chevron">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+            <span id="cs6-lang-menu" role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch__menu" hidden="">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            English<span aria-hidden="true" class="cs6-lang-switch__tick">✓</span>                                    </a>
+                                                                            <a href="https://www.santodecredito.com/ccpa-privacy-policy/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            Español                                    </a>
+                        </span>
+            </span>
+                                        <a href="../portal/login/index.html" id="nav-login" data-track="true" class="cs6-header__login">Log in</a>
+                                <a class="cs6-header__cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" id="cta-header" data-track="true" data-cs-cta="landing"><span>Start free consultation</span>
+                                            <span aria-hidden="true" class="cs6-header__cta-arrow">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+                        </span></a>
+                                    <button type="button" class="cs6-header__menu-button" aria-expanded="false" aria-controls="cs6-menu" aria-label="Menu" data-cs6-menu-toggle="">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                            <g class="cs6-header__icon-open">
+                                <path d="M4 7h16"></path>
+                                <path d="M4 12h16"></path>
+                                <path d="M4 17h16"></path>
+                            </g>
+                            <g class="cs6-header__icon-close">
+                                <path d="M6 6l12 12"></path>
+                                <path d="M18 6L6 18"></path>
+                            </g>
+                        </svg>
+                    </button>
+                            </span>
+        </div>
+
+                    <div id="cs6-menu" class="cs6-header__menu" hidden="">
+                <div class="cs6-header__menu-inner">
+                                                                        <a href="../packages/index.html" id="nav-packages" data-track="true" class="cs6-header__menu-link">Packages</a>
+                                                                                                <a href="../faq/index.html" id="nav-faq" data-track="true" class="cs6-header__menu-link">FAQ</a>
+                                                                                                <a href="../resources/index.html" id="nav-resources" data-track="true" class="cs6-header__menu-link">Resources</a>
+                                                                <a href="../portal/login/index.html" class="cs6-header__menu-link">Log in</a>
+                    <div class="cs6-lang-switch__row">
+            <span class="cs6-lang-switch__row-label" aria-hidden="true">Language</span>
+            <span role="group" aria-label="Language" class="cs6-lang-switch cs6-lang-switch--menu">
+                                                                    <a href="index.html" class="cs6-lang-switch__option" lang="en" hreflang="en" aria-label="English" translate="no" aria-current="true">
+                                            EN
+                                    </a>
+                                                                                <span aria-hidden="true" class="cs6-lang-switch__sep">|</span>
+                                <a href="https://www.santodecredito.com/ccpa-privacy-policy/" class="cs6-lang-switch__option" lang="es" hreflang="es" aria-label="Español" translate="no" data-cs6-lang="es">
+                                            ES
+                                    </a>
+                        </span>
+            </div>
+                        <a class="cs6-header__menu-cta" href="https://www.creditsaint.com/enter/de95e85dbecac2750889eec78b3ece93" data-cs-cta="landing"><span>Start free consultation</span>
+                        <span aria-hidden="true" class="cs6-header__menu-cta-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="cs6-icon "><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+</span></a>
+                </div>
+            </div>
+            </nav>
+</div>
+
+        <main>
+        <article class="cs6-legal__article">
+            <div class="cs6-legal__wrap">
+                <nav aria-label="Breadcrumb" class="cs6-crumbs cs6-legal__crumbs">
+    <ol>
+                    <li>
+                                    <a href="../index.html">Home</a>
+                            </li>
+                    <li>
+                                    <span aria-current="page">Your California Privacy Rights</span>
+                            </li>
+            </ol>
+</nav>
+                <h1 class="cs6-legal__title">Your California Privacy Rights</h1>
+                                    <p class="cs6-legal__lede">Important privacy notice for California consumers, under the California Consumer Privacy Act.</p>
+                                                                    <p class="cs6-legal__meta">
+                        <span class="cs6-legal__meta-item">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="4.5" width="18" height="17" rx="2.5"></rect>
+                                <path d="M8 2.5v4M16 2.5v4M3 10h18"></path>
+                            </svg>
+                            Last revised: March 29, 2020
+                        </span>
+                    </p>
+                            </div>
+            <div class="cs6-legal__layout">
+                                    <div class="cs6-legal-toc__cell">
+                        <div class="cs6-legal-toc__sentinel" data-cs6-toc-sentinel="" aria-hidden="true"></div>
+                        <div class="cs6-legal-toc__placeholder" data-cs6-toc-placeholder="" aria-hidden="true"></div>
+                        <nav class="cs6-legal-toc__toc" data-cs6-toc="" data-next="Next: :title" data-end="End of article" aria-labelledby="cs6-legal-toc-label">
+                            <button type="button" class="cs6-legal-toc__toggle" data-cs6-toc-toggle="" aria-labelledby="cs6-legal-toc-label" aria-controls="cs6-legal-toc-list" disabled="">
+                                <svg class="cs6-legal-toc__book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 7v14"></path>
+                                    <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+                                </svg>
+                                <span id="cs6-legal-toc-label" class="cs6-legal-toc__label">On this page</span>
+                                <span class="cs6-legal-toc__now" aria-hidden="true">
+                                    <span class="cs6-legal-toc__now-cur" data-cs6-toc-cur="">Collection and Use of Personal Information</span>
+                                    <span class="cs6-legal-toc__now-next" data-cs6-toc-next="">Next: Categories of Personal Information Collected</span>
+                                </span>
+                                <svg class="cs6-legal-toc__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg>
+                            </button>
+                            <ol id="cs6-legal-toc-list" class="cs6-legal-toc__list">
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="collection-and-use-of-personal-information" data-active="">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#collection-and-use-of-personal-information">Collection and Use of Personal Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="categories-of-personal-information-collected">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#categories-of-personal-information-collected">Categories of Personal Information Collected</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="sources-of-personal-information">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#sources-of-personal-information">Sources of Personal Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="how-we-use-personal-information">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#how-we-use-personal-information">How We Use Personal Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="sharing-personal-information">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#sharing-personal-information">Sharing Personal Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="disclosure-of-personal-information-for-a-business-purpose">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#disclosure-of-personal-information-for-a-business-purpose">Disclosure of Personal Information for a Business Purpose</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="sale-of-personal-information">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#sale-of-personal-information">Sale of Personal Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="notice-regarding-your-rights">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#notice-regarding-your-rights">Notice Regarding Your Rights</a>
+                                                                                            <button type="button" class="cs6-legal-toc__expand" data-cs6-toc-expand="" aria-expanded="false" aria-label="Expand section">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                        <path d="m6 9 6 6 6-6"></path>
+                                                    </svg>
+                                                </button>
+                                                                                    </div>
+                                                                                    <ol class="cs6-legal-toc__sub-list">
+                                                                                                    <li class="cs6-legal-toc__sub" data-cs6-toc-sub="access-and-data-portability-rights">
+                                                        <a class="cs6-legal-toc__link" href="#access-and-data-portability-rights">Access and Data Portability Rights</a>
+                                                    </li>
+                                                                                                    <li class="cs6-legal-toc__sub" data-cs6-toc-sub="deletion-request-rights">
+                                                        <a class="cs6-legal-toc__link" href="#deletion-request-rights">Deletion Request Rights</a>
+                                                    </li>
+                                                                                                    <li class="cs6-legal-toc__sub" data-cs6-toc-sub="right-to-opt-out-of-the-sale-of-personal-information">
+                                                        <a class="cs6-legal-toc__link" href="#right-to-opt-out-of-the-sale-of-personal-information">Right to Opt Out of the Sale of Personal Information</a>
+                                                    </li>
+                                                                                            </ol>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="exercising-your-rights">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#exercising-your-rights">Exercising Your Rights</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="response-timing-and-format">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#response-timing-and-format">Response Timing and Format</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="non-discrimination">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#non-discrimination">Non-Discrimination</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="do-not-track-disclosures">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#do-not-track-disclosures">Do Not Track Disclosures</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="other-california-privacy-rights">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#other-california-privacy-rights">Other California Privacy Rights</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="changes-to-our-privacy-notice">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#changes-to-our-privacy-notice">Changes to Our Privacy Notice</a>
+                                                                                    </div>
+                                                                            </li>
+                                                                                                        <li class="cs6-legal-toc__item" data-cs6-toc-item="contact-information">
+                                        <div class="cs6-legal-toc__row">
+                                            <a class="cs6-legal-toc__link" href="#contact-information">Contact Information</a>
+                                                                                    </div>
+                                                                            </li>
+                                                            </ol>
+                        </nav>
+                    </div>
+                                <div class="cs6-prose__body">
+                        <p class="cs6-prose__lead">This Privacy Notice for California Consumers (“Notice”), provided by Credit Saint, LLC (“Credit Saint,” “Company,” “we,” or “our”), supplements, and is expressly made part of, the information contained in Credit Saint’s Online Privacy Policy.</p>
+    <p class="cs6-prose__p">It applies solely to those who are consumers (“you” or “your”) as defined in Section 1798.140(g) of the California Consumer Privacy Act of 2018 (“CCPA”). We adopt this Notice in compliance with the CCPA and any terms defined in the CCPA have the same meaning when used in this Notice.</p>
+    <p class="cs6-prose__p">Credit Saint collects information that identifies, relates to, describes, references, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer, household, or device (“personal information”). As a consumer, you have certain rights regarding your personal information as defined in the CCPA. This Notice provides you with information on how Credit Saint collects, uses, and shares personal information. It also outlines the rights you have regarding personal information that we collect from you and describes how you can exercise those rights.</p>
+                                            <h2 id="collection-and-use-of-personal-information" class="cs6-prose__h2">Collection and Use of Personal Information</h2>
+                            <p class="cs6-prose__p">As a company that conducts activities that are financial in nature, Credit Saint is a “financial institution” as that term is defined in the Gramm-Leach-Bliley Act (“GLBA”). While the CCPA does not exempt financial institutions, and thus, Credit Saint, from its requirements, Section 1798.145(e) of the CCPA does exempt personal information collected by a financial institution pursuant to the GLBA. Accordingly, much, if not all, of the data consumers provide to Credit Saint, or that we collect from consumers, will fall within the GLBA exemption to the CCPA’s definition of personal information and thus outside the scope of the CCPA.</p>
+                                                                    <h2 id="categories-of-personal-information-collected" class="cs6-prose__h2">Categories of Personal Information Collected</h2>
+                            <p class="cs6-prose__p">Credit Saint recognizes the eleven (11) broad categories of personal information referenced in the CCPA that a business may collect about a consumer. In particular, Credit Saint has collected the following categories of personal information from consumers within the last twelve (12) months (though most, if not all, such personal information is collected pursuant to the GLBA and is thus exempt from the CCPA):</p>
+    <table class="cs6-legal-ccpa__table">
+    <thead>
+        <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Examples</th>
+            <th scope="col">Collected</th>
+        </tr>
+    </thead>
+    <tbody>
+                    <tr>
+                <td>A. Identifiers</td>
+                <td>A real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, Social Security number, driver’s license number, passport number, or other similar identifiers.</td>
+                <td><span class="cs6-legal-ccpa__yes">YES</span></td>
+            </tr>
+                    <tr>
+                <td>B. California Customer Records</td>
+                <td>A name, signature, Social Security number, physical characteristics or description, address, telephone number, passport number, driver’s license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information. Some personal information included in this category may overlap with other categories. <span class="cs6-prose__muted" translate="no">(Cal. Civ. Code § 1798.80(e))</span></td>
+                <td><span class="cs6-legal-ccpa__yes">YES</span></td>
+            </tr>
+                    <tr>
+                <td>C. Protected classification characteristics</td>
+                <td>Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability, sex (including gender, gender identity, gender expression, pregnancy or childbirth and related medical conditions), sexual orientation, veteran or military status, genetic information (including familial genetic information).</td>
+                <td><span class="cs6-legal-ccpa__yes">YES</span></td>
+            </tr>
+                    <tr>
+                <td>D. Commercial information</td>
+                <td>Records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</td>
+                <td><span class="cs6-legal-ccpa__yes">YES</span></td>
+            </tr>
+                    <tr>
+                <td>E. Biometric information</td>
+                <td>Genetic, physiological, behavioral, and biological characteristics, or activity patterns used to extract a template or other identifier or identifying information, such as fingerprints, faceprints, and voiceprints, iris or retina scans, keystroke, gait, or other physical patterns, and sleep, health, or exercise data.</td>
+                <td><span class="cs6-legal-ccpa__no">NO</span></td>
+            </tr>
+                    <tr>
+                <td>F. Internet or other similar network activity</td>
+                <td>Browsing history, search history, information on a consumer’s interaction with a website, application, or advertisement.</td>
+                <td><span class="cs6-legal-ccpa__yes">YES</span></td>
+            </tr>
+                    <tr>
+                <td>G. Geolocation data</td>
+                <td>Physical location or movements.</td>
+                <td><span class="cs6-legal-ccpa__yes">YES</span></td>
+            </tr>
+                    <tr>
+                <td>H. Sensory data</td>
+                <td>Audio, electronic, visual, thermal, olfactory, or similar information.</td>
+                <td><span class="cs6-legal-ccpa__no">NO</span></td>
+            </tr>
+                    <tr>
+                <td>I. Professional or employment-related information</td>
+                <td>Current or past job history or performance evaluations.</td>
+                <td><span class="cs6-legal-ccpa__no">NO</span></td>
+            </tr>
+                    <tr>
+                <td>J. Non-public education information</td>
+                <td>Education records directly related to a student maintained by an educational institution or party acting on its behalf, such as grades, transcripts, class lists, student schedules, student identification codes, student financial information, or student disciplinary records. <span class="cs6-prose__muted" translate="no">(FERPA, 20 U.S.C. § 1232g, 34 C.F.R. Part 99)</span></td>
+                <td><span class="cs6-legal-ccpa__no">NO</span></td>
+            </tr>
+                    <tr>
+                <td>K. Inferences drawn from other personal information</td>
+                <td>Profile reflecting a person’s preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes.</td>
+                <td><span class="cs6-legal-ccpa__yes">YES</span></td>
+            </tr>
+            </tbody>
+</table>
+    <p class="cs6-prose__p">Personal information does not include publicly available information from government records, de-identified or aggregated consumer information, or information otherwise excluded from the CCPA’s scope, such as information collected pursuant to the GLBA. Any personal information or category of personal information collected pursuant to the GLBA would not be considered “personal information” under the CCPA.</p>
+                                                                    <h2 id="sources-of-personal-information" class="cs6-prose__h2">Sources of Personal Information</h2>
+                            <p class="cs6-prose__p">Notwithstanding the GLBA exemption to which most, if not all personal information collected by Credit Saint is subject, we have obtained the categories of personal information listed above from the following categories of sources:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span><strong>Directly from you.</strong> For example, from forms you complete or products and services you purchase.</span></li>
+                    <li class="cs6-prose__item"><span><strong>Indirectly from you.</strong> For example, from information we obtain in the course of providing our services to you, or from observing your actions on our website.</span></li>
+                    <li class="cs6-prose__item"><span><strong>From third-party business partners</strong> such as social media sites, ad networks, and analytics providers.</span></li></ul>
+                                                                    <h2 id="how-we-use-personal-information" class="cs6-prose__h2">How We Use Personal Information</h2>
+                            <p class="cs6-prose__p">Credit Saint may use this information to:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Provide you with the information, products, or services you request from us.</span></li>
+                    <li class="cs6-prose__item"><span>Fulfill the reason you provided the information, such as to respond to customer service requests or other inquiries.</span></li>
+                    <li class="cs6-prose__item"><span>Create, maintain, customize, and secure your account with us.</span></li>
+                    <li class="cs6-prose__item"><span>Personalize your website experience and deliver content and product and service offerings relevant to your interests, including targeted offers and ads through our Site, third-party sites, and via email or text message (with your consent where required by law).</span></li>
+                    <li class="cs6-prose__item"><span>Advertise and market products and services to you from both affiliated and non-affiliated entities, which includes sending promotional communications, target advertising, and presenting you relevant offers (with your consent where required by law).</span></li>
+                    <li class="cs6-prose__item"><span>Help maintain the safety, security, and integrity of our website, products and services, databases and other technology assets, and business.</span></li>
+                    <li class="cs6-prose__item"><span>Process your requests, purchases, transactions, and payments.</span></li>
+                    <li class="cs6-prose__item"><span>Provide you with support and to respond to your inquiries, including to investigate and address your concerns and monitor and improve our responses.</span></li>
+                    <li class="cs6-prose__item"><span>For testing, research, analysis, and product development, including to develop and improve our website, products, and services.</span></li>
+                    <li class="cs6-prose__item"><span>Prevent transactional fraud.</span></li>
+                    <li class="cs6-prose__item"><span>Respond to law enforcement requests and as required by applicable law, court order, or governmental regulations.</span></li>
+                    <li class="cs6-prose__item"><span>As described to you when collecting your personal information or as otherwise set forth in the CCPA.</span></li></ul>
+    <p class="cs6-prose__p">Credit Saint will not collect additional categories of personal information or use the personal information we collected for materially different, unrelated, or incompatible purposes without providing notice to you. Such notice may be delivered, for example, by posting an updated California Privacy Notice.</p>
+                                                                    <h2 id="sharing-personal-information" class="cs6-prose__h2">Sharing Personal Information</h2>
+                            <p class="cs6-prose__p">Credit Saint may disclose your personal information to a third party service provider for business purposes. When we do so, Credit Saint enters into a contractual arrangement that describes the business purpose and requires the recipient to both: (A) keep that personal information confidential; and (B) not use it for any purpose except performing the obligations under the contract.</p>
+    <p class="cs6-prose__p">We share your personal information with the following categories of third parties for a business purpose:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Affiliates.</span></li>
+                    <li class="cs6-prose__item"><span>Service providers.</span></li>
+                    <li class="cs6-prose__item"><span>Data aggregators.</span></li>
+                    <li class="cs6-prose__item"><span>Social media companies.</span></li>
+                    <li class="cs6-prose__item"><span>Internet cookie data recipients (e.g., Google Analytics).</span></li></ul>
+                                                                    <h2 id="disclosure-of-personal-information-for-a-business-purpose" class="cs6-prose__h2">Disclosure of Personal Information for a Business Purpose</h2>
+                            <p class="cs6-prose__p">The CCPA requires Credit Saint to provide you with a statement on its personal information disclosures for a business purpose that reference the eleven (11) categories of information reflected in the chart above. In the preceding twelve (12) months, Credit Saint has disclosed the following categories of personal information for a business purpose:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Category A: Identifiers.</span></li>
+                    <li class="cs6-prose__item"><span>Category B: California Customer Records personal information categories.</span></li>
+                    <li class="cs6-prose__item"><span>Category C: Protected classification characteristics under California or federal law.</span></li>
+                    <li class="cs6-prose__item"><span>Category D: Commercial information.</span></li>
+                    <li class="cs6-prose__item"><span>Category F: Internet or other similar network activity.</span></li>
+                    <li class="cs6-prose__item"><span>Category G: Geolocation data.</span></li>
+                    <li class="cs6-prose__item"><span>Category K: Inferences drawn from other personal information.</span></li></ul>
+                                                                    <h2 id="sale-of-personal-information" class="cs6-prose__h2">Sale of Personal Information</h2>
+                            <p class="cs6-prose__p">The CCPA similarly requires Credit Saint to provide you with a statement on its personal information sales. In the preceding 12 months, we have sold the below categories of information:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Category A: Identifiers.</span></li>
+                    <li class="cs6-prose__item"><span>Category B: California Customer Records personal information categories.</span></li>
+                    <li class="cs6-prose__item"><span>Category C: Protected classification characteristics under California or federal law.</span></li>
+                    <li class="cs6-prose__item"><span>Category D: Commercial information.</span></li>
+                    <li class="cs6-prose__item"><span>Category F: Internet or other similar network activity.</span></li>
+                    <li class="cs6-prose__item"><span>Category G: Geolocation data.</span></li>
+                    <li class="cs6-prose__item"><span>Category K: Inferences drawn from other personal information.</span></li></ul>
+    <p class="cs6-prose__p">We sell these categories of personal information for commercial purposes to the following categories of third parties:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span><strong>Financial institutions</strong> — including, for example, debt settlement service providers and lenders.</span></li>
+                    <li class="cs6-prose__item"><span><strong>Business partners and third parties</strong> — we may also share information with business partners and third parties (e.g., other companies, retailers, research organizations, advertisers, ad agencies, advertising networks and platforms, social networks, participatory databases, publishers, and non-profit organizations) that may want to market products or services to you.</span></li></ul>
+    <p class="cs6-prose__p">Please note that once we sell your personal information with another company, the information received by the other company is controlled by that company and becomes subject to the other company’s privacy practices.</p>
+                                                                    <h2 id="notice-regarding-your-rights" class="cs6-prose__h2">Notice Regarding Your Rights</h2>
+                                                                            <h3 id="access-and-data-portability-rights" class="cs6-prose__h3">Access and Data Portability Rights</h3>
+                                <p class="cs6-prose__p">You have the right to request that Credit Saint disclose what personal information we collect, use, and disclose. If we receive and confirm your consumer request as verifiable and no exception applies, we will provide you with:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>The categories of personal information we collected about you.</span></li>
+                    <li class="cs6-prose__item"><span>The categories of sources for the personal information we collected about you.</span></li>
+                    <li class="cs6-prose__item"><span>Our business or commercial purpose for collecting that personal information.</span></li>
+                    <li class="cs6-prose__item"><span>The categories of third parties with whom we share that personal information.</span></li>
+                    <li class="cs6-prose__item"><span>The specific pieces of personal information we collected about you.</span></li>
+                    <li class="cs6-prose__item"><span>If we sold or disclosed your personal information for a business purpose, two lists disclosing: sales, identifying the personal information categories that each category of recipient purchased; and disclosures for a business purpose, identifying the personal information categories that each category of recipient obtained.</span></li></ul>
+                                                    <h3 id="deletion-request-rights" class="cs6-prose__h3">Deletion Request Rights</h3>
+                                <p class="cs6-prose__p">Subject to certain exceptions, you have the right to request that we delete any of your personal information that we collected from you and retained. If we receive and confirm your consumer request as verifiable, unless an exception applies we will delete (and direct our service providers to delete) your personal information from our records.</p>
+    <p class="cs6-prose__p">The CCPA provides a number of reasons why a deletion request may be denied. We may deny your deletion request if retaining the information is necessary for us or our service provider(s) to:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Complete the transaction for which we collected the personal information, provide a good or service that you requested, take actions reasonably anticipated within the context of our ongoing business relationship with you, fulfill the terms of a written warranty or product recall conducted in accordance with federal law, or otherwise perform our contract with you.</span></li>
+                    <li class="cs6-prose__item"><span>Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities.</span></li>
+                    <li class="cs6-prose__item"><span>Debug products to identify and repair errors that impair existing intended functionality.</span></li>
+                    <li class="cs6-prose__item"><span>Exercise free speech, ensure the right of another consumer to exercise their free speech rights, or exercise another right provided for by law.</span></li>
+                    <li class="cs6-prose__item"><span>Comply with the California Electronic Communications Privacy Act (Cal. Penal Code § 1546 et seq.).</span></li>
+                    <li class="cs6-prose__item"><span>Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the information’s deletion may likely render impossible or seriously impair the research’s achievement, if you previously provided informed consent.</span></li>
+                    <li class="cs6-prose__item"><span>Enable solely internal uses that are reasonably aligned with consumer expectations based on your relationship with us.</span></li>
+                    <li class="cs6-prose__item"><span>Comply with a legal obligation.</span></li>
+                    <li class="cs6-prose__item"><span>Make other internal and lawful uses of that information that are compatible with the context in which you provided it.</span></li></ul>
+                                                    <h3 id="right-to-opt-out-of-the-sale-of-personal-information" class="cs6-prose__h3">Right to Opt Out of the Sale of Personal Information</h3>
+                                <p class="cs6-prose__p">You have the right to request that Credit Saint no longer sell your personal information. To exercise that right, please use our <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676">Do Not Sell My Personal Information request form</a>, or call us toll-free during business hours.</p>
+                                                                    <h2 id="exercising-your-rights" class="cs6-prose__h2">Exercising Your Rights</h2>
+                            <p class="cs6-prose__p">To exercise the access, data portability, and deletion rights described above, please submit a verifiable consumer request to Credit Saint by:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Calling us toll-free during business hours; or</span></li>
+        <li class="cs6-prose__item"><span>Filling out the California Consumer request form available at <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676">our privacy request portal</a>.</span></li></ul>
+    <p class="cs6-prose__p">Only you or someone registered with the California Secretary of State and legally authorized to act on your behalf may make a verifiable consumer request related to your personal information. You may only make a verifiable consumer request for access or data portability twice within a 12-month period.</p>
+    <p class="cs6-prose__p">The verifiable consumer request must:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Provide sufficient information that allows Credit Saint to verify, to a reasonable degree of certainty, that you are the person about whom Credit Saint collected personal information (or your authorized representative), which may include multi-factor authentication of identifying information provided by you. Such authentication may be conducted and verified independently or in combination with a comparison of personal information already maintained by Credit Saint, if any; and</span></li>
+                    <li class="cs6-prose__item"><span>Describe your request with sufficient detail that allows Credit Saint to properly understand, evaluate, and respond to it.</span></li></ul>
+    <p class="cs6-prose__p">We cannot respond to your request or provide you with personal information if we cannot verify your identity or authority to make the request and confirm that the personal information relates to you. Making a verifiable consumer request does not require you to create an account with us, but we must also be able to confirm the personal information relates to you. However, we do consider requests made through your password protected account sufficiently verified when the request relates to personal information associated with that specific account.</p>
+    <p class="cs6-prose__p">We will only use personal information provided in a verifiable consumer request to verify the requestor’s identity or authority to make the request.</p>
+                                                                    <h2 id="response-timing-and-format" class="cs6-prose__h2">Response Timing and Format</h2>
+                            <p class="cs6-prose__p">Credit Saint endeavors to respond to a verifiable consumer request within forty-five (45) days of receiving it. If Credit Saint requires additional time to process your request, up to a maximum total of ninety (90) days from the date the request is received, we will notify you of this and inform you of the reason for requiring the additional time.</p>
+    <p class="cs6-prose__p">If you have an online account with us, we will deliver our written response to your online account. If you do not have an account with us, we will deliver our written response by mail or electronically, at your option. Any disclosures we provide will only cover the 12-month period preceding the verifiable consumer request’s receipt. The response we provide will also explain the reasons we cannot comply with a request or have denied a request, if applicable.</p>
+    <p class="cs6-prose__p">We do not charge a fee to process or respond to your verifiable consumer request unless it is excessive, repetitive, or manifestly unfounded. If we determine that the request warrants a fee, we will tell you why we made that decision and provide you with a cost estimate before completing your request.</p>
+                                                                    <h2 id="non-discrimination" class="cs6-prose__h2">Non-Discrimination</h2>
+                            <p class="cs6-prose__p">Credit Saint will not discriminate against you for exercising any of your CCPA rights as described above. Unless permitted by the CCPA, Credit Saint will not:</p>
+    <ul class="cs6-prose__list  "><li class="cs6-prose__item"><span>Deny you goods or services.</span></li>
+                    <li class="cs6-prose__item"><span>Charge you different prices or rates for goods or services, including through granting discounts or other benefits, or imposing penalties.</span></li>
+                    <li class="cs6-prose__item"><span>Provide you a different level or quality of goods or services.</span></li>
+                    <li class="cs6-prose__item"><span>Suggest that you may receive a different price or rate for goods or services or a different level or quality of goods or services.</span></li></ul>
+                                                                    <h2 id="do-not-track-disclosures" class="cs6-prose__h2">Do Not Track Disclosures</h2>
+                            <p class="cs6-prose__p"><strong> How do we respond to Web browser “do not track” signals or other mechanisms that provide consumers the ability to exercise choice regarding the collection of personally identifiable information about an individual consumer’s online activities over time and across third-party websites or online services? </strong> We currently do not respond to DNT signals in browsers because we do not track individual users across the web.</p>
+    <p class="cs6-prose__p"><strong> May other parties collect personally identifiable information about an individual consumer’s online activities over time and across different websites when they visit www.creditsaint.com? </strong> No.</p>
+                                                                    <h2 id="other-california-privacy-rights" class="cs6-prose__h2">Other California Privacy Rights</h2>
+                            <p class="cs6-prose__p">California’s “Shine the Light” law (Civil Code Section § 1798.83) permits certain individuals that are California residents to request information regarding our disclosure of personal information to third parties for their direct marketing purposes. To make such a request, please email us at <a href="mailto:support@creditsaint.com">support@creditsaint.com</a> or write to us at <span translate="no">Credit Saint, LLC, PO Box 110, Oakland, NJ 07436</span>.</p>
+                                                                    <h2 id="changes-to-our-privacy-notice" class="cs6-prose__h2">Changes to Our Privacy Notice</h2>
+                            <p class="cs6-prose__p">We reserve the right to amend this Notice at our discretion and at any time. When we make changes to this Notice, we will post the updated Notice on our website and update the Notice’s effective date. Your continued use of our website following the posting of changes constitutes your acceptance of such changes.</p>
+                                                                    <h2 id="contact-information" class="cs6-prose__h2">Contact Information</h2>
+                            <p class="cs6-prose__p">Credit Saint is committed to responding promptly to any questions or concerns you may have about this Notice. If you have questions concerning the methods by which Credit Saint collects or uses your personal information as explained in this Notice and our Online Privacy Policy, the rights granted to you under the CCPA, or how to exercise your rights, or if you are a consumer with a disability and you wish to receive a copy of this Notice, you can contact us by calling, writing, or emailing us:</p>
+    <div class="cs6-prose__callout"><address class="cs6-prose__address" translate="no">
+            Credit Saint, LLC<br>            250 Pehle Avenue, Suite 200<br>            Saddle Brook, NJ 07663    </address>
+        <p class="cs6-prose__callout-text"><a href="mailto:support@creditsaint.com">support@creditsaint.com</a></p></div>
+    <p class="cs6-prose__p">Please print and retain a copy of this California Privacy Notice for your records.</p>
+                                                            </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="cs6-footer">
+    <div class="cs6-footer__inner">
+        <div class="cs6-footer__grid">
+            <div class="cs6-footer__brand-col">
+                <a href="../index.html" aria-label="Credit Saint" class="cs6-footer__brand">
+                    <span class="cs6-lockup" data-size="footer">
+    <img src="../_external/cdn.creditsaint.com/webapp/img/home-6-0/cs-logo-nav.webp" alt="" width="64" height="64" class="cs6-lockup__mark" loading="lazy">
+    <span class="cs6-lockup__words">
+        <span class="cs6-lockup__wordmark"><span class="cs6-lockup__name">Credit Saint</span><sup>™</sup></span>
+        <span class="cs6-lockup__tagline">#1 FOR A REASON</span>
+    </span>
+</span>
+                </a>
+                <ul class="cs6-footer__contact">
+                    <li>
+                        <span class="cs6-footer__address" translate="no">250 Pehle Ave, Suite 200, Saddle Brook, NJ 07663</span>
+                    </li>
+                    <li>
+                        <span class="cs6-footer__address">Mailing: <span translate="no">PO Box 110, Oakland, NJ 07436</span></span>
+                    </li>
+                    <li class="cs6-footer__phone-row">
+                        <span>Customer service: <a href="tel:+18776372673" data-cs6-phone="" data-track="true" data-track-id="phone-footer"><span data-cs6-phone-text="">877-637-2673</span></a></span>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-labelledby="ft-prog">
+                <h3 id="ft-prog" class="cs6-footer__heading">Credit Programs</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../packages/index.html">Packages and Pricing</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../faq/index.html">FAQ</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../resources/index.html">Resources</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../about/index.html">About</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../careers/index.html">Careers</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+            <nav aria-labelledby="ft-legal">
+                <h3 id="ft-legal" class="cs6-footer__heading">Legal and Your Rights</h3>
+                <ul class="cs6-footer__links">
+                                            <li>
+                                                            <a href="../terms-of-service/index.html">Terms and Conditions</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://privacy.cptn.co/privacy-policy/973bfa8b-4680-4129-a23e-fac916e9629f" target="_blank" rel="noopener">Privacy Policy</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="../disclosure/index.html">Disclosure</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://www.creditsaint.com/glba-notice/" target="_blank" rel="noopener">GLBA Privacy Notice</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="index.html">Your California Privacy Rights</a>
+                                                    </li>
+                                            <li>
+                                                            <a href="https://dsar.cptn.co/dsar/03f30a0b-340f-4bff-9f1e-c4b952306676" target="_blank" rel="noopener">Privacy Requests</a>
+                                                    </li>
+                                    </ul>
+            </nav>
+        </div>
+        <div class="cs6-footer__notes">
+            <p>“#1 for a reason”: named #1 Best Overall Credit Repair Company by ConsumerAffairs, 2026.</p>
+            <p>Ratings, review counts and client counts as of October 2026.</p>
+                        <p class="cs6-footer__copyright">© 2026. All Rights Reserved. Credit Saint, LLC</p>
+        </div>
+    </div>
+</footer>
+
+            <script src="../js/home-6-0/legal__q19m5z2z.js" defer=""></script>
+    
+    <div id="cs6-chat" class="cs6-chat" data-mode="widget" data-chat-now-url="https://www.creditsaint.com/chat-now" data-entry-url="https://chat.creditsaint.com/" data-start-url="https://chat.creditsaint.com/start" data-attribution="[]">
+            <button type="button" id="cs-chat-launcher" class="cs6-chat__launcher" aria-label="Chat with Nico, Credit Saint’s virtual assistant, available 24/7" aria-controls="cs-chat-panel" aria-expanded="false" title="Chat with Nico">
+            <span aria-hidden="true" class="cs6-nico-orb cs6-chat__launcher-orb" data-cs6-nico-orb="reading" style="--orb: 84px; --draw: 109px">
+    <span class="cs6-nico-orb__draw" data-cs6-nico-orb-draw=""></span>
+</span>
+        </button>
+                <div id="cs-chat-panel" role="dialog" aria-label="Chat with Nico" class="cs6-chat__panel" hidden="" data-out="" inert="" data-frame-title="Chat with Credit Saint">
+            <div class="cs6-chat__bar">
+                <span class="cs6-chat__avatar" aria-hidden="true">
+                    <span class="cs6-chat__orb"></span>
+                </span>
+                <span class="cs6-chat__identity">
+                    <b class="cs6-chat__name">
+                        <span translate="no">Nico</span>
+                        <span class="cs6-chat__role">Virtual assistant</span>
+                    </b>
+                    <small class="cs6-chat__company" translate="no">Credit Saint</small>
+                </span>
+                <button type="button" class="cs6-chat__minimize" aria-label="Minimize chat" data-cs6-chat-minimize="">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                        <path d="M6 12h12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="cs6-chat__body">
+                <div class="cs6-chat__wait">
+                    <span class="cs6-chat__wait-orb" aria-hidden="true">
+                        <span class="cs6-chat__orb"></span>
+                    </span>
+                    <span aria-hidden="true" data-cs6-chat-connecting="">Connecting to Nico…</span>
+                    <span class="cs6-chat__slow" data-cs6-chat-slow="" hidden="">
+                        Taking longer than usual.
+                        <a href="#" target="_blank" rel="noopener" data-cs6-chat-slow-link="">Open the chat in a new tab</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home-6-0/site__q19m5z2z.js" defer=""></script>
+    <script src="../js/home-6-0/nico-orb__q19m5z2z.js" defer=""></script>
+    <script type="text/javascript">
+        // Load Microsoft Clarity after user interaction or timeout (non-critical analytics)
+        function loadClarity() {
+            if (window.clarityLoaded) return;
+            window.clarityLoaded = true;
+
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "liqcu2if7a");
+        }
+
+        // Load on deferred scripts event (user interaction) or after timeout
+        if (document.addEventListener) {
+            window.addEventListener('deferredScriptsReady', loadClarity, { once: true });
+
+            // Fallback: load after 3s if no interaction
+            window.addEventListener('load', function() {
+                setTimeout(loadClarity, 3000);
+            });
+        }
+    </script>
+    
+
+
+</body></html>
